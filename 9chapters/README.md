@@ -17,6 +17,7 @@ Class notes are inside Notability. Recorded video are also provided.
 - [分治法](#dc)
 - [DFS](#dfs)
 - [HashMap Heap](#hash)
+- [DP - Memorization](#mem)
 
 
 </br>
@@ -273,6 +274,10 @@ Follow Up:
 
 # 第二十章【视频】刷人利器——深度优先搜索
 
+---
+---
+---
+
 # 🔴 <span id = "hash" style="color:purple">***HashMap Heap***:</span>
 
 [第十八章【互动】哈希表的原理](files/chapter18.md)
@@ -284,6 +289,16 @@ Follow Up:
 
 第二十一章【视频】高频数据结构——哈希表与堆
 
+
+
+---
+---
+---
+
+# 🔴 <span id = "mem" style="color:purple">***DP - Memoization 记忆化搜索***:</span>
+
+从DFS到DP 之：
+[第二十二章【互动】从搜索到动规——记忆化搜索入门](files/chapter22.md)
 
 ---
 ([Go back to respository ReadMe](../README.md))

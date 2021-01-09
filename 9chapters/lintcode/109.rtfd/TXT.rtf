@@ -1,0 +1,3323 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\fnil\fcharset134 PingFangSC-Semibold;
+\f3\fnil\fcharset0 HelveticaNeue-Bold;\f4\fswiss\fcharset0 Helvetica;\f5\fswiss\fcharset0 Helvetica-Bold;
+\f6\fnil\fcharset0 Menlo-Regular;\f7\fswiss\fcharset0 Helvetica-Oblique;\f8\fnil\fcharset0 STIXGeneral-Regular;
+\f9\fnil\fcharset0 Menlo-Bold;\f10\fnil\fcharset0 HelveticaNeue-Medium;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;\red255\green255\blue255;
+\red65\green90\blue214;\red0\green0\blue0;\red236\green242\blue255;\red24\green121\blue255;\red224\green245\blue255;
+\red38\green38\blue38;\red242\green242\blue242;\red0\green0\blue0;\red0\green0\blue0;\red253\green153\blue50;
+\red253\green153\blue50;\red244\green0\blue95;\red29\green30\blue26;\red213\green213\blue213;\red152\green224\blue36;
+\red98\green94\blue76;\red249\green249\blue249;\red176\green94\blue210;\red183\green49\blue52;\red236\green236\blue236;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0\c45098;\cssrgb\c0\c0\c0\c65098;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c32157\c45098\c87059;\cssrgb\c0\c0\c0\c85098;\cssrgb\c94118\c96078\c100000;\cssrgb\c9412\c56471\c100000;\cssrgb\c90196\c96863\c100000;
+\cssrgb\c20000\c20000\c20000;\cssrgb\c96078\c96078\c96078;\cssrgb\c0\c0\c0\c20000;\cssrgb\c0\c0\c0\c25098;\cssrgb\c100000\c66275\c25098;
+\cssrgb\c100000\c66275\c25098\c20000;\cssrgb\c97647\c14902\c44706;\cssrgb\c15294\c15686\c13333;\cssrgb\c86667\c86667\c86667;\cssrgb\c65098\c88627\c18039;
+\cssrgb\c45882\c44314\c36863;\cssrgb\c98039\c98039\c98039;\cssrgb\c74902\c47451\c85882;\cssrgb\c77647\c27451\c26275;\cssrgb\c94118\c94118\c94118;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14040\viewh17140\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.jiuzhang.com/problem"}}{\fldrslt 
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+LintCode
+\f1 \'c1\'ec\'bf\'db\'cc\'e2\'bd\'e2}}
+\f0\fs32 \cf3 \expnd0\expndtw0\kerning0
+\'a0 / \'a0
+\f1 \'ca\'fd\'d7\'d6\'c8\'fd\'bd\'c7\'d0\'ce
+\f0  \'b7 Triangle\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1\fs28 \cf4 \cb5 \shad\shadx0\shady20\shadr0\shado0 \shadc0 \'c9\'cf\'b4\'ab\'cc\'e2\'bd\'e2
+\f0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs40 \cf6 \cb4 \shad0 \'ca\'fd\'d7\'d6\'c8\'fd\'bd\'c7\'d0\'ce
+\f3  \'b7 Triangle\cb1 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.jiuzhang.com/problem/search?tags=google"}}{\fldrslt 
+\f1\b0\fs24 \cf5 \cb7 \'b9\'c8\'b8\'e8}}
+\f0\b0\fs24 \cf5 \cb7 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.jiuzhang.com/problem/search?tags=dynamic-programming"}}{\fldrslt 
+\f1 \cf5 \'b6\'af\'cc\'ac\'b9\'e6\'bb\'ae}}\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf6 \cb4 \outl\strokewidth30 \strokec6 \'c3\'e8\'ca\'f6
+\f4\b0\fs28 \cf3 \cb5 \outl\strokewidth34 \strokec3 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1\fs24 \cf4 \outl\strokewidth40 \strokec4 \'d6\'d0\'ce\'c4
+\f4 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf3 \cb4 \outl0\strokewidth0 \'b8\'f8\'b6\'a8\'d2\'bb\'b8\'f6\'ca\'fd\'d7\'d6\'c8\'fd\'bd\'c7\'d0\'ce\'a3\'ac\'d5\'d2\'b5\'bd\'b4\'d3\'b6\'a5\'b2\'bf\'b5\'bd\'b5\'d7\'b2\'bf\'b5\'c4\'d7\'ee\'d0\'a1\'c2\'b7\'be\'b6\'ba\'cd\'a1\'a3\'c3\'bf\'d2\'bb\'b2\'bd\'bf\'c9\'d2\'d4\'d2\'c6\'b6\'af\'b5\'bd\'cf\'c2\'c3\'e6\'d2\'bb\'d0\'d0\'b5\'c4\'cf\'e0\'c1\'da\'ca\'fd\'d7\'d6\'c9\'cf\'a1\'a3
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf8 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf6 \cb9 \up0 \'c8\'e7\'b9\'fb\'c4\'e3\'d6\'bb\'d3\'c3\'b6\'ee\'cd\'e2\'bf\'d5\'bc\'e4\'b8\'b4\'d4\'d3\'b6\'c8
+\f0 O(n)
+\f1 \'b5\'c4\'cc\'f5\'bc\'fe\'cf\'c2\'cd\'ea\'b3\'c9\'bf\'c9\'d2\'d4\'bb\'f1\'b5\'c3\'bc\'d3\'b7\'d6\'a3\'ac\'c6\'e4\'d6\'d0
+\f0 n
+\f1 \'ca\'c7\'ca\'fd\'d7\'d6\'c8\'fd\'bd\'c7\'d0\'ce\'b5\'c4\'d7\'dc\'d0\'d0\'ca\'fd\'a1\'a3
+\f0 \cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf6 \cb4 \outl\strokewidth30 \strokec6 \'d1\'f9\'c0\'fd
+\f5 \cb1 \outl\strokewidth30 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs28 \cf3 \cb4 \outl0\strokewidth0 \'d1\'f9\'c0\'fd
+\f3  1
+\f0\b0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf10 \cb11 \'ca\'e4\'c8\'eb\'cf\'c2\'c1\'d0\'ca\'fd\'d7\'d6\'c8\'fd\'bd\'c7\'d0\'ce\'a3\'ba
+\f6 \
+[\
+     [2],\
+    [3,4],\
+   [6,5,7],\
+  [4,1,8,3]\
+]\
+
+\f1 \'ca\'e4\'b3\'f6\'a3\'ba
+\f6  11\
+
+\f1 \'bd\'e2\'ca\'cd\'a3\'ba
+\f6  
+\f1 \'b4\'d3\'b6\'a5\'b5\'bd\'b5\'d7\'b2\'bf\'b5\'c4\'d7\'ee\'d0\'a1\'c2\'b7\'be\'b6\'ba\'cd\'ce\'aa
+\f6 11 ( 2 + 3 + 5 + 1 = 11)
+\f1 \'a1\'a3
+\f6 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf3 \cb4 \'d1\'f9\'c0\'fd
+\f3  2
+\f0\b0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf10 \cb11 \'ca\'e4\'c8\'eb\'cf\'c2\'c1\'d0\'ca\'fd\'d7\'d6\'c8\'fd\'bd\'c7\'d0\'ce\'a3\'ba
+\f6 \
+[\
+     [2],\
+    [3,2],\
+   [6,5,7],\
+  [4,4,8,1]\
+]\
+
+\f1 \'ca\'e4\'b3\'f6\'a3\'ba
+\f6  12\
+
+\f1 \'bd\'e2\'ca\'cd\'a3\'ba
+\f6  
+\f1 \'b4\'d3\'b6\'a5\'b5\'bd\'b5\'d7\'b2\'bf\'b5\'c4\'d7\'ee\'d0\'a1\'c2\'b7\'be\'b6\'ba\'cd\'ce\'aa
+\f6 12 ( 2 + 2 + 7 + 1 = 12)
+\f1 \'a1\'a3
+\f6 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf3 \cb12 \
+\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'c8\'a5
+\f0  LintCode 
+\f1 \'b6\'d4\'cc\'e2\'c4\'bf\'bd\'f8\'d0\'d0\'d4\'da\'cf\'df\'b2\'e2\'c6\'c0
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf4 \cb5 \'c8\'ab\'b2\'bf
+\f0 (51)\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb4 java(23)\cb1 \
+\cb4 python(21)\cb1 \
+\cb4 cpp(7)\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf3 \cb4 \'d6\'bb\'bf\'b4\'be\'ab\'d1\'a1
+\f0 \cb13 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\fs24 \cf4 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'c1\'ee\'ba\'fc\'b3\'e5
+\fs28 \cf14 \cb15 \'be\'ab\'d1\'a1
+\f3\fs32 \cf3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  6/21/2020, 1:21:41 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 python\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'ca\'b9\'d3\'c3\'bc\'c7\'d2\'e4\'bb\'af\'cb\'d1\'cb\'f7\'b5\'c4\'b0\'e6\'b1\'be
+\f0  
+\f1 \'ca\'b1\'bc\'e4\'b8\'b4\'d4\'d3\'b6\'c8
+\f7\i\fs33 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb4 O\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0 \cf10 \cb4 (\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\i \cf10 \cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0\fs23\fsmilli11680 \cf10 \cb4 \up11 2\cb1 \up0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f8 \cf10 \cb4 O\cb1 \
+\cb4 (\cb1 \
+\cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24\fsmilli12390 \cf10 \cb4 2\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'bf\'d5\'bc\'e4\'b8\'b4\'d4\'d3\'b6\'c8
+\f7\i\fs33 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb4 O\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0 \cf10 \cb4 (\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\i \cf10 \cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0\fs23\fsmilli11680 \cf10 \cb4 \up11 2\cb1 \up0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f8 \cf10 \cb4 O\cb1 \
+\cb4 (\cb1 \
+\cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24\fsmilli12390 \cf10 \cb4 2\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'a3\'a8\'b6\'ee\'cd\'e2\'ba\'c4\'b7\'d1\'b5\'c4\'bf\'d5\'bc\'e4\'a3\'a9
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f9\b \cf16 \cb17 class
+\f6\b0 \cf18  
+\f9\b \cf19 Solution
+\f6\b0 \cf18 :\
+    \cf19 """\
+    @param triangle: a list of lists of integers\
+    @return: An integer, minimum path sum\
+    """\cf18 \
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 minimumTotal
+\f6\b0 \cf18 (self, triangle):\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  self.divide_conquer(triangle, 0, 0, \{\})\
+        \
+    \cf20 # 
+\f1 \'ba\'af\'ca\'fd\'b7\'b5\'bb\'d8\'b4\'d3
+\f6  x, y 
+\f1 \'b3\'f6\'b7\'a2\'a3\'ac\'d7\'df\'b5\'bd\'d7\'ee\'b5\'d7\'b2\'e3\'b5\'c4\'d7\'ee\'b6\'cc\'c2\'b7\'be\'b6\'d6\'b5
+\f6 \cf18 \
+    \cf20 # memo 
+\f1 \'d6\'d0
+\f6  key 
+\f1 \'ce\'aa\'b6\'fe\'d4\'aa\'d7\'e9
+\f6  (x, y)\cf18 \
+    \cf20 # memo 
+\f1 \'d6\'d0
+\f6  value 
+\f1 \'ce\'aa\'b4\'d3
+\f6  x, y 
+\f1 \'d7\'df\'b5\'bd\'d7\'ee\'b5\'d7\'b2\'e3\'b5\'c4\'d7\'ee\'b6\'cc\'c2\'b7\'be\'b6\'d6\'b5
+\f6 \cf18 \
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 divide_conquer
+\f6\b0 \cf18 (self, triangle, x, y, memo):\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  x == len(triangle):\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  0\
+            \
+        \cf20 # 
+\f1 \'c8\'e7\'b9\'fb\'d5\'d2\'b9\'fd\'c1\'cb\'a3\'ac\'be\'cd\'b2\'bb\'d2\'aa\'d4\'d9\'d5\'d2\'c1\'cb\'a3\'ac\'d6\'b1\'bd\'d3\'b0\'d1\'d6\'ae\'c7\'b0\'d5\'d2\'b5\'bd\'b5\'c4\'d6\'b5\'b7\'b5\'bb\'d8
+\f6 \cf18 \
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (x, y) 
+\f9\b \cf16 in
+\f6\b0 \cf18  memo:\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  memo[(x, y)]\
+\
+        left = self.divide_conquer(triangle, x + 1, y, memo)\
+        right = self.divide_conquer(triangle, x + 1, y + 1, memo)\
+        \
+        \cf20 # 
+\f1 \'d4\'da
+\f6  return 
+\f1 \'d6\'ae\'c7\'b0\'cf\'c8\'b0\'d1\'d5\'e2\'b4\'ce\'d5\'d2\'b5\'bd\'b5\'c4\'d7\'ee\'b6\'cc\'c2\'b7\'be\'b6\'d6\'b5\'bc\'c7\'c2\'bc\'cf\'c2\'c0\'b4
+\f6 \cf18 \
+        \cf20 # 
+\f1 \'b1\'dc\'c3\'e2\'d6\'ae\'ba\'f3\'d6\'d8\'b8\'b4\'cb\'d1\'cb\'f7
+\f6 \cf18 \
+        memo[(x, y)] = min(left, right) + triangle[x][y]\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  memo[(x, y)]\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 7\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf5 \cb4 2 
+\f1 \'cc\'f5\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 {{\NeXTGraphic c19890e4-1f06-11eb-9cfe-0242ac120002.jpg.png \width21440 \height2600 \noorient \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\cf3 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'c1\'ee\'ba\'fc\'b3\'e5
+\fs28 \cf14 \cb15 \'be\'ab\'d1\'a1
+\f3\fs32 \cf3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  7/2/2020, 7:22:19 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 python\
+java\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'d7\'d4\'b6\'a5\'cf\'f2\'cf\'c2\'b5\'c4\'b7\'bd\'ca\'bd\'b5\'c4\'b6\'e0\'d6\'d8\'d1\'ad\'bb\'b7\'b6\'af\'cc\'ac\'b9\'e6\'bb\'ae
+\f0  
+\f1 \'ca\'b9\'d3\'c3\'c1\'cb\'b9\'f6\'b6\'af\'ca\'fd\'d7\'e9\'d3\'c5\'bb\'af\'bf\'d5\'bc\'e4
+\f0  
+\f1 \'ca\'b1\'bc\'e4\'b8\'b4\'d4\'d3\'b6\'c8
+\f7\i\fs33 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb4 O\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0 \cf10 \cb4 (\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\i \cf10 \cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0\fs23\fsmilli11680 \cf10 \cb4 \up11 2\cb1 \up0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f8 \cf10 \cb4 O\cb1 \
+\cb4 (\cb1 \
+\cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24\fsmilli12390 \cf10 \cb4 2\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'bf\'d5\'bc\'e4\'b8\'b4\'d4\'d3\'b6\'c8
+\f7\i\fs33 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb4 O\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0 \cf10 \cb4 (\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\i \cf10 \cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f8 \cf10 \cb4 O\cb1 \
+\cb4 (\cb1 \
+\cb4 n\cb1 \
+\cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'a3\'a8\'b6\'ee\'cd\'e2\'bf\'d5\'bc\'e4\'a3\'a9
+\f0 \cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f3\b \cf13 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f10\b0 \cf5 \cb4 python
+\f0 \cf3 \cb21 java\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb5 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f9\b \cf16 \cb17 class
+\f6\b0 \cf18  
+\f9\b \cf19 Solution
+\f6\b0 \cf18 :\
+    \cf19 """\
+    @param triangle: a list of lists of integers\
+    @return: An integer, minimum path sum\
+    """\cf18 \
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 minimumTotal
+\f6\b0 \cf18 (self, triangle):\
+        n = len(triangle)\
+        \
+        \cf20 # state: dp[i][j] 
+\f1 \'b4\'fa\'b1\'ed\'b4\'d3
+\f6  0, 0 
+\f1 \'d7\'df\'b5\'bd
+\f6  i, j 
+\f1 \'b5\'c4\'d7\'ee\'b6\'cc\'c2\'b7\'be\'b6\'d6\'b5
+\f6 \cf18 \
+        dp = [[0] * n, [0] * n]\
+        \
+        \cf20 # initialize: 
+\f1 \'b3\'f5\'ca\'bc\'bb\'af\'c6\'f0\'b5\'e3
+\f6 \cf18 \
+        dp[0][0] = triangle[0][0]\
+        \
+        \cf20 # function: dp[i][j] = min(dp[i - 1][j - 1], dp[i - 1][j]) + triangle[i][j]\cf18 \
+        \cf20 # i, j 
+\f1 \'d5\'e2\'b8\'f6\'ce\'bb\'d6\'c3\'ca\'c7\'b4\'d3\'ce\'bb\'d6\'c3
+\f6  i - 1, j 
+\f1 \'bb\'f2\'d5\'df
+\f6  i - 1, j - 1 
+\f1 \'d7\'df\'b9\'fd\'c0\'b4\'b5\'c4
+\f6 \cf18 \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  i 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(1, n):\
+            dp[i % 2][0] = dp[(i - 1) % 2][0] + triangle[i][0]\
+            dp[i % 2][i] = dp[(i - 1) % 2][i - 1] + triangle[i][i]\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  j 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(1, i):\
+                dp[i % 2][j] = min(dp[(i - 1) % 2][j], dp[(i - 1) % 2][j - 1]) + triangle[i][j]\
+               \
+        \cf20 # answer: 
+\f1 \'d7\'ee\'ba\'f3\'d2\'bb\'b2\'e3\'b5\'c4\'c8\'ce\'d2\'e2\'ce\'bb\'d6\'c3\'b6\'bc\'bf\'c9\'d2\'d4\'ca\'c7\'c2\'b7\'be\'b6\'b5\'c4\'d6\'d5\'b5\'e3
+\f6 \cf18 \
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  min(dp[(n - 1) % 2])\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf3 \cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 6\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'c1\'ee\'ba\'fc\'b3\'e5
+\fs28 \cf14 \cb15 \'be\'ab\'d1\'a1
+\f3\fs32 \cf3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  10/8/2020, 11:45:55 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 java\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf10 \cb4 Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.\cb1 \
+\cb4 For example, given the following triangle [ \cf5 2\cf10 , \cf5 3,4\cf10 , \cf5 6,5,7\cf10 , \cf5 4,1,8,3\cf10  ] The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).\cb1 \
+\cb4 Note: Bonus point if you are able to do this using only O(n) extra space, where n is the total number of rows in the triangle.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f6 \cf20 \cb17 // version 0: top-down\cf18 \
+
+\f9\b \cf16 public
+\f6\b0 \cf18  
+\f9\b \cf16 class
+\f6\b0 \cf18  \cf22 Solution\cf18  \{\
+    \cf20 /**\
+     * @param triangle: a list of lists of integers.\
+     * @return: An integer, minimum path sum.\
+     */\cf18 \
+    
+\f9\b \cf16 public
+\f6\b0 \cf18  \cf19 int\cf18  minimumTotal(\cf19 int\cf18 [][] triangle) \{\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (triangle == 
+\f9\b \cf16 null
+\f6\b0 \cf18  || triangle.length == 0) \{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  -1;\
+        \}\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (triangle[0] == 
+\f9\b \cf16 null
+\f6\b0 \cf18  || triangle[0].length == 0) \{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  -1;\
+        \}\
+        \
+        \cf20 // state: f[x][y] = minimum path value from 0,0 to x,y\cf18 \
+        \cf19 int\cf18  n = triangle.length;\
+        \cf19 int\cf18 [][] f = new \cf19 int\cf18 [n][n];\
+        \
+        \cf20 // initialize \cf18 \
+        f[0][0] = triangle[0][0];\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  i = 1; i < n; i++) \{\
+            f[i][0] = f[i - 1][0] + triangle[i][0];\
+            f[i][i] = f[i - 1][i - 1] + triangle[i][i];\
+        \}\
+        \
+        \cf20 // top down\cf18 \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  i = 1; i < n; i++) \{\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  j = 1; j < i; j++) \{\
+                f[i][j] = Math.min(f[i - 1][j], f[i - 1][j - 1]) + triangle[i][j];\
+            \}\
+        \}\
+        \
+        \cf20 // answer\cf18 \
+        \cf19 int\cf18  best = f[n - 1][0];\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  i = 1; i < n; i++) \{\
+            best = Math.min(best, f[n - 1][i]);\
+        \}\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  best;\
+    \}\
+\}\
+\
+\
+\
+\cf20 //Version 1: Bottom-Up\cf18 \
+
+\f9\b \cf16 public
+\f6\b0 \cf18  
+\f9\b \cf16 class
+\f6\b0 \cf18  \cf22 Solution\cf18  \{\
+    \cf20 /**\
+     * @param triangle: a list of lists of integers.\
+     * @return: An integer, minimum path sum.\
+     */\cf18 \
+    
+\f9\b \cf16 public
+\f6\b0 \cf18  \cf19 int\cf18  minimumTotal(\cf19 int\cf18 [][] triangle) \{\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (triangle == 
+\f9\b \cf16 null
+\f6\b0 \cf18  || triangle.length == 0) \{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  -1;\
+        \}\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (triangle[0] == 
+\f9\b \cf16 null
+\f6\b0 \cf18  || triangle[0].length == 0) \{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  -1;\
+        \}\
+        \
+        \cf20 // state: f[x][y] = minimum path value from x,y to bottom\cf18 \
+        \cf19 int\cf18  n = triangle.length;\
+        \cf19 int\cf18 [][] f = new \cf19 int\cf18 [n][n];\
+        \
+        \cf20 // initialize \cf18 \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  i = 0; i < n; i++) \{\
+            f[n - 1][i] = triangle[n - 1][i];\
+        \}\
+        \
+        \cf20 // bottom up\cf18 \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  i = n - 2; i >= 0; i--) \{\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  j = 0; j <= i; j++) \{\
+                f[i][j] = Math.min(f[i + 1][j], f[i + 1][j + 1]) + triangle[i][j];\
+            \}\
+        \}\
+        \
+        \cf20 // answer\cf18 \
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  f[0][0];\
+    \}\
+\}\
+\
+\
+\cf20 //Version 2 : Memorize Search\cf18 \
+
+\f9\b \cf16 public
+\f6\b0 \cf18  
+\f9\b \cf16 class
+\f6\b0 \cf18  \cf22 Solution\cf18  \{\
+    
+\f9\b \cf16 private
+\f6\b0 \cf18  \cf19 int\cf18  n;\
+    
+\f9\b \cf16 private
+\f6\b0 \cf18  \cf19 int\cf18 [][] minSum;\
+    
+\f9\b \cf16 private
+\f6\b0 \cf18  \cf19 int\cf18 [][] triangle;\
+\
+    
+\f9\b \cf16 private
+\f6\b0 \cf18  \cf19 int\cf18  search(\cf19 int\cf18  x, \cf19 int\cf18  y) \{\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (x >= n) \{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  0;\
+        \}\
+\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (minSum[x][y] != Integer.MAX_VALUE) \{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  minSum[x][y];\
+        \}\
+\
+        minSum[x][y] = Math.min(search(x + 1, y), search(x + 1, y + 1))\
+            + triangle[x][y];\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  minSum[x][y];\
+    \}\
+\
+    
+\f9\b \cf16 public
+\f6\b0 \cf18  \cf19 int\cf18  minimumTotal(\cf19 int\cf18 [][] triangle) \{\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (triangle == 
+\f9\b \cf16 null
+\f6\b0 \cf18  || triangle.length == 0) \{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  -1;\
+        \}\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (triangle[0] == 
+\f9\b \cf16 null
+\f6\b0 \cf18  || triangle[0].length == 0) \{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  -1;\
+        \}\
+        \
+        
+\f9\b \cf16 this
+\f6\b0 \cf18 .n = triangle.length;\
+        
+\f9\b \cf16 this
+\f6\b0 \cf18 .triangle = triangle;\
+        
+\f9\b \cf16 this
+\f6\b0 \cf18 .minSum = new \cf19 int\cf18 [n][n];\
+\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  i = 0; i < n; i++) \{\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  j = 0; j < n; j++) \{\
+                minSum[i][j] = Integer.MAX_VALUE;\
+            \}\
+        \}\
+\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  search(0, 0);\
+    \}\
+\} \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 3\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf5 \cb4 1 
+\f1 \'cc\'f5\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'c1\'ee\'ba\'fc\'b3\'e5
+\fs28 \cf14 \cb15 \'be\'ab\'d1\'a1
+\f3\fs32 \cf3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  7/2/2020, 7:18:12 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 python\
+java\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'d7\'d4\'b6\'a5\'cf\'f2\'cf\'c2\'b5\'c4\'b6\'e0\'d6\'d8\'d1\'ad\'bb\'b7\'ca\'b5\'cf\'d6\'b5\'c4\'b6\'af\'cc\'ac\'b9\'e6\'bb\'ae
+\f0  
+\f1 \'ce\'de\'c8\'ce\'ba\'ce\'bf\'d5\'bc\'e4\'d3\'c5\'bb\'af
+\f0 \cb1 \
+
+\f1 \cb4 \'ca\'b1\'bc\'e4\'b8\'b4\'d4\'d3\'b6\'c8
+\f7\i\fs33 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb4 O\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0 \cf10 \cb4 (\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\i \cf10 \cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0\fs23\fsmilli11680 \cf10 \cb4 \up11 2\cb1 \up0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f8 \cf10 \cb4 O\cb1 \
+\cb4 (\cb1 \
+\cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24\fsmilli12390 \cf10 \cb4 2\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'bf\'d5\'bc\'e4\'b8\'b4\'d4\'d3\'b6\'c8
+\f7\i\fs33 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb4 O\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0 \cf10 \cb4 (\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\i \cf10 \cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0\fs23\fsmilli11680 \cf10 \cb4 \up11 2\cb1 \up0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f8 \cf10 \cb4 O\cb1 \
+\cb4 (\cb1 \
+\cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24\fsmilli12390 \cf10 \cb4 2\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'a3\'a8\'b6\'ee\'cd\'e2\'bf\'d5\'bc\'e4\'a3\'a9
+\f0 \cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f3\b \cf13 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f10\b0 \cf5 \cb4 python
+\f0 \cf3 \cb21 java\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb5 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f9\b \cf16 \cb17 class
+\f6\b0 \cf18  
+\f9\b \cf19 Solution
+\f6\b0 \cf18 :\
+    \cf19 """\
+    @param triangle: a list of lists of integers\
+    @return: An integer, minimum path sum\
+    """\cf18 \
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 minimumTotal
+\f6\b0 \cf18 (self, triangle):\
+        n = len(triangle)\
+        \
+        \cf20 # state: dp[i][j] 
+\f1 \'b4\'fa\'b1\'ed\'b4\'d3
+\f6  0, 0 
+\f1 \'d7\'df\'b5\'bd
+\f6  i, j 
+\f1 \'b5\'c4\'d7\'ee\'b6\'cc\'c2\'b7\'be\'b6\'d6\'b5
+\f6 \cf18 \
+        dp = [[0] * (i + 1) 
+\f9\b \cf16 for
+\f6\b0 \cf18  i 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(n)]\
+        \
+        \cf20 # initialize: 
+\f1 \'c8\'fd\'bd\'c7\'d0\'ce\'b5\'c4\'d7\'f3\'b1\'df\'ba\'cd\'d3\'d2\'b1\'df\'d2\'aa\'b3\'f5\'ca\'bc\'bb\'af
+\f6 \cf18 \
+        \cf20 # 
+\f1 \'d2\'f2\'ce\'aa\'cb\'fb\'c3\'c7\'b7\'d6\'b1\'f0\'c3\'bb\'d3\'d0\'d7\'f3\'c9\'cf\'bd\'c7\'ba\'cd\'d3\'d2\'c9\'cf\'bd\'c7\'b5\'c4\'b5\'e3
+\f6 \cf18 \
+        dp[0][0] = triangle[0][0]\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  i 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(1, n):\
+            dp[i][0] = dp[i - 1][0] + triangle[i][0]\
+            dp[i][i] = dp[i - 1][i - 1] + triangle[i][i]\
+        \
+        \cf20 # function: dp[i][j] = min(dp[i - 1][j - 1], dp[i - 1][j]) + triangle[i][j]\cf18 \
+        \cf20 # i, j 
+\f1 \'d5\'e2\'b8\'f6\'ce\'bb\'d6\'c3\'ca\'c7\'b4\'d3\'ce\'bb\'d6\'c3
+\f6  i - 1, j 
+\f1 \'bb\'f2\'d5\'df
+\f6  i - 1, j - 1 
+\f1 \'d7\'df\'b9\'fd\'c0\'b4\'b5\'c4
+\f6 \cf18 \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  i 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(2, n):\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  j 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(1, i):\
+                dp[i][j] = min(dp[i - 1][j], dp[i - 1][j - 1]) + triangle[i][j]\
+               \
+        \cf20 # answer: 
+\f1 \'d7\'ee\'ba\'f3\'d2\'bb\'b2\'e3\'b5\'c4\'c8\'ce\'d2\'e2\'ce\'bb\'d6\'c3\'b6\'bc\'bf\'c9\'d2\'d4\'ca\'c7\'c2\'b7\'be\'b6\'b5\'c4\'d6\'d5\'b5\'e3
+\f6 \cf18 \
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  min(dp[n - 1])\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf3 \cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 2\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'c1\'ee\'ba\'fc\'b3\'e5
+\fs28 \cf14 \cb15 \'be\'ab\'d1\'a1
+\f3\fs32 \cf3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  7/2/2020, 6:31:25 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 python\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'d7\'d4\'b5\'d7\'cf\'f2\'c9\'cf\'b5\'c4\'b6\'af\'cc\'ac\'b9\'e6\'bb\'ae\'a3\'ac\'b6\'e0\'d6\'d8\'d1\'ad\'bb\'b7\'ca\'b5\'cf\'d6
+\f0  
+\f1 \'ca\'b9\'d3\'c3\'b9\'f6\'b6\'af\'ca\'fd\'d7\'e9\'bd\'f8\'d0\'d0\'bf\'d5\'bc\'e4\'d3\'c5\'bb\'af
+\f0 \cb1 \
+
+\f1 \cb4 \'ca\'b1\'bc\'e4\'b8\'b4\'d4\'d3\'b6\'c8
+\f7\i\fs33 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb4 O\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0 \cf10 \cb4 (\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\i \cf10 \cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0\fs23\fsmilli11680 \cf10 \cb4 \up11 2\cb1 \up0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f8 \cf10 \cb4 O\cb1 \
+\cb4 (\cb1 \
+\cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24\fsmilli12390 \cf10 \cb4 2\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'bf\'d5\'bc\'e4\'b8\'b4\'d4\'d3\'b6\'c8
+\f7\i\fs33 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb4 O\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0 \cf10 \cb4 (\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\i \cf10 \cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f8 \cf10 \cb4 O\cb1 \
+\cb4 (\cb1 \
+\cb4 n\cb1 \
+\cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'a3\'a8\'b6\'ee\'cd\'e2\'bf\'d5\'bc\'e4\'ba\'c4\'b7\'d1\'a3\'a9
+\f0 \cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f3\b \cf13 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f10\b0 \cf5 \cb4 python
+\f0 \cf3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb5 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f9\b \cf16 \cb17 class
+\f6\b0 \cf18  
+\f9\b \cf19 Solution
+\f6\b0 \cf18 :\
+    \cf19 """\
+    @param triangle: a list of lists of integers\
+    @return: An integer, minimum path sum\
+    """\cf18 \
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 minimumTotal
+\f6\b0 \cf18 (self, triangle):\
+        n = len(triangle)\
+        \
+        \cf20 # state: dp[i][j] 
+\f1 \'b4\'fa\'b1\'ed\'b4\'d3
+\f6  i,j  
+\f1 \'d7\'df\'b5\'bd\'d7\'ee\'b5\'d7\'b2\'e3\'b5\'c4\'d7\'ee\'b6\'cc\'c2\'b7\'be\'b6\'d6\'b5
+\f6 \cf18 \
+        dp = [[0] * n, [0] * n]\
+        \
+        \cf20 # initialize: 
+\f1 \'b3\'f5\'ca\'bc\'bb\'af\'d6\'d5\'b5\'e3\'a3\'a8\'d7\'ee\'ba\'f3\'d2\'bb\'b2\'e3\'a3\'a9
+\f6 \cf18 \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  i 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(n):\
+            dp[(n - 1) % 2][i] = triangle[n - 1][i]\
+            \
+        \cf20 # function: 
+\f1 \'b4\'d3\'cf\'c2\'cd\'f9\'c9\'cf\'b5\'b9\'b9\'fd\'c0\'b4\'cd\'c6\'b5\'bc\'a3\'ac\'bc\'c6\'cb\'e3\'c3\'bf\'b8\'f6\'d7\'f8\'b1\'ea\'b5\'bd\'c4\'c4\'b6\'f9\'c8\'a5
+\f6 \cf18 \
+        \cf20 # dp[i][j] = min(dp[i + 1][j], dp[i + 1][j + 1]) + triangle[i][j]\cf18 \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  i 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(n - 2, -1, -1):\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  j 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(i + 1):\
+                dp[i % 2][j] = min(dp[(i + 1) % 2][j], dp[(i + 1) % 2][j + 1]) + triangle[i][j]\
+                \
+        \cf20 # answer: 
+\f1 \'c6\'f0\'b5\'e3\'be\'cd\'ca\'c7\'b4\'f0\'b0\'b8
+\f6 \cf18 \
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  dp[0][0]\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf3 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 2\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'c1\'ee\'ba\'fc\'b3\'e5
+\fs28 \cf14 \cb15 \'be\'ab\'d1\'a1
+\f3\fs32 \cf3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  6/18/2020, 3:11:25 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 python\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'d7\'d4\'b5\'d7\'cf\'f2\'c9\'cf\'b5\'c4\'b6\'af\'cc\'ac\'b9\'e6\'bb\'ae\'a3\'ac\'b6\'e0\'d6\'d8\'d1\'ad\'bb\'b7\'ca\'b5\'cf\'d6
+\f0  
+\f1 \'c3\'bb\'d3\'d0\'bf\'d5\'bc\'e4\'d3\'c5\'bb\'af
+\f0 \cb1 \
+
+\f1 \cb4 \'ca\'b1\'bc\'e4\'b8\'b4\'d4\'d3\'b6\'c8
+\f7\i\fs33 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb4 O\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0 \cf10 \cb4 (\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\i \cf10 \cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0\fs23\fsmilli11680 \cf10 \cb4 \up11 2\cb1 \up0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f8 \cf10 \cb4 O\cb1 \
+\cb4 (\cb1 \
+\cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24\fsmilli12390 \cf10 \cb4 2\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'bf\'d5\'bc\'e4\'b8\'b4\'d4\'d3\'b6\'c8
+\f7\i\fs33 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb4 O\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0 \cf10 \cb4 (\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\i \cf10 \cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0\fs23\fsmilli11680 \cf10 \cb4 \up11 2\cb1 \up0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f8 \cf10 \cb4 O\cb1 \
+\cb4 (\cb1 \
+\cb4 n\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24\fsmilli12390 \cf10 \cb4 2\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs33 \cf10 \cb4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'a3\'a8\'b6\'ee\'cd\'e2\'bf\'d5\'bc\'e4\'ba\'c4\'b7\'d1\'a3\'a9
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f9\b \cf16 \cb17 class
+\f6\b0 \cf18  
+\f9\b \cf19 Solution
+\f6\b0 \cf18 :\
+    \cf19 """\
+    @param triangle: a list of lists of integers\
+    @return: An integer, minimum path sum\
+    """\cf18 \
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 minimumTotal
+\f6\b0 \cf18 (self, triangle):\
+        n = len(triangle)\
+        \
+        \cf20 # state: dp[i][j] 
+\f1 \'b4\'fa\'b1\'ed\'b4\'d3
+\f6  i,j  
+\f1 \'d7\'df\'b5\'bd\'d7\'ee\'b5\'d7\'b2\'e3\'b5\'c4\'d7\'ee\'b6\'cc\'c2\'b7\'be\'b6\'d6\'b5
+\f6 \cf18 \
+        dp = [[0] * (i + 1) 
+\f9\b \cf16 for
+\f6\b0 \cf18  i 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(n)]\
+        \
+        \cf20 # initialize: 
+\f1 \'b3\'f5\'ca\'bc\'bb\'af\'d6\'d5\'b5\'e3\'a3\'a8\'d7\'ee\'ba\'f3\'d2\'bb\'b2\'e3\'a3\'a9
+\f6 \cf18 \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  i 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(n):\
+            dp[n - 1][i] = triangle[n - 1][i]\
+            \
+        \cf20 # function: 
+\f1 \'b4\'d3\'cf\'c2\'cd\'f9\'c9\'cf\'b5\'b9\'b9\'fd\'c0\'b4\'cd\'c6\'b5\'bc\'a3\'ac\'bc\'c6\'cb\'e3\'c3\'bf\'b8\'f6\'d7\'f8\'b1\'ea\'b5\'bd\'c4\'c4\'b6\'f9\'c8\'a5
+\f6 \cf18 \
+        \cf20 # dp[i][j] = min(dp[i + 1][j], dp[i + 1][j + 1]) + triangle[i][j]\cf18 \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  i 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(n - 2, -1, -1):\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  j 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(i + 1):\
+                dp[i][j] = min(dp[i + 1][j], dp[i + 1][j + 1]) + triangle[i][j]\
+                \
+        \cf20 # answer: 
+\f1 \'c6\'f0\'b5\'e3\'be\'cd\'ca\'c7\'b4\'f0\'b0\'b8
+\f6 \cf18 \
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  dp[0][0]\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 2\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'c1\'ee\'ba\'fc\'b3\'e5
+\fs28 \cf14 \cb15 \'be\'ab\'d1\'a1
+\f3\fs32 \cf3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  6/9/2020, 7:04:29 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 c++\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf10 \cb4 Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.\cb1 \
+\cb4 For example, given the following triangle [ \cf5 2\cf10 , \cf5 3,4\cf10 , \cf5 6,5,7\cf10 , \cf5 4,1,8,3\cf10  ] The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).\cb1 \
+\cb4 Note: Bonus point if you are able to do this using only O(n) extra space, where n is the total number of rows in the triangle.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f6 \cf18 \cb17 class Solution \{\
+
+\f9\b \cf16 public
+\f6\b0 \cf18 :\
+    \cf20 /**\
+     * @param triangle: a list of lists of integers.\
+     * @return: An integer, minimum path sum.\
+     */\cf18 \
+    \cf19 int\cf18  minimumTotal(vector<vector<\cf19 int\cf18 > > &\cf19 triangle\cf18 ) \{\
+        \cf20 // write your code here\cf18 \
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (\cf19 triangle\cf18 .\cf19 size\cf18 () == 0)\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  0;\
+            \
+        vector<\cf19 int\cf18 > f(\cf19 triangle\cf18 [\cf19 triangle\cf18 .\cf19 size\cf18 ()-1].\cf19 size\cf18 ());\
+        \
+        f[0] = \cf19 triangle\cf18 [0][0];\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18 (\cf19 int\cf18  i = 1; i < \cf19 triangle\cf18 .\cf19 size\cf18 (); i++)\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18 (\cf19 int\cf18  j = \cf19 triangle\cf18 [i].\cf19 size\cf18 () - 1; j >= 0; j--)\
+                
+\f9\b \cf16 if
+\f6\b0 \cf18  (j == 0)\
+                    f[j] = f[j] + \cf19 triangle\cf18 [i][j];\
+                
+\f9\b \cf16 else
+\f6\b0 \cf18  
+\f9\b \cf16 if
+\f6\b0 \cf18  (j == \cf19 triangle\cf18 [i].\cf19 size\cf18 () - 1)\
+                    f[j] = f[j-1] + \cf19 triangle\cf18 [i][j];\
+                
+\f9\b \cf16 else
+\f6\b0 \cf18 \
+                    f[j] = \cf19 min\cf18 (f[j-1], f[j]) + \cf19 triangle\cf18 [i][j];\
+                    \
+        \cf19 int\cf18  ret = INT_MAX;\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18 (\cf19 int\cf18  i = 0; i < f.\cf19 size\cf18 (); i++)\
+            ret = \cf19 min\cf18 (ret, f[i]);\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  ret; \
+    \}\
+\};\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 0\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'d0\'f9
+\f3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  8/4/2020, 7:16:21 PM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 java\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'bc\'c6\'bb\'ae\'cb\'d1\'cb\'f7
+\f0  1
+\f1 \'a3\'ba\'ca\'d7\'cf\'c8\'d4\'cb\'d3\'c3\'b6\'fe\'b7\'d6\'b5\'c4\'cb\'bc\'cf\'eb\'b5\'b1\'c8\'bb
+\f0  
+\f1 \'d0\'d0
+\f0  0 0 
+\f1 \'cf\'c2\'d2\'bb\'d0\'d0
+\f0  
+\f1 \'d4\'f2\'ca\'c7\'b6\'fe\'d6\'d6\'bf\'c9\'c4\'dc
+\f0  1 0, 1 1 
+\f1 \'d3\'c3\'b7\'d6\'d6\'ce\'b7\'a8\'b5\'c3\'b5\'bd\'d7\'f3\'b1\'df\'b2\'bf\'b7\'d6\'b5\'c4
+\f0  leftNumber 
+\f1 \'b5\'c3\'b5\'bd\'d3\'d2\'b1\'df\'b2\'bf\'b7\'d6
+\f0  rightNumber 
+\f1 \'b1\'c8\'bd\'cf\'d7\'f3\'d3\'d2\'b6\'fe\'b1\'df
+\f0  
+\f1 \'c4\'c7\'d2\'bb\'b1\'df\'d0\'a1
+\f0  
+\f1 \'be\'cd\'b0\'d1\'b5\'b1\'c7\'b0\'b5\'c4\'b6\'a5\'b6\'cb\'b5\'c4
+\f0  
+\f1 \'bc\'d3\'c9\'cf\'d0\'a1\'b5\'c4\'c4\'c7\'d2\'bb\'b2\'bf\'b7\'d6
+\f0  
+\f1 \'be\'cd\'ca\'c7\'d7\'ee\'d0\'a1\'c2\'b7\'be\'b6\'ba\'cd
+\f0 . 
+\f1 \'c6\'e4\'ca\'b5
+\f0 basecase 
+\f1 \'ce\'aa
+\f0  
+\f1 \'d0\'d0\'ca\'e4\'c8\'eb
+\f0  
+\f1 \'c8\'e7\'b9\'fb\'b5\'b1\'c7\'b0
+\f0 row + 1 
+\f1 \'b5\'c8\'d3\'da
+\f0  triangle 
+\f1 \'b5\'c4\'b3\'a4\'b6\'c8
+\f0  
+\f1 \'c4\'c7\'c3\'b4\'cb\'b5\'c3\'f7\'b5\'bd\'c1\'cb\'d7\'ee\'ba\'f3\'d2\'bb\'b8\'f6\'d6\'b5\'c1\'cb
+\f0  
+\f1 \'ba\'f3\'c3\'e6\'c3\'bb\'b7\'a8\'d4\'d9\'b7\'d6\'c1\'cb
+\f0  
+\f1 \'cb\'f9\'d2\'d4\'d6\'b1\'bd\'d3\'b7\'b5\'bb\'d8
+\f0 return
+\f1 \'b6\'d4\'d3\'a6\'b5\'c4\'d6\'b5
+\f0 \cb1 \
+\cb4 2
+\f1 \'a3\'ba\'d4\'cb\'d0\'d0\'b4\'fa\'c2\'eb\'cd\'a8\'b2\'bb\'b9\'fd\'a3\'ac\'ca\'c7\'d2\'f2\'ce\'aa\'d3\'d0\'ba\'dc\'b6\'e0\'d6\'d8\'b8\'b4\'b5\'c4\'bc\'c6\'cb\'e3
+\f0  0,0 -> 1,0 , 1,1 1,0 -> 2,0, 2,1 1,1 -> 2,1, 2,2 
+\f1 \'cf\'c8\'bf\'b4\'b5\'bd\'d5\'e2\'c0\'ef
+\f0  2,1 2,1 
+\f1 \'c4\'bf\'c7\'b0\'d3\'d0
+\f0 2
+\f1 \'b8\'f6
+\f0  2,1
+\f1 \'c1\'cb
+\f0  
+\f1 \'cb\'f9\'d2\'d4\'b0\'b4\'d5\'d5\'d6\'ae\'c7\'b0\'b5\'c4\'cb\'e3\'b7\'a8\'a3\'ac\'b6\'e0\'bc\'c6\'cb\'e3\'c1\'cb\'d2\'bb\'b4\'ce\'a3\'ac\'cb\'f9\'d2\'d4\'b4\'d3\'d5\'e2\'c0\'ef\'bf\'c9\'d2\'d4\'d3\'c5\'bb\'af\'a3\'ac
+\f0  
+\f1 \'bc\'b4\'ce\'d2\'c3\'c7\'bf\'c9\'d2\'d4\'c9\'ea\'c7\'eb
+\f0 2
+\f1 \'b8\'f6\'b6\'fe\'ce\'ac\'ca\'fd\'d7\'e9
+\f0 \cb1 \
+
+\f1 \cb4 \'d2\'bb\'b8\'f6\'b4\'e6\'b4\'a2\'ca\'c7\'b7\'f1\'b1\'bb\'b7\'c3\'ce\'ca\'b5\'bd
+\f0  
+\f1 \'d2\'bb\'b8\'f6\'b4\'e6\'b4\'a2\'bc\'c6\'cb\'e3\'ba\'f3\'b5\'c4\'d6\'b5
+\f0  
+\f1 \'d5\'e2\'d1\'f9\'b5\'c4\'bb\'b0
+\f0  
+\f1 \'b5\'b1\'b5\'da\'d2\'bb\'b4\'ce\'b7\'c3\'ce\'ca\'c1\'cb
+\f0  2,1 
+\f1 \'d2\'d4\'ba\'f3
+\f0 visited\cf5 2\cf10  
+\f1 \'be\'cd\'bb\'e1\'b1\'bb\'c9\'e8\'d6\'c3\'ce\'aa
+\f0 true memo\cf5 2\cf10  
+\f1 \'d2\'b2\'bb\'e1\'cc\'ee\'c8\'eb\'d6\'b5
+\f0  
+\f1 \'c4\'c7\'c3\'b4\'d4\'d9\'b4\'ce\'b7\'c3\'ce\'ca\'b5\'c4\'ca\'b1\'ba\'f2
+\f0  
+\f1 \'d4\'f2\'b4\'fa\'c2\'eb\'d6\'d0\'ca\'d7\'cf\'c8\'c8\'a5\'c5\'d0\'b6\'cf
+\f0  
+\f1 \'ca\'c7\'b7\'f1
+\f0  visited 
+\f1 \'ce\'aa
+\f0 true 
+\f1 \'c8\'e7\'b9\'fb\'ce\'aa
+\f0 true 
+\f1 \'d4\'f2
+\f0  
+\f1 \'b7\'b5\'bb\'d8
+\f0  memo
+\f1 \'d6\'d0\'bc\'c7\'c2\'bc\'b5\'c4\'d6\'b5
+\f0  
+\f1 \'d5\'e2\'b8\'f6\'be\'cd\'bf\'c9\'d2\'d4\'b2\'bb\'d6\'d8\'b8\'b4\'bc\'c6\'cb\'e3\'c1\'cb\'a1\'a3
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f6 \cf19 \cb17 public\cf18  
+\f9\b \cf16 class
+\f6\b0 \cf18  Solution \{\
+    \cf20 /**\
+     * @param triangle: a list of lists of integers\
+     * @return: An integer, minimum path sum\
+     */\cf18 \
+    \cf19 public\cf18  
+\f9\b \cf19 int
+\f6\b0 \cf18  minimumTotal(
+\f9\b \cf19 int
+\f6\b0 \cf18 [][] triangle) \{\
+        // 
+\f9\b \cf16 write
+\f6\b0 \cf18  your code here\
+        
+\f9\b \cf19 boolean
+\f6\b0 \cf18 [][]visited = \cf19 new\cf18  
+\f9\b \cf19 boolean
+\f6\b0 \cf18 [triangle.length][];\
+        
+\f9\b \cf19 int
+\f6\b0 \cf18 [][]memo = \cf19 new\cf18  
+\f9\b \cf19 int
+\f6\b0 \cf18 [triangle.length][];\
+        \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (
+\f9\b \cf19 int
+\f6\b0 \cf18  i = 0; i < triangle.length; i++) \{\
+            visited[i] = \cf19 new\cf18  
+\f9\b \cf19 boolean
+\f6\b0 \cf18 [triangle[i].length];\
+            memo[i] = \cf19 new\cf18  
+\f9\b \cf19 int
+\f6\b0 \cf18 [triangle[i].length];\
+        \}    \
+        \
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  helper(triangle, 0, 0, visited, memo);\
+    \}\
+    \
+    \cf19 public\cf18  
+\f9\b \cf19 int
+\f6\b0 \cf18  helper(
+\f9\b \cf19 int
+\f6\b0 \cf18 [][] triangle,\
+                      
+\f9\b \cf19 int
+\f6\b0 \cf18  
+\f9\b \cf16 row
+\f6\b0 \cf18 ,\
+                      
+\f9\b \cf19 int
+\f6\b0 \cf18  
+\f9\b \cf16 column
+\f6\b0 \cf18 ,\
+                      
+\f9\b \cf19 boolean
+\f6\b0 \cf18 [][]visited,\
+                      
+\f9\b \cf19 int
+\f6\b0 \cf18 [][]memo) \{\
+        // 
+\f9\b \cf16 if
+\f6\b0 \cf18  (
+\f9\b \cf16 row
+\f6\b0 \cf18  == triangle.length - 1 && \
+         \
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (visited[
+\f9\b \cf16 row
+\f6\b0 \cf18 ][
+\f9\b \cf16 column
+\f6\b0 \cf18 ]) \{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  memo[
+\f9\b \cf16 row
+\f6\b0 \cf18 ][
+\f9\b \cf16 column
+\f6\b0 \cf18 ];\
+        \}\
+        
+\f9\b \cf19 int
+\f6\b0 \cf18  number = triangle[
+\f9\b \cf16 row
+\f6\b0 \cf18 ][
+\f9\b \cf16 column
+\f6\b0 \cf18 ];\
+        \
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (
+\f9\b \cf16 row
+\f6\b0 \cf18  + 1 == triangle.length) \{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  number;\
+        \}\
+        \
+        
+\f9\b \cf19 int
+\f6\b0 \cf18  leftNumber = helper(triangle, 
+\f9\b \cf16 row
+\f6\b0 \cf18  + 1, 
+\f9\b \cf16 column
+\f6\b0 \cf18 , visited, memo);\
+        // recordData(
+\f9\b \cf16 row
+\f6\b0 \cf18  + 1, 
+\f9\b \cf16 column
+\f6\b0 \cf18 , leftNumber);\
+        
+\f9\b \cf19 int
+\f6\b0 \cf18  rightNumber = helper(triangle, 
+\f9\b \cf16 row
+\f6\b0 \cf18  + 1, 
+\f9\b \cf16 column
+\f6\b0 \cf18  + 1, visited, memo);\
+        // recordData(
+\f9\b \cf16 row
+\f6\b0 \cf18  + 1, 
+\f9\b \cf16 column
+\f6\b0 \cf18  + 1, leftNumber);\
+        
+\f9\b \cf19 int
+\f6\b0 \cf18  result = 0;\
+        \
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (leftNumber < rightNumber) \{\
+            result = number + leftNumber;\
+        \} 
+\f9\b \cf16 else
+\f6\b0 \cf18  \{\
+            result = number + rightNumber;\
+        \}\
+        \
+        recordData(
+\f9\b \cf16 row
+\f6\b0 \cf18 , 
+\f9\b \cf16 column
+\f6\b0 \cf18 , visited, memo, result);\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  result;\
+    \}\
+    \
+    private 
+\f9\b \cf19 void
+\f6\b0 \cf18  recordData(
+\f9\b \cf19 int
+\f6\b0 \cf18  
+\f9\b \cf16 row
+\f6\b0 \cf18 , \
+                            
+\f9\b \cf19 int
+\f6\b0 \cf18  
+\f9\b \cf16 column
+\f6\b0 \cf18 , \
+                            
+\f9\b \cf19 boolean
+\f6\b0 \cf18 [][]visited,\
+                            
+\f9\b \cf19 int
+\f6\b0 \cf18 [][]memo,\
+                            
+\f9\b \cf19 int
+\f6\b0 \cf18  result) \{\
+            visited[
+\f9\b \cf16 row
+\f6\b0 \cf18 ][
+\f9\b \cf16 column
+\f6\b0 \cf18 ] = 
+\f9\b \cf16 true
+\f6\b0 \cf18 ;\
+            memo[
+\f9\b \cf16 row
+\f6\b0 \cf18 ][
+\f9\b \cf16 column
+\f6\b0 \cf18 ] = result;            \
+    \}\
+\}\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 7\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs32 \cf3 \cb4 cc189\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  6/9/2020, 7:03:46 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 python\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f6 \cf18 \cb17 class Solution:\
+    def minimumTotal(self, M):\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  \cf19 i\cf18  in range(len(M)-2,-1,-1):\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  \cf19 j\cf18  in range(0,\cf19 i\cf18 +1):\
+                M[\cf19 i\cf18 ][\cf19 j\cf18 ] += \cf19 min\cf18 (M[\cf19 i\cf18 +1][\cf19 j\cf18 ],M[\cf19 i\cf18 +1][\cf19 j\cf18 +1])\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  M[0][0]\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 6\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'be\'c5\'d5\'c2\'d3\'c3\'bb\'a7
+\f3 OJZ1DE\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  8/1/2020, 8:41:01 PM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 java\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'ca\'b9\'d3\'c3\'b6\'af\'cc\'ac\'b9\'e6\'bb\'ae\'a3\'ac\'d2\'d4\'bc\'b0\'d2\'bb\'d6\'d6\'c8\'dd\'d2\'d7\'c0\'ed\'bd\'e2\'b5\'c4\'bd\'da\'ca\'a1\'bf\'d5\'bc\'e4\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ac\'d6\'bb\'d0\'e8\'d2\'aa
+\f0 O(n)
+\f1 \'bf\'d5\'bc\'e4\'b8\'b4\'d4\'d3\'b6\'c8\'a1\'a3
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f9\b \cf16 \cb17 public
+\f6\b0 \cf18  
+\f9\b \cf16 class
+\f6\b0 \cf18  \cf22 Solution\cf18  \{\
+    \cf20 /**\
+     * @param triangle: a list of lists of integers\
+     * @return: An integer, minimum path sum\
+     */\cf18 \
+    
+\f9\b \cf16 public
+\f6\b0 \cf18  \cf19 int\cf18  minimumTotal(\cf19 int\cf18 [][] triangle) \{\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (triangle == 
+\f9\b \cf16 null
+\f6\b0 \cf18  || triangle.length == 0 || triangle[0].length == 0)\{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  0;\
+        \}\
+        \cf19 int\cf18  m = triangle.length;\
+        \cf19 int\cf18 [] result = new \cf19 int\cf18 [m];\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  i = 0; i < m; i++)\{\
+            result[i] = triangle[m - 1][i];\
+        \}\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  i = m - 2; i >= 0; i--)\{\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  j = 0; j <= i; j++)\{\
+                result[j] = triangle[i][j] + Math.min(result[j], result[j + 1]);\
+            \}\
+        \}\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  result[0];\
+    \}\
+\}\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 5\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'be\'c5\'d5\'c2\'d3\'c3\'bb\'a7
+\f3 T12FVG\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  6/9/2020, 7:03:47 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 java\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'b4\'d3\'c9\'cf\'cd\'f9\'cf\'c2
+\f0 DP 
+\f1 \'cd\'ac\'d1\'f9\'ca\'b9\'d3\'c3
+\f0 2D
+\f1 \'ca\'fd\'d7\'e9
+\f0  110. Minimum Path Sum 
+\f1 \'a3\'ac
+\f0  
+\f1 \'bf\'d5\'bc\'e4\'b8\'b4\'d4\'d3\'b6\'c8
+\f0 O
+\f1 \'a3\'a8
+\f0 1
+\f1 \'a3\'a9
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f9\b \cf16 \cb17 public
+\f6\b0 \cf18  \cf19 int\cf18  minimumTotal(\cf19 int\cf18 [][] triangle) \{\
+        \cf20 // write your code here\cf18 \
+        \cf19 int\cf18  row = triangle.length;\
+        \cf19 int\cf18  ans = Integer.MAX_VALUE;\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (row < 1) 
+\f9\b \cf16 return
+\f6\b0 \cf18  -1;\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  i = 1; i < row; i++) \{\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  j = 0; j <= i; j++) \{\
+                
+\f9\b \cf16 if
+\f6\b0 \cf18  (j == 0) \{\
+                    triangle[i][j] += triangle[i - 1][j];\
+                \} 
+\f9\b \cf16 else
+\f6\b0 \cf18  
+\f9\b \cf16 if
+\f6\b0 \cf18  (j == i) \{\
+                    triangle[i][j] += triangle[i - 1][j - 1]; \
+                \} 
+\f9\b \cf16 else
+\f6\b0 \cf18  \{\
+                    triangle[i][j] += Math.min(triangle[i - 1][j - 1], triangle[i - 1][j]);\
+                \}\
+            \}\
+        \}\
+        \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  i= 0; i < row; i++) \{\
+            ans = Math.min(ans, triangle[row - 1][i]);\
+        \}\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  ans;\
+    \}\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 4\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'c3\'f7\'c4\'e1\'cb\'d5\'b4\'ef\'b4\'f3\'bd\'c7\'d1\'f2
+\f3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  6/9/2020, 7:03:49 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 python\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf10 \cb4 DP
+\f1 \'d7\'d4\'cf\'c2\'b6\'f8\'c9\'cf\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ac\'d6\'bb\'d3\'c3\'d2\'bb\'ce\'ac\'ca\'fd\'d7\'e9\'bc\'c7\'c2\'bc\'a3\'ac\'cb\'f9\'d2\'d4\'ca\'c7
+\f0 O(n)
+\f1 \'b5\'c4\'b6\'ee\'cd\'e2\'bf\'d5\'bc\'e4
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f6 \cf18 \cb17 class Solution:\
+\
+    def minimumTotal(self, \cf19 triangle\cf18 ):\
+        # write your code here\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  
+\f9\b \cf16 not
+\f6\b0 \cf18  \cf19 triangle\cf18  
+\f9\b \cf16 or
+\f6\b0 \cf18  
+\f9\b \cf16 not
+\f6\b0 \cf18  \cf19 triangle\cf18 [0]:\
+            \cf19 return\cf18  0\
+            \
+        n, m = len(\cf19 triangle\cf18 ), len(\cf19 triangle\cf18 [-1])\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  n == 0 
+\f9\b \cf16 or
+\f6\b0 \cf18  m == 0:\
+            \cf19 return\cf18  0\
+\
+        path_sum = \cf19 triangle\cf18 [-1][::]\
+        \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  i 
+\f9\b \cf16 in
+\f6\b0 \cf18  \cf19 range\cf18 (n - 2, -1, -1):\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  j 
+\f9\b \cf16 in
+\f6\b0 \cf18  \cf19 range\cf18 (i + 1):\
+                path_sum[j] = \cf19 min\cf18 (path_sum[j], path_sum[j + 1]) + \cf19 triangle\cf18 [i][j]\
+        \
+        \cf19 return\cf18  path_sum[0]\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 2\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'cb\'ab\'cb\'ab
+\f3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  10/12/2020, 3:20:49 PM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 java\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'ce\'d2\'d3\'c3\'c1\'cb\'d2\'bb\'b8\'f6
+\f0 dfs
+\f1 \'bd\'e2\'a1\'a3\'a1\'a3\'a1\'a3\'b5\'ab\'b8\'d0\'be\'f5\'be\'cd\'ca\'c7\'d2\'bb\'b8\'f6\'c6\'d5\'cd\'a8\'b5\'c4
+\f0 recursion
+\f1 \'a1\'a3
+\f0  
+\f1 \'d7\'a2\'d2\'e2\'b4\'e6\'d7\'b4\'cc\'ac\'b5\'c4\'ca\'fd\'be\'dd\'bd\'e1\'b9\'b9\'a3\'ac\'b1\'d8\'d0\'eb\'b7\'d6\'bf\'aa\'a3\'ac\'b7\'f1\'d4\'f2\'d6\'b5\'b2\'bb\'b6\'d4\'a1\'a3
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f6 \cf19 \cb17 public\cf18  
+\f9\b \cf16 class
+\f6\b0 \cf18  Solution \{\
+    \cf20 /**\
+     * @param triangle: a list of lists of integers\
+     * @return: An integer, minimum path sum\
+     */\cf18 \
+    \cf19 public\cf18  
+\f9\b \cf19 int
+\f6\b0 \cf18  minimumTotal(
+\f9\b \cf19 int
+\f6\b0 \cf18 [][] triangle) \{\
+        // 
+\f9\b \cf16 write
+\f6\b0 \cf18  your code here\
+        
+\f9\b \cf19 int
+\f6\b0 \cf18 []result = \cf19 new\cf18  
+\f9\b \cf19 int
+\f6\b0 \cf18 [1];\
+        result[0] = 
+\f9\b \cf19 Integer
+\f6\b0 \cf18 .MAX_VALUE;\
+        \
+        
+\f9\b \cf19 int
+\f6\b0 \cf18  [] 
+\f9\b \cf19 path
+\f6\b0 \cf18  =  \cf19 new\cf18  
+\f9\b \cf19 int
+\f6\b0 \cf18  [triangle.length];\
+        dfs(0, triangle.length, triangle , 
+\f9\b \cf19 path
+\f6\b0 \cf18 , result);\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  result[0];\
+        \
+    \}\
+    \
+    \cf19 public\cf18  
+\f9\b \cf19 void
+\f6\b0 \cf18  dfs(
+\f9\b \cf19 int
+\f6\b0 \cf18  
+\f9\b \cf16 start
+\f6\b0 \cf18 , 
+\f9\b \cf19 int
+\f6\b0 \cf18  
+\f9\b \cf16 end
+\f6\b0 \cf18 , 
+\f9\b \cf19 int
+\f6\b0 \cf18  [][]triangle, 
+\f9\b \cf19 int
+\f6\b0 \cf18 []
+\f9\b \cf19 path
+\f6\b0 \cf18  , 
+\f9\b \cf19 int
+\f6\b0 \cf18 [] result ) \{\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18 (start == 
+\f9\b \cf16 end
+\f6\b0 \cf18 ) \{\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18 (
+\f9\b \cf19 int
+\f6\b0 \cf18  i  = 0; i < 
+\f9\b \cf19 path
+\f6\b0 \cf18 .length; i++) \{\
+                result[0] = Math.min(result[0], 
+\f9\b \cf19 path
+\f6\b0 \cf18 [i]);\
+            \}\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18 ;\
+        \}\
+        \
+        
+\f9\b \cf16 if
+\f6\b0 \cf18 (start == 0) \{\
+            
+\f9\b \cf19 path
+\f6\b0 \cf18 [0] = triangle[0][0];\
+        \} 
+\f9\b \cf16 else
+\f6\b0 \cf18  \{\
+            
+\f9\b \cf19 int
+\f6\b0 \cf18  [] tmp = \cf19 new\cf18  
+\f9\b \cf19 int
+\f6\b0 \cf18 [
+\f9\b \cf19 path
+\f6\b0 \cf18 .length];\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18 (
+\f9\b \cf19 int
+\f6\b0 \cf18  i = 0; i < 
+\f9\b \cf19 path
+\f6\b0 \cf18 .length ; i++)\{\
+                tmp[i] = 
+\f9\b \cf19 path
+\f6\b0 \cf18 [i];\
+            \}\
+            \
+            
+\f9\b \cf16 for
+\f6\b0 \cf18 (
+\f9\b \cf19 int
+\f6\b0 \cf18  i = 0; i< 
+\f9\b \cf16 start
+\f6\b0 \cf18  + 1; i++) \{\
+               
+\f9\b \cf16 if
+\f6\b0 \cf18  (i == 0) \{\
+                   
+\f9\b \cf19 path
+\f6\b0 \cf18 [i] = tmp[i] + triangle[
+\f9\b \cf16 start
+\f6\b0 \cf18 ][i];\
+               \} 
+\f9\b \cf16 else
+\f6\b0 \cf18  
+\f9\b \cf16 if
+\f6\b0 \cf18  (i == 
+\f9\b \cf16 start
+\f6\b0 \cf18 )\{\
+                   
+\f9\b \cf19 path
+\f6\b0 \cf18 [i] = tmp[i-1] + triangle[
+\f9\b \cf16 start
+\f6\b0 \cf18 ][i];\
+               \} 
+\f9\b \cf16 else
+\f6\b0 \cf18  \{\
+                   
+\f9\b \cf19 path
+\f6\b0 \cf18 [i] = Math.min(tmp[i] , tmp[i-1]) + triangle[
+\f9\b \cf16 start
+\f6\b0 \cf18 ][i];\
+               \}\
+            \}   \
+        \}     \
+        dfs(
+\f9\b \cf16 start
+\f6\b0 \cf18  + 1, 
+\f9\b \cf16 end
+\f6\b0 \cf18 , triangle, 
+\f9\b \cf19 path
+\f6\b0 \cf18 , result);\
+    \}\
+\}\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 1\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs32 \cf3 \cb4 jerron\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  9/14/2020, 1:38:46 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 c++\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf10 \cb4 bottom up to save a few lines of code\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f9\b \cf16 \cb17 class
+\f6\b0 \cf18  \cf22 Solution\cf18  \{\
+
+\f9\b \cf16 public
+\f6\b0 \cf18 :\
+    \cf20 /**\
+     * @param triangle: a list of lists of integers\
+     * @return: An integer, minimum path sum\
+     */\cf18 \
+    \cf19 int\cf18  minimumTotal(vector<vector<\cf19 int\cf18 >> &triangle) \{\
+        \cf20 // write your code here\cf18 \
+        \cf19 int\cf18  size=triangle.size();\
+        vector<\cf19 int\cf18 >sums\{triangle.back()\};\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18 (\cf19 int\cf18  i=size-2;i>=0;--i)\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18 (\cf19 int\cf18  j=0;j<=i;++j)\
+                sums[j]=triangle[i][j]+min(sums[j],sums[j+1]);\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  sums[0];\
+    \}\
+\};\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 1\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs32 \cf3 \cb4 J.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  6/9/2020, 7:03:57 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 python\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf10 \cb4 DP 
+\f1 \'bc\'c7\'d2\'e4\'bb\'af\'cb\'d1\'cb\'f7
+\f0 \cb1 \
+
+\f1 \cb4 \'d3\'c3\'d7\'d6\'b5\'e4\'c8\'a1\'b4\'fa\'c1\'cb\'ca\'fd\'d7\'e9\'a3\'ac
+\f0 space 
+\f1 \'d4\'bc\'b1\'e4\'ce\'aa\'d3\'c3\'ca\'fd\'d7\'e9\'ca\'b1\'b5\'c4
+\f0  1/2\cb1 \
+
+\f1 \cb4 \'b5\'ab\'ca\'c7\'bf\'b4\'c6\'f0\'c0\'b4\'b8\'fa
+\f0  DP 
+\f1 \'ba\'c3\'cf\'f1\'c3\'bb\'c9\'b6\'b9\'d8\'cf\'b5\'c1\'cb\'a3\'ac\'b8\'fc\'cf\'f1
+\f0  dfs\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f6 \cf19 \cb17 """\
+DP: Memory Searching\
+"""\cf18 \
+
+\f9\b \cf16 class
+\f6\b0 \cf18  
+\f9\b \cf19 Solution
+\f6\b0 \cf18 :\
+    \cf19 """\
+    @param: triangle: a list of lists of integers\
+    @return: An integer, minimum path sum\
+    """\cf18 \
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 minimumTotal
+\f6\b0 \cf18 (self, triangle):\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  
+\f9\b \cf16 not
+\f6\b0 \cf18  triangle 
+\f9\b \cf16 or
+\f6\b0 \cf18  
+\f9\b \cf16 not
+\f6\b0 \cf18  triangle[0]:\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  0\
+\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  self.memo_search(0, 0, triangle, \{\})\
+\
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 memo_search
+\f6\b0 \cf18 (self, depth, start, triangle, memo):\
+        key = \cf19 '\{0\}:\{1\}'\cf18 .format(depth, start)\
+\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  depth == len(triangle) - 1:\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  triangle[depth][start]\
+\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  key 
+\f9\b \cf16 in
+\f6\b0 \cf18  memo:\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  memo[key]\
+\
+        memo[key] = min(\
+            self.memo_search(depth + 1, start, triangle, memo),\
+            self.memo_search(depth + 1, start + 1, triangle, memo)\
+        )\
+\
+        memo[key] += triangle[depth][start]\
+\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  memo[key]\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 1\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs32 \cf3 \cb4 Iris\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  6/9/2020, 7:03:55 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 java\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'cc\'e2\'c4\'bf\'b5\'c4
+\f0 BONUS
+\f1 \'ca\'c7\'d6\'bb\'c4\'dc\'bf\'aa
+\f0 ON
+\f1 \'b5\'c4\'bf\'d5\'bc\'e4\'a3\'ac
+\f0  
+\f1 \'bf\'b4\'be\'c5\'d5\'c2\'b4\'f0\'b0\'b8\'ca\'c7\'bf\'aa\'c1\'cb
+\f0 N
+\f1 \'c6\'bd\'b7\'bd\'b5\'c4\'bf\'d5\'bc\'e4\'a3\'ac\'d3\'c3\'b9\'f6\'b6\'af\'ca\'fd\'d7\'e9\'a3\'ac\'d3\'c5\'bb\'af\'c1\'cb\'bf\'d5\'bc\'e4\'a1\'a3
+\f0  
+\f1 \'d6\'bb\'d0\'e8\'d2\'aa
+\f0 2N
+\f1 \'b5\'c4\'bf\'d5\'bc\'e4\'a3\'ac\'cf\'e0\'b5\'b1\'d3\'da\'b4\'ef\'b5\'bd\'c1\'cb\'cc\'e2\'c4\'bf
+\f0 BONUS
+\f1 \'b5\'c4
+\f0 ON
+\f1 \'a1\'a3
+\f0  
+\f1 \'c6\'e4\'cb\'fb\'ba\'cd\'be\'c5\'d5\'c2\'d0\'b4\'b5\'c4\'b2\'ee\'b2\'bb\'b6\'e0\'a3\'ac\'be\'cd\'ca\'c7
+\f0 0
+\f1 \'c1\'d0\'ba\'cd\'d7\'ee\'ba\'f3\'d2\'bb\'c1\'d0\'b7\'c5\'d4\'da\'d2\'bb\'b8\'f6\'d1\'ad\'bb\'b7\'c5\'d0\'b6\'cf\'c1\'cb\'a3\'ac\'b8\'d0\'be\'f5\'cf\'eb\'c6\'f0\'c0\'b4\'b8\'fc\'d7\'d4\'c8\'bb\'d2\'bb\'b5\'e3\'a3\'bb\'d3\'c3\'b9\'f6\'b6\'af\'ca\'fd\'d7\'e9\'a3\'ac\'d3\'c5\'bb\'af\'c1\'cb\'bf\'d5\'bc\'e4\'a1\'a3\'d0\'bb\'d0\'bb\'b4\'f3\'bc\'d2\'a3\'ac\'c7\'eb\'b0\'ef\'c3\'a6\'d7\'f3\'c9\'cf\'bd\'c7\'b5\'e3\'b8\'f6\'d4\'de\'a1\'a3
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f9\b \cf16 \cb17 public
+\f6\b0 \cf18  
+\f9\b \cf16 class
+\f6\b0 \cf18  \cf22 Solution\cf18  \{\
+    \cf20 /**\
+     * @param triangle: a list of lists of integers\
+     * @return: An integer, minimum path sum\
+     */\cf18 \
+    
+\f9\b \cf16 public
+\f6\b0 \cf18  \cf19 int\cf18  minimumTotal(\cf19 int\cf18 [][] triangle) \{\
+        \cf20 // write your code here\cf18 \
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (triangle == 
+\f9\b \cf16 null
+\f6\b0 \cf18  || triangle.length == 0 || triangle[0].length == 0) \{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  -1;\
+        \}\
+        \
+        \cf19 int\cf18  n = triangle.length;\
+        \cf19 int\cf18 [][] f = new \cf19 int\cf18 [2][n];\cf20 //
+\f1 \'b9\'f6\'b6\'af\'ca\'fd\'d7\'e9\'a3\'ac\'c3\'bf\'b4\'ce\'bc\'c6\'cb\'e3\'d6\'bb\'d2\'aa\'d6\'aa\'b5\'c0\'c9\'cf\'d2\'bb\'d0\'d0\'a3\'ac\'d6\'bb\'d0\'e8\'d2\'aa\'b4\'e6\'c9\'cf\'d2\'bb\'d0\'d0\'ba\'cd\'b1\'be\'d0\'d0\'a3\'ac\'cb\'f9\'d2\'d4\'b5\'da\'d2\'bb\'ce\'ac\'b3\'a4\'b6\'c8\'b6\'a8\'ce\'aa
+\f6 2
+\f1 \'a3\'bb
+\f6 \cf18 \
+        f[0][0] = triangle[0][0];\
+        \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  i = 1; i < n; ++i) \{\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  j = 0; j < triangle[i].length; ++j) \{\
+                
+\f9\b \cf16 if
+\f6\b0 \cf18  (j == 0) \{\cf20 // 0 
+\f1 \'c1\'d0
+\f6 \cf18 \
+                    f[i % 2][0] = f[(i -1) % 2][0] + triangle[i][0];\
+                \}
+\f9\b \cf16 else
+\f6\b0 \cf18  
+\f9\b \cf16 if
+\f6\b0 \cf18  (j == triangle[i].length -1) \{\cf20 // 
+\f1 \'d7\'ee\'ba\'f3\'d2\'bb\'c1\'d0
+\f6 \cf18 \
+                    f[i % 2][j] = f[(i -1) % 2][i -1] + triangle[i][j];\
+                \}
+\f9\b \cf16 else
+\f6\b0 \cf18  \{\
+                    f[i % 2][j] = Math.min(f[(i -1) % 2][j -1], f[(i -1) % 2][j]) + triangle[i][j];\
+                \}\
+            \}\
+        \}\
+        \
+        \cf19 int\cf18  res = Integer.MAX_VALUE;\
+        \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  i = 0; i < n; ++i) \{\cf20 // n-1 
+\f1 \'d0\'d0\'d3\'d0
+\f6  n 
+\f1 \'b8\'f6
+\f6 \cf18 \
+            res = Math.min(res, f[(n -1) % 2][i]);\
+        \}\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  res;\
+    \}\
+\}\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 1\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs32 \cf3 \cb4 r
+\f2 \'cd\'ac\'d1\'a7
+\f3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  6/9/2020, 7:03:54 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 java\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'d6\'bb\'d0\'e8\'d2\'aa
+\f0 O
+\f1 \'a3\'a8
+\f0 1
+\f1 \'a3\'a9\'b5\'c4\'bf\'d5\'bc\'e4\'a3\'ac\'b7\'c7\'b3\'a3\'bc\'f2\'bd\'e0\'b5\'c4\'b7\'bd\'b7\'a8\'a1\'a3
+\f0 \cb1 \
+
+\f1 \cb4 \'b4\'d3\'c9\'cf\'b5\'bd\'cf\'c2\'c0\'db\'bc\'d3\'a3\'ac\'bd\'ab\'d6\'ae\'c7\'b0\'d5\'e2\'cc\'f5\'c2\'b7\'be\'b6\'c9\'cf\'b5\'c4\'ba\'cd\'d3\'eb\'b1\'be\'c9\'ed\'d4\'aa\'cb\'d8\'b5\'c4\'d6\'b5\'cf\'e0\'bc\'d3\'a3\'ac\'c0\'b4\'b8\'fc\'d0\'c2\'b1\'be\'c9\'ed\'d4\'aa\'cb\'d8\'a1\'a3\'cd\'ea\'b3\'c9\'d5\'e2\'b8\'f6\'b9\'fd\'b3\'cc\'ba\'f3\'a3\'ac\'ca\'fd\'d7\'e9\'c4\'da\'b5\'c4\'d6\'b5\'ca\'c7\'c7\'b0\'c3\'e6\'c2\'b7\'be\'b6\'c9\'cf\'b5\'c4
+\f0 min value
+\f1 \'a1\'a3
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f9\b \cf16 \cb17 public
+\f6\b0 \cf18  
+\f9\b \cf16 class
+\f6\b0 \cf18  \cf22 Solution\cf18  \{\
+    \cf20 /**\
+     * @param triangle: a list of lists of integers\
+     * @return: An integer, minimum path sum\
+     */\cf18 \
+    
+\f9\b \cf16 public
+\f6\b0 \cf18  \cf19 int\cf18  minimumTotal(\cf19 int\cf18 [][] triangle) \{\
+        \cf20 // write your code here\cf18 \
+        \cf19 int\cf18  rows = triangle.length;\
+        \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  r = 1; r < rows; r++)\{\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  c = 0; c <= r; c++)\{\
+                \
+                
+\f9\b \cf16 if
+\f6\b0 \cf18  (c == 0)\{ \cf20 // case where it is the 1st element on the left\cf18 \
+                    triangle[r][c] += triangle[r - 1][c];\
+                    
+\f9\b \cf16 continue
+\f6\b0 \cf18 ;\
+                \}\
+                \
+                
+\f9\b \cf16 if
+\f6\b0 \cf18  (c == r)\{ \cf20 // case where it is the last element on the right\cf18 \
+                    triangle[r][c] += triangle[r - 1][c - 1];\
+                    
+\f9\b \cf16 continue
+\f6\b0 \cf18 ;\
+                \} \
+                \cf20 // other cases, only need to add the minimum value among the two adjacent elements in the previous row with the current element value\cf18 \
+                triangle[r][c] = Math.min(triangle[r - 1][c], triangle[r - 1][c - 1]) + triangle[r][c];\
+            \}\
+        \}\
+        \
+        \cf19 int\cf18  min_sum = Integer.MAX_VALUE;\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  c = 0; c < rows; c++)\{\
+            min_sum = Math.min(min_sum, triangle[rows - 1][c]);\
+        \}\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  min_sum;\
+    \}\
+\}\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 1\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs32 \cf3 \cb4 Jet\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  6/9/2020, 7:03:53 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 c++\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'d7\'d4\'b6\'a5\'cf\'f2\'cf\'c2\'b5\'c4\'b6\'af\'cc\'ac\'b9\'e6\'bb\'ae\'a3\'ac\'b6\'e0\'d6\'d8\'d1\'ad\'bb\'b7\'ca\'b5\'cf\'d6\'c7\'f3\'d7\'ee\'d6\'b5\'ce\'ca\'cc\'e2\'a1\'a3\'d7\'a2\'d2\'e2\'b1\'df\'bd\'e7\'cc\'f5\'bc\'fe\'b5\'b1
+\f0 j=0
+\f1 \'ba\'cd
+\f0 j=i
+\f1 \'ca\'b1\'a3\'a8\'bc\'b0\'c8\'fd\'bd\'c7\'d0\'ce\'b5\'c4\'c1\'bd\'b1\'df\'a3\'a9\'a3\'ac\'d0\'e8\'d2\'aa\'b7\'d6\'bf\'aa\'bf\'bc\'c2\'c7\'a1\'a3
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f6 \cf18 \cb17 class Solution \{\
+
+\f9\b \cf16 public
+\f6\b0 \cf18 :\
+    \cf20 /**\
+     * @param triangle: a list of lists of integers\
+     * @return: An integer, minimum path sum\
+     */\cf18 \
+    \cf19 int\cf18  minimumTotal(vector<vector<\cf19 int\cf18 >> &\cf19 triangle\cf18 ) \{\
+        \cf20 // write your code here\cf18 \
+        
+\f9\b \cf16 if
+\f6\b0 \cf18 (\cf19 triangle\cf18 .\cf19 size\cf18 ()==0)\{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  0;\
+        \}\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18 (\cf19 triangle\cf18 .\cf19 size\cf18 ()==1)\{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  \cf19 triangle\cf18 [0][0];\
+        \}\
+        \cf19 int\cf18  f[\cf19 triangle\cf18 .\cf19 size\cf18 ()][\cf19 triangle\cf18 .\cf19 size\cf18 ()];\
+        f[0][0]=\cf19 triangle\cf18 [0][0];\
+        \cf20 //int min;\cf18 \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18 (\cf19 int\cf18  i=1;i<\cf19 triangle\cf18 .\cf19 size\cf18 ();i++)\{\
+\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18 (\cf19 int\cf18  j=0;j<\cf19 triangle\cf18 [i].\cf19 size\cf18 ();j++)\{\
+                
+\f9\b \cf16 if
+\f6\b0 \cf18 (j==0)\{\cf20 //\cf18 \
+                    f[i][j]=f[i-1][j]+\cf19 triangle\cf18 [i][j];\
+                    
+\f9\b \cf16 continue
+\f6\b0 \cf18 ;\
+                \}\
+                
+\f9\b \cf16 if
+\f6\b0 \cf18 (j==i)\{\
+                    f[i][j]=f[i-1][j-1]+\cf19 triangle\cf18 [i][j];\
+                    
+\f9\b \cf16 continue
+\f6\b0 \cf18 ;\
+                \}\
+                f[i][j]=\cf19 min\cf18 (f[i-1][j-1],f[i-1][j])+\cf19 triangle\cf18 [i][j];\
+\
+            \}\
+        \}\
+        \cf19 int\cf18  \cf19 min\cf18 =f[\cf19 triangle\cf18 .\cf19 size\cf18 ()-1][0];\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18 (\cf19 int\cf18  i=1;i<\cf19 triangle\cf18 [\cf19 triangle\cf18 .\cf19 size\cf18 ()-1].\cf19 size\cf18 ();i++)\{\
+            
+\f9\b \cf16 if
+\f6\b0 \cf18 (f[\cf19 triangle\cf18 .\cf19 size\cf18 ()-1][i]<\cf19 min\cf18 )\{\
+                \cf19 min\cf18 =f[\cf19 triangle\cf18 .\cf19 size\cf18 ()-1][i];\
+            \}\
+        \}\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  \cf19 min\cf18 ;\
+        \
+        \
+        \
+    \}\
+\};\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 1\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'be\'c5\'d5\'c2\'d3\'c3\'bb\'a7
+\f3 PUGFLM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  6/9/2020, 7:03:52 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 python\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'ce\'e5\'d6\'d6\'b7\'bd\'b7\'a8\'a3\'ba
+\f0  
+\f1 \'b7\'bd\'b7\'a8
+\f0 1: Traverse 
+\f1 \'a3\'a8\'ce\'de\'b7\'b5\'bb\'d8\'d6\'b5\'a3\'a9
+\f0  
+\f1 \'b7\'bd\'b7\'a8
+\f0 2: Divide and Conquer 
+\f1 \'a3\'a8\'b4\'f8\'b7\'b5\'bb\'d8\'d6\'b5\'a3\'a9
+\f0  
+\f1 \'b7\'bd\'b7\'a8
+\f0 3: DFS+memo 
+\f1 \'a3\'a8\'bc\'d3
+\f0 cache
+\f1 \'a3\'a9
+\f0  
+\f1 \'b7\'bd\'b7\'a8
+\f0 4: DP
+\f1 \'a3\'ac\'a3\'a8\'cc\'ee\'b1\'ed\'b8\'f1\'a3\'a9
+\f0  
+\f1 \'b7\'bd\'b7\'a8
+\f0 5: DP + rolling array 
+\f1 \'d3\'c5\'bb\'af\'bf\'d5\'bc\'e4
+\f0  
+\f1 \'a3\'a8\'c7\'f3\'d3\'e0\'b4\'f3\'b7\'a8\'a3\'a9
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f9\b \cf16 \cb17 class
+\f6\b0 \cf18  
+\f9\b \cf19 Solution
+\f6\b0 \cf18 :\
+    \cf19 """\
+    @param triangle: a list of lists of integers\
+    @return: An integer, minimum path sum\
+    """\cf18 \
+    \cf20 # 1: Traverse O(2^n)\cf18 \
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 minimumTotalTraverse
+\f6\b0 \cf18 (
+\f9\b \cf16 self
+\f6\b0 \cf18 , triangle):\
+        \cf20 # 
+\f1 \'c0\'cf\'b4\'f3\'c4\'c3\'bc\'c7\'ca\'c2\'b1\'be\'a3\'a8\'b1\'e4\'c1\'bf\'a3\'a9\'cf\'c2\'bb\'f9\'b2\'e3\'a3\'ac\'c3\'bb\'d3\'d0\'b7\'b5\'bb\'d8\'d6\'b5
+\f6 \cf18 \
+        
+\f9\b \cf16 self
+\f6\b0 \cf18 .minRes = float(\cf19 'inf'\cf18 )\
+        
+\f9\b \cf16 self
+\f6\b0 \cf18 .traversal(triangle, 0, 0, 0)\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  
+\f9\b \cf16 self
+\f6\b0 \cf18 .minRes\
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 traversal
+\f6\b0 \cf18 (
+\f9\b \cf16 self
+\f6\b0 \cf18 , triangle, x, y, total):\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  x == len(triangle):\
+            
+\f9\b \cf16 self
+\f6\b0 \cf18 .minRes = min(
+\f9\b \cf16 self
+\f6\b0 \cf18 .minRes, total)\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18 \
+        
+\f9\b \cf16 self
+\f6\b0 \cf18 .traversal(triangle, x+1, y, total+triangle[x][y])\
+        
+\f9\b \cf16 self
+\f6\b0 \cf18 .traversal(triangle, x+1, y+1, total+triangle[x][y])\
+    \
+    \cf20 # 2: Divide and Conquer O(2^n)\cf18 \
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 minimumTotalDQ
+\f6\b0 \cf18 (
+\f9\b \cf16 self
+\f6\b0 \cf18 , triangle):   \
+        \cf20 # 
+\f1 \'c5\'c9\'d0\'a1\'b5\'dc\'b3\'f6\'c8\'a5\'b8\'c9\'bb\'ee\'a3\'ac\'b4\'f8\'bb\'d8\'c0\'b4\'b7\'b5\'bb\'d8\'d6\'b5
+\f6 \cf18 \
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  
+\f9\b \cf16 self
+\f6\b0 \cf18 .divdeConquer(triangle, 0, 0)\
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 divdeConquer
+\f6\b0 \cf18 (
+\f9\b \cf16 self
+\f6\b0 \cf18 , triangle, x, y):\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  x == len(triangle):\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  0\
+        left = 
+\f9\b \cf16 self
+\f6\b0 \cf18 .divdeConquer(triangle, x+1, y)\
+        right = 
+\f9\b \cf16 self
+\f6\b0 \cf18 .divdeConquer(triangle, x+1, y+1)\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  min(left, right) + triangle[x][y]\
+    \
+    \cf20 #3: DFS + memo O(n^2)
+\f1 \'a3\'ac
+\f6  
+\f1 \'bc\'d3
+\f6 cache
+\f1 \'cd\'b3\'d2\'bb\'cc\'d7\'c2\'b7
+\f6 \cf18 \
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 minimumTotalMemo
+\f6\b0 \cf18 (
+\f9\b \cf16 self
+\f6\b0 \cf18 , triangle):\
+        cache = \{\}\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  
+\f9\b \cf16 self
+\f6\b0 \cf18 .DFSmemo(triangle, 0, 0, cache)\
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 DFSmemo
+\f6\b0 \cf18 (
+\f9\b \cf16 self
+\f6\b0 \cf18 , triangle, x, y, cache):\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (x, y) 
+\f9\b \cf16 in
+\f6\b0 \cf18  \cf22 cache:\cf18  
+\f9\b \cf16 return
+\f6\b0 \cf18  cache[(x,y)]\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  x == len(triangle): \
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  0\
+        left = 
+\f9\b \cf16 self
+\f6\b0 \cf18 .DFSmemo(triangle, x+1, y, cache)\
+        right = 
+\f9\b \cf16 self
+\f6\b0 \cf18 .DFSmemo(triangle, x+1, y+1, cache)\
+        res =  min(left, right) + triangle[x][y]\
+        cache[(x,y)] = res\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  res\
+    \
+    \cf20 # DP, Time complexity O(n^2), space complexity: O(n^2) \cf18 \
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 minimumTotalDP
+\f6\b0 \cf18 (
+\f9\b \cf16 self
+\f6\b0 \cf18 , triangle):\
+        \cf20 # dp[i][j]: minpathSum from top to triangle[i][j] \cf18 \
+        \cf20 # dp[i][j] = min(dp[i-1][j-1], dp[i-1][j])+triangle[i][j]\cf18 \
+        \cf20 # initial dp[0][0] = triangle[0][0]
+\f1 \'a3\'ac\'c0\'fb\'d3\'c3\'b5\'dd\'cd\'c6\'b9\'ab\'ca\'bd\'b8\'e3\'b2\'bb\'b3\'f6\'c0\'b4\'be\'cd\'d0\'e8\'d2\'aa\'b3\'f5\'ca\'bc\'bb\'af
+\f6 \cf18 \
+        \cf20 # result: min(dp[n-1])\cf18 \
+        n = len(triangle)\
+        dp = [[float(\cf19 'inf'\cf18 )] * (i+1) 
+\f9\b \cf16 for
+\f6\b0 \cf18  i 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(n)]\
+        dp[0][0] = triangle[0][0]\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  i 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(1, n):\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  j 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(i+1):\
+                
+\f9\b \cf16 if
+\f6\b0 \cf18  j == 0:\
+                    dp[i][j] = dp[i-1][j] + triangle[i][j]\
+                elif j == \cf22 i:\cf18 \
+                    dp[i][j] = dp[i-1][j-1] + triangle[i][j]\
+                \cf22 else:\cf18 \
+                    dp[i][j] = min(dp[i-1][j-1], dp[i-1][j])+triangle[i][j]\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  min(dp[n-1])\
+    \
+    \cf20 # DP, O(n^2) + rolling array O(n) space 
+\f1 \'d3\'c5\'bb\'af\'bf\'d5\'bc\'e4
+\f6 , 
+\f1 \'c7\'f3\'d3\'e0\'b4\'f3\'b7\'a8\'ba\'c3
+\f6 \cf18 \
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 minimumTotalDPOpt
+\f6\b0 \cf18 (
+\f9\b \cf16 self
+\f6\b0 \cf18 , triangle):\
+        n = len(triangle)\
+        dp = [[float(\cf19 'inf'\cf18 )] * n 
+\f9\b \cf16 for
+\f6\b0 \cf18  _ 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(2)]\
+        dp[0][0] = triangle[0][0]\
+        i = 0\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  i 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(1, n):\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  j 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(i+1):\
+                
+\f9\b \cf16 if
+\f6\b0 \cf18  j == 0:\
+                    dp[i%2][j] = dp[(i-1)%2][j] + triangle[i][j]\
+                elif j == \cf22 i:\cf18 \
+                    dp[i%2][j] = dp[(i-1)%2][j-1] + triangle[i][j]\
+                \cf22 else:\cf18 \
+                    dp[i%2][j] = min(dp[(i-1)%2][j-1], dp[(i-1)%2][j])+triangle[i][j]\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  min(dp[i%2])\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 1\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'d0\'a1\'ba\'ee
+\f3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  6/9/2020, 7:03:52 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 java\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'b2\'bb\'d0\'e8\'d2\'aa\'b6\'ee\'cd\'e2\'b5\'c4
+\f0  Space, 
+\f1 \'d6\'b1\'bd\'d3\'d4\'d9\'d4\'ad\'d3\'d0\'b5\'c4
+\f0  triangle 
+\f1 \'c0\'ef\'c3\'e6\'d7\'f6
+\f0  bottom-up approach.\cb1 \
+
+\f1 \cb4 \'c3\'bf\'d2\'bb\'b8\'f6
+\f0 node
+\f1 \'b6\'bc\'d6\'d8\'d0\'c2\'d7\'f6\'d2\'bb\'b8\'f6
+\f0  Node value + Math.min(
+\f1 \'c1\'bd\'b8\'f6\'b6\'f9\'d7\'d3
+\f0 ). 
+\f1 \'d7\'ee\'ba\'f3\'b6\'a5\'b2\'bf\'b5\'c4\'be\'cd\'ca\'c7\'c4\'e3\'d2\'aa\'b5\'c4
+\f0  min path sum.\cb1 \
+\cb4 O(1) space O(n^2) time complexity\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f6 \cf18 \cb17 public class Solution \{\
+    \
+    //DP bottom up approach\
+    public int minimumTotal(int[][] \cf19 triangle\cf18 ) \{\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (\cf19 triangle\cf18  == null || \cf19 triangle\cf18 .\cf19 length\cf18  == 0) \cf19 return\cf18  0;\
+        \
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (\cf19 triangle\cf18 .\cf19 length\cf18  == 1) \cf19 return\cf18  \cf19 triangle\cf18 [0][0];\
+        \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (int \cf19 row\cf18  = \cf19 triangle\cf18 .\cf19 length\cf18 -2; \cf19 row\cf18  >= 0; \cf19 row\cf18 --) \{\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  (int \cf19 col\cf18  = 0; \cf19 col\cf18  < \cf19 triangle\cf18 [\cf19 row\cf18 ].\cf19 length\cf18 ; \cf19 col\cf18 ++) \{\
+                \cf19 triangle\cf18 [\cf19 row\cf18 ][\cf19 col\cf18 ] += Math.\cf19 min\cf18 (\cf19 triangle\cf18 [\cf19 row\cf18 +1][\cf19 col\cf18 ], \cf19 triangle\cf18 [\cf19 row\cf18 +1][\cf19 col\cf18 +1]);\
+            \}\
+        \}\
+        \
+        \cf19 return\cf18  \cf19 triangle\cf18 [0][0];\
+    \}\
+\}\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 1\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs32 \cf3 \cb4 pyao\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  12/22/2020, 12:32:52 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 c++\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'b6\'af\'cc\'ac\'b9\'e6\'bb\'ae\'a1\'a3
+\f0 \cb1 \
+
+\f1 \cb4 \'ca\'b9\'d3\'c3\'c1\'bd\'b8\'f6\'b9\'f6\'b6\'af\'ca\'fd\'d7\'e9\'d3\'c5\'bb\'af\'bf\'d5\'bc\'e4\'b8\'b4\'d4\'d3\'b6\'c8\'b5\'bd
+\f0 O(n)
+\f1 \'a1\'a3
+\f0 \cb1 \
+
+\f1 \cb4 \'ca\'fd\'d7\'e9
+\f6 \cf23 \cb24 dp
+\f1 \cf10 \cb4 \'bc\'c7\'c2\'bc\'d2\'c0\'b4\'ce\'d1\'a1\'d4\'f1\'c3\'bf\'b8\'f6\'d4\'aa\'cb\'d8\'ca\'b1\'b6\'d4\'d3\'a6\'b5\'c4\'d7\'ee\'b6\'cc\'c2\'b7\'be\'b6\'a3\'ac\'b3\'cc\'d0\'f2\'b7\'b5\'bb\'d8\'ca\'fd\'d7\'e9
+\f6 \cf23 \cb24 dp
+\f1 \cf10 \cb4 \'d6\'d0\'b5\'c4\'d7\'ee\'d0\'a1\'d6\'b5\'a1\'a3
+\f0 \cb1 \
+
+\f1 \cb4 \'ca\'fd\'d7\'e9
+\f6 \cf23 \cb24 temp
+\f1 \cf10 \cb4 \'bc\'c7\'c2\'bc\'b4\'d3\'b5\'da
+\f6 \cf23 \cb24 0
+\f1 \cf10 \cb4 \'d0\'d0\'b5\'bd\'b5\'b1\'c7\'b0\'d0\'d0\'a3\'a8\'b5\'da
+\f6 \cf23 \cb24 i
+\f1 \cf10 \cb4 \'d0\'d0\'a3\'a9\'a3\'ac\'d2\'c0\'b4\'ce\'d1\'a1\'d4\'f1\'b5\'da
+\f6 \cf23 \cb24 i
+\f1 \cf10 \cb4 \'d0\'d0\'c3\'bf\'b8\'f6\'d4\'aa\'cb\'d8\'ca\'b1\'b6\'d4\'d3\'a6\'b5\'c4\'d7\'ee\'b6\'cc\'c2\'b7\'be\'b6\'a1\'a3
+\f0 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}
+\f1 \expnd0\expndtw0\kerning0
+\'c8\'e7\'b9\'fb
+\f6 \cf23 \cb24 j==0
+\f1 \cf3 \cb4 \'a3\'a8\'d1\'a1\'d4\'f1\'b5\'b1\'c7\'b0\'d0\'d0\'b5\'c4\'b5\'da\'d2\'bb\'b8\'f6\'d4\'aa\'cb\'d8\'a3\'a9\'a3\'ac\'c4\'c7\'c3\'b4
+\f6 \cf23 \cb24 temp[0] = dp[0] + triangle[i][0];
+\f0 \cf3 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}
+\f1 \expnd0\expndtw0\kerning0
+\'c8\'e7\'b9\'fb
+\f6 \cf23 \cb24 j==i
+\f1 \cf3 \cb4 \'a3\'a8\'d1\'a1\'d4\'f1\'b5\'b1\'c7\'b0\'d0\'d0\'b5\'c4\'d7\'ee\'ba\'f3\'d2\'bb\'b8\'f6\'d4\'aa\'cb\'d8\'a3\'a9\'a3\'ac\'c4\'c7\'c3\'b4
+\f6 \cf23 \cb24 temp[i] = dp[i - 1] + triangle[i][i];
+\f0 \cf3 \cb1 \
+\ls1\ilvl0\cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}
+\f1 \expnd0\expndtw0\kerning0
+\'b7\'f1\'d4\'f2\'a3\'a8\'d1\'a1\'d4\'f1\'b5\'b1\'c7\'b0\'d0\'d0\'d6\'d0\'bc\'e4\'b5\'c4\'d4\'aa\'cb\'d8\'a3\'a9\'a3\'ac
+\f6 \cf23 \cb24 temp[j] = min(dp[j - 1], dp[j]) + triangle[i][j];
+\f0 \cf3 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf10 \cb4 \'b1\'e9\'c0\'fa\'b5\'da
+\f6 \cf23 \cb24 i
+\f1 \cf10 \cb4 \'d0\'d0\'c3\'bf\'b8\'f6\'d4\'aa\'cb\'d8\'ba\'f3\'a3\'ac\'d3\'c3
+\f6 \cf23 \cb24 temp
+\f1 \cf10 \cb4 \'b5\'c4\'d6\'b5\'b8\'b2\'b8\'c7
+\f6 \cf23 \cb24 dp
+\f1 \cf10 \cb4 \'b6\'d4\'d3\'a6\'ce\'bb\'d6\'c3\'b5\'c4\'d6\'b5\'a3\'ac\'d0\'ce\'b3\'c9\'b9\'f6\'b6\'af\'ca\'fd\'d7\'e9\'a1\'a3
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f6 \cf18 \cb17 class Solution\
+\{\
+
+\f9\b \cf16 public
+\f6\b0 \cf18 :\
+    \cf20 /**\
+     * @param triangle: a list of lists of integers\
+     * @return: An integer, minimum path sum\
+     */\cf18 \
+    \cf19 int\cf18  minimumTotal(vector<vector<\cf19 int\cf18 >> &\cf19 triangle\cf18 )\
+    \{\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (\cf19 triangle\cf18 .empty())\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  0;\
+        vector<\cf19 int\cf18 > dp(\cf19 triangle\cf18 .\cf19 size\cf18 ());\
+        dp[0] = \cf19 triangle\cf18 [0][0];\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  i = 1; i != \cf19 triangle\cf18 .\cf19 size\cf18 (); i++)\
+        \{\
+            vector<\cf19 int\cf18 > temp(\cf19 triangle\cf18 [i].\cf19 size\cf18 ());\
+\
+            temp[0] = dp[0] + \cf19 triangle\cf18 [i][0];\
+\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  j = 1; j != \cf19 triangle\cf18 [i].\cf19 size\cf18 () - 1; j++)\
+            \{\
+                temp[j] = \cf19 min\cf18 (dp[j - 1], dp[j]) + \cf19 triangle\cf18 [i][j];\
+            \}\
+\
+            temp[i] = dp[i - 1] + \cf19 triangle\cf18 [i][i];\
+\
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  (vector<\cf19 int\cf18 >::size_type j = 0; j != \cf19 triangle\cf18 [i].\cf19 size\cf18 (); j++)\
+            \{\
+                dp[j] = temp[j];\
+            \}\
+        \}\
+\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  *min_element(dp.begin(), dp.end());\
+    \}\
+\};\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 0\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 \cb4 \'be\'c5\'d5\'c2\'d3\'c3\'bb\'a7
+\f3 1U267B\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  11/14/2020, 3:05:18 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 python\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf10 \cb4 BFS
+\f1 \'bd\'e2\'b7\'a8\'a1\'a3
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f9\b \cf16 \cb17 class
+\f6\b0 \cf18  
+\f9\b \cf19 Solution
+\f6\b0 \cf18 :\
+    \cf19 """\
+    @param triangle: a list of lists of integers\
+    @return: An integer, minimum path sum\
+    """\cf18 \
+    
+\f9\b \cf16 def
+\f6\b0 \cf18  
+\f9\b \cf19 minimumTotal
+\f6\b0 \cf18 (self, triangle):\
+        \cf20 # write your code here\cf18 \
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  
+\f9\b \cf16 not
+\f6\b0 \cf18  triangle:\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  0\
+        \
+        result = triangle[0]\
+        \
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  row 
+\f9\b \cf16 in
+\f6\b0 \cf18  range(1, len(triangle)):\
+            temp = []\
+            \
+            
+\f9\b \cf16 for
+\f6\b0 \cf18  i, num 
+\f9\b \cf16 in
+\f6\b0 \cf18  enumerate(triangle[row]):\
+                
+\f9\b \cf16 if
+\f6\b0 \cf18  i == 0:\
+                    temp.append(num + result[0])\
+                
+\f9\b \cf16 elif
+\f6\b0 \cf18  i != 0 
+\f9\b \cf16 and
+\f6\b0 \cf18  i != len(triangle[row]) - 1:\
+                    temp.append(num + min(result[i], result[i - 1]))\
+                
+\f9\b \cf16 elif
+\f6\b0 \cf18  i == len(triangle[row]) - 1:\
+                    temp.append(num + result[i - 1])\
+            result = temp\
+\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  min(result)\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 0\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs32 \cf3 \cb4 yitian\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  9/14/2020, 1:51:16 AM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 c++\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf10 \cb4 \'bf\'c9\'d2\'d4\'d3\'c3\'b9\'f6\'b6\'af\'ca\'fd\'d7\'e9\'c0\'b4\'cd\'ea\'b3\'c9\'a1\'a3
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f6 \cf19 \cb17 int\cf18  minimumTotal(vector<vector<\cf19 int\cf18 >> &triangle) \{\
+    \cf20 // write your code here\cf18 \
+    
+\f9\b \cf16 if
+\f6\b0 \cf18  (triangle.empty())\
+    
+\f9\b \cf16 return
+\f6\b0 \cf18  0;\
+    vector<vector<\cf19 int\cf18 >> dp(2, vector<\cf19 int\cf18 >());\
+    \cf19 int\cf18  minimum = INT_MAX;\
+    
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  j = 0; j < triangle.size(); j++) \{\
+        dp[ j % 2 ].clear();\
+        
+\f9\b \cf16 for
+\f6\b0 \cf18  (\cf19 int\cf18  i = 0; i < triangle[j].size(); i++)\
+        \{\
+            
+\f9\b \cf16 if
+\f6\b0 \cf18  (j == 0) \{\
+                dp[ j % 2 ].push_back(triangle[j][i]);\
+            \}\
+            
+\f9\b \cf16 else
+\f6\b0 \cf18  \{\
+                \cf19 int\cf18  upToLastRow ;\
+                
+\f9\b \cf16 if
+\f6\b0 \cf18  (i == 0)\
+                    upToLastRow = dp[(j + 1) % 2][i];\
+                
+\f9\b \cf16 else
+\f6\b0 \cf18  
+\f9\b \cf16 if
+\f6\b0 \cf18  (i == j) \
+                    upToLastRow = dp[(j + 1) % 2][i - 1];\
+                
+\f9\b \cf16 else
+\f6\b0 \cf18 \
+                    upToLastRow = min(dp[(j + 1) % 2][i], dp[(j + 1) % 2][i - 1]);\
+                \
+                dp[ j % 2 ].push_back(upToLastRow + triangle[j][i]);\
+            \}\
+            
+\f9\b \cf16 if
+\f6\b0 \cf18  (j == triangle.size() - 1 && dp [ j % 2 ].back() < minimum) \{\
+                minimum = dp[ j % 2 ].back();\
+            \}\
+        \}\
+    \}\
+    \
+    
+\f9\b \cf16 return
+\f6\b0 \cf18  minimum;\
+\}\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 0\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs32 \cf3 \cb4 HUE\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb4 \'b8\'fc\'d0\'c2\'d3\'da
+\f0  8/3/2020, 9:19:53 PM\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf5 \cb7 c++\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf10 \cb4 C++ 
+\f1 \'d3\'9b\'91\'9b\'bb\'af\'cb\'d1\'cb\'f7
+\f0  
+\f1 \'d6\'d8\'fc\'63\'d4\'da
+\f0  memo 
+\f1 \'d0\'fb\'b8\'e6\'95\'72\'b5\'c4\'b4\'f3\'d0\'a1\'a3\'ac\'d2\'f2\'9e\'e9\'ca\'c7\'c8\'fd\'bd\'c7\'d0\'ce\'c9\'cf\'d5\'ad\'cf\'c2\'8c\'92\'a3\'ac\'cb\'f9\'d2\'d4\'d0\'d0\'94\'b5\'d2\'aa\'d3\'c3\'c8\'fd\'bd\'c7\'d0\'ce\'d7\'ee\'b5\'d7\'8c\'d3\'b5\'c4\'b4\'f3\'d0\'a1\'d0\'fb\'b8\'e6
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f6 \cf18 \cb17 class Solution \{\
+
+\f9\b \cf16 public
+\f6\b0 \cf18 :\
+    \cf20 /**\
+     * @param triangle: a list of lists of integers\
+     * @return: An integer, minimum path sum\
+     */\cf18 \
+    \cf19 int\cf18  minimumTotal(vector<vector<\cf19 int\cf18 >> &\cf19 triangle\cf18 ) \{\
+        \cf20 // write your code here\cf18 \
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (\cf19 triangle\cf18 .empty() || \cf19 triangle\cf18 [0].empty()) \{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  0;\
+        \}\
+        \
+        vector<vector<\cf19 int\cf18 >> memo (\cf19 triangle\cf18 .\cf19 size\cf18 (), vector<\cf19 int\cf18 >(\cf19 triangle\cf18 [\cf19 triangle\cf18 .\cf19 size\cf18 () - 1].\cf19 size\cf18 (), INT_MAX));\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  dfs(\cf19 triangle\cf18 , 0, 0, memo);\
+    \}\
+    \
+    \cf19 int\cf18  dfs(vector<vector<\cf19 int\cf18 >> &\cf19 triangle\cf18 , \cf19 int\cf18  x, \cf19 int\cf18  y, vector<vector<\cf19 int\cf18 >> &memo) \{\
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (x == \cf19 triangle\cf18 .\cf19 size\cf18 ()) \{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  0;\
+        \}\
+        \
+        
+\f9\b \cf16 if
+\f6\b0 \cf18  (memo[x][y] != INT_MAX) \{\
+            
+\f9\b \cf16 return
+\f6\b0 \cf18  memo[x][y];\
+        \}\
+        \
+        \cf19 int\cf18  left = dfs(\cf19 triangle\cf18 , x + 1, y, memo);\
+        \cf19 int\cf18  right = dfs(\cf19 triangle\cf18 , x + 1, y + 1, memo);\
+        memo[x][y] = \cf19 min\cf18 (left, right) + \cf19 triangle\cf18 [x][y];\
+        
+\f9\b \cf16 return
+\f6\b0 \cf18  memo[x][y];\
+    \}\
+\};\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf5 \cb1 \dn4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf5 \cb7 \up0 \'d4\'de\'cd\'ac
+\f0 \cb1 \
+\cb7 0\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1 \cf5 \cb4 \'cc\'ed\'bc\'d3\'c6\'c0\'c2\'db
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf4 \cb5 \shad\shadx0\shady20\shadr0\shado0 \shadc0 \'bc\'d3\'d4\'d8\'b8\'fc\'b6\'e0\'cc\'e2\'bd\'e2
+\f0 \cf3 \cb1 \shad0 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb12 \
+\
+}
