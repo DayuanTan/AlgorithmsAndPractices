@@ -300,5 +300,13 @@ Follow Up:
 从DFS到DP 之：
 [第二十二章【互动】从搜索到动规——记忆化搜索入门](files/chapter22.md)
 
+
+第二十六章【视频】让面试官眼前一亮——记忆化搜索
+
+面试中遇到的最难的题就是DP和DFS，记忆化搜索即练习了DFS也练习了DP。
+
+DP的两种实现方式，分别是for循环的方式，和记忆化搜索的方式。所有能for循环实现的，都可以记忆化搜索实现。
+
+
 ---
 ([Go back to respository ReadMe](../README.md))
