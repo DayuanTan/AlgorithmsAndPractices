@@ -41,3 +41,39 @@
 [771. Double Factorial](../lintcode/771.Double_Factorial.md)
 
 [1333. Reverse Bits](../lintcode/1333.Reverse_Bits.md)
+
+[97. Maximum Depth of Binary Tree] https://www.lintcode.com/problem/maximum-depth-of-binary-tree/description 
+
+# 内存中的堆栈 Stack and Heap in Memory
+
+- 递归深度太⼤容易 “爆栈” Stack Overflow, Segment Fault
+  - 堆空间:
+  - 存放 new 得到的对象
+  - ⽆限制 (剩余内存⼤⼩)
+- 栈空间:
+  - 存放对象的引⽤, 值类型变量(Java), 数组(C/C++), 以及函数调⽤信息
+  - 有限制, ⼀般很⼩, MB量级
+
+# 函数调用栈
+
+- 想象⼀个 “圆筒”, 调⽤的函数需要放到筒⾥
+- 第⼀个进⼊ “圆筒” 的是 main() 函数
+- 每发⽣⼀次新的函数调⽤, 就会有⼀个新函数进⼊ “圆筒”
+- 正在执⾏的就是最上⾯的函数
+- ⼀个函数执⾏完毕, 就会被拿出来
+- ⼀个函数占⽤ “圆筒” 的空间与参数, 局部变量的数量有关
+
+## Stack overflow
+
+- Java 
+  - About 18615 recursion delpth. (18073 recursion delpth when more varibales)
+- C/C++ 
+  - About 262009 recursion delpth. (174672 recursion delpth when more varibales)
+- Python 
+  - About 998 recursion delpth. (998 recursion delpth when more varibales)
+  - Not stackoverflow. 
+  - “RuntimeError: maximum recursion depth exceeded”. 
+  - Inside the setting of python, the max levels of recursion is set as about 999. 
+
+
+
