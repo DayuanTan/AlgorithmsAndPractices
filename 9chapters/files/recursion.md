@@ -33,3 +33,11 @@
 - 关系式: F i= F i−1 + F i−2
 
 <img src="recursion1.png">
+
+[1807. Fibonacci easy](../lintcode/1807.Fibonacci_easy.md)
+
+[366. Fibonacci](../lintcode/366.Fibonacci.md)
+
+[771. Double Factorial](../lintcode/771.Double_Factorial.md)
+
+[1333. Reverse Bits](../lintcode/1333.Reverse_Bits.md)
