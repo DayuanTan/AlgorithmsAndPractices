@@ -4,7 +4,7 @@ This is a record of my practising of algorithms on Leetcode.
 
 
   
-1. 相向双指针 Face to Face Two Pointers
+1. Face to Face Two Pointers 相向双指针 
    - Two Sum type
      - sum of two numbers. ( [1. Two Sum](leetcode/1.twosum.md);  )
      - sum of three numbers. ( )
@@ -14,8 +14,8 @@ This is a record of my practising of algorithms on Leetcode.
    - Partition type
      - quick sort. (  )
      - color sort.
-2. 背向双指针 （最长回文串）Back to Back Two Pointers
-3. 同向双指针 Same Direction Two Pointers 
+2. Back to Back Two Pointers 背向双指针 （最长回文串）
+3. Same Direction Two Pointers 同向双指针  
 
 ||Time Complexity|Space Complexity|
 |-|-|-|
