@@ -2,7 +2,7 @@ This is a record of my practicing of algorithms on Leetcode.
 
 # 1. Two Pointers Method
 
-## Category:
+## Theory:
 
 1. Face to Face Two Pointers 相向双指针 
    - Two Sum type
@@ -35,6 +35,7 @@ This is a record of my practicing of algorithms on Leetcode.
        - Easy [167. Two Sum II - Input array is sorted](leetcode/167.Two_Sum_II_Input_array_is_sorted.md);  
        - Easy [1099. Two Sum - Less than or equal to target](leetcode/1099.Two_Sum_Less_than_or_equal_to_target.md) 
      - sum of three numbers. 
+       - Medium [15. 3 Sum](leetcode/15.3sum.md)
    - Reverse type     
      - 判断回文串 palindrome. (  )
      - 翻转字符串 flip string. 
