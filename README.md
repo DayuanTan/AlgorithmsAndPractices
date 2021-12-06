@@ -1,5 +1,14 @@
 This is a record of my practicing of algorithms on Leetcode.
 
+# 0. Steps for all questions
+
+1. Confirm questions with interviewer, including input, output, examples; discuss about corner cases examples
+2. Describe your idea/thoughts
+3. Write your code while explaining it
+4. Introduce your tests and run tests 
+5. Time and space complexity analysis
+6. Optimal solution or follow up
+
 # 1. Two Pointers Method
 
 ## Theory:
@@ -38,10 +47,10 @@ This is a record of my practicing of algorithms on Leetcode.
      - sum of three numbers. 
        - Medium [15. 3 Sum](leetcode/15.3sum.md)
    - Reverse type     
-     - 判断回文串 palindrome. 
+     - palindrome 判断回文串. 
        - Easy [125. Valid Palindrome](leetcode/125.Valid_Palindrome.md) 
        - Easy [680. Valid Palindrome II](leetcode/680.Valid_Palindrome_II.md) 
-     - 翻转字符串 flip string. 
+     - flip string 翻转字符串. 
    - Partition type
      - quick sort.
      - color sort.
