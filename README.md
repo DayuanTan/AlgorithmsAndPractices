@@ -9,6 +9,10 @@ This is a record of my practicing of algorithms on Leetcode.
 5. Time and space complexity analysis
 6. Optimal solution or follow up
 
+
+- Time complexity O(n) algorithms:
+  - 2 pointers (频率)>> 打擂台算法 单调栈算法 单调队列算法
+
 # 1. Two Pointers Method
 
 ## Theory:
@@ -30,7 +34,7 @@ This is a record of my practicing of algorithms on Leetcode.
 ||Time Complexity|Space Complexity|
 |-|-|-|
 |Use HashTable| O(n)|O(n)|
-|USe sort + 2 pointers|O(nlogn)|O(1)|
+|USe (sort +) 2 pointers|O(nlogn)|O(1)|
 
 
 
