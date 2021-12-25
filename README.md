@@ -1,4 +1,6 @@
-This is a record of my practicing of algorithms on Leetcode.
+This re[p is about my notes and a record of my practicing of algorithms on Leetcode. 
+
+(It is wrote mainly in English and little Chinese. Ignoring the Chinese parts doens't affect the understanding of this repo.)    
 
 # 0. Steps for all questions
 
@@ -10,8 +12,8 @@ This is a record of my practicing of algorithms on Leetcode.
 6. Optimal solution or follow up
 
 
-- Time complexity O(n) algorithms:
-  - 2 pointers (频率)>> 打擂台算法 单调栈算法 单调队列算法
+- Algorithms with Time complexity O(n):
+  - 考得频率Test freq.: 2 pointers >> 打擂台算法 ~= 单调栈算法 ~= 单调队列算法
 
 # 1. Two Pointers Method
 
