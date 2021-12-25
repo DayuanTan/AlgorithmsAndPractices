@@ -60,6 +60,9 @@ This is a record of my practicing of algorithms on Leetcode.
      - quick sort. 
        - [Quick sort merge sort note](note/quick_sort_merge_sort_note.md)
        - Medium [912. Sort an Array](leetcode/912.sort_an_array.md)
+       - merge sort. Easy [88. Merge Sorted Array](leetcode/88.Merge_Sorted_Array.md)
+       - Easy [703. Kth Largest Element in a Stream](leetcode/703.Kth_Largest_Element_in_a_Stream.md)
+       - Medium [215. Kth Largest Element in an Array](leetcode/215.Kth_Largest_Element_in_an_Array.md)
      - color sort.
 2. Back to Back Two Pointers 背向双指针 （最长回文串）
 3. Same Direction Two Pointers 同向双指针  
