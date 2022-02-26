@@ -4,12 +4,13 @@ This re[p is about my notes and a record of my practicing of algorithms on Leetc
 
 # 0. Steps for all questions
 
-1. Confirm questions with interviewer, including input, output, examples; discuss about corner cases examples
-2. Describe your idea/thoughts
-3. Write your code while explaining it
-4. Introduce your tests and run tests 
-5. Time and space complexity analysis
-6. Optimal solution or follow up
+1. Clarification. Confirm questions with interviewer, including input, output, examples; discuss about corner cases examples.
+2. Think out loud. Describe your idea/thoughts before coding. Talk before write.
+3. Point out your assumption. Like arguments/inputs are in memory, are they sorted already or not.
+4. Talk through. Write your code while explaining it.
+5. Introduce your tests and run tests. Test in real time, use examples given, then edge cases. 
+6. Time and space complexity analysis
+7. Optimal solution or follow up
 
 
 - Algorithms with Time complexity O(n):
