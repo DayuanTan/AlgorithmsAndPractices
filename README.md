@@ -1,4 +1,4 @@
-This re[p is about my notes and a record of my practicing of algorithms on Leetcode. 
+This repo is about my notes and a record of my practicing of algorithms on Leetcode. 
 
 (It is wrote mainly in English and little Chinese. Ignoring the Chinese parts doens't affect the understanding of this repo.)    
 
