@@ -9,9 +9,20 @@ This re[p is about my notes and a record of my practicing of algorithms on Leetc
 3. Point out your assumption. Like arguments/inputs are in memory, are they sorted already or not.
 4. Talk through. Write your code while explaining it.
 5. Introduce your tests and run tests. Test in real time, use examples given, then edge cases. 
-6. Time and space complexity analysis
-7. Optimal solution or follow up
+6. Time and space complexity analysis. Scale analysis.
+7. Optimal solution or follow up.
 
+
+- Must-master data structures:
+  - Arrays, Linked list, Stacks, Queues, Sets, Maps, Binary tress, Heaps, Graphs ([Google Code Interview 2:38](https://www.youtube.com/watch?v=6ZZX9iIgFoo))    
+
+- Must-master algorithms: ([Google Code Interview 3:04](https://www.youtube.com/watch?v=6ZZX9iIgFoo)) 
+  - sorting, searching, binary searching
+  - Divide and conquer
+  - Dynamic programming and memorizaiton
+  - Greedy algorithms
+  - Recursion
+  - Graph traversal, breadth- depth-first  
 
 - Algorithms with Time complexity O(n):
   - 考得频率Test freq.: 2 pointers >> 打擂台算法 ~= 单调栈算法 ~= 单调队列算法
