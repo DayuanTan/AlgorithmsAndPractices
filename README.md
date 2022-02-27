@@ -58,7 +58,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 1. Face to Face Two Pointers 相向双指针 
    - Two Sum type
      - sum of two numbers.  
-       - Easy [1. Two Sum](leetcode/1.twosum.md) (2 pointer base); 
+       - Easy [1. Two Sum](leetcode/1.twosum.md) (2 pointer base - O(nlogn), hashtable O(n)); 
        - [Two sum note](note/twosumnote.md)
        - Easy [167. Two Sum II - Input array is sorted](leetcode/167.Two_Sum_II_Input_array_is_sorted.md);  
        - Easy [1099. Two Sum - Less than or equal to target](leetcode/1099.Two_Sum_Less_than_or_equal_to_target.md) 
