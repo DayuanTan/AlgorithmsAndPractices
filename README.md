@@ -12,10 +12,14 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 6. Time and space complexity analysis. Scale analysis.
 7. Optimal solution or follow up.
 
+## Data structure
 
+- Underlying storage methods: only array (sequential storage) and linked list (chain storage). 
 - Must-master data structures:
   - Arrays, Linked list, Stacks, Queues, Sets, Maps, Binary tress, Heaps, Graphs ([Google Code Interview 2:38](https://www.youtube.com/watch?v=6ZZX9iIgFoo))    
 
+
+## Algorithms 
 - Must-master algorithms: ([Google Code Interview 3:04](https://www.youtube.com/watch?v=6ZZX9iIgFoo)) 
   - sorting, searching, binary searching
   - Divide and conquer
