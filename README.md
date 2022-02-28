@@ -15,6 +15,8 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 ## Data structure
 
 - Underlying storage methods: only array (sequential storage) and linked list (chain storage). 
+- VS
+- Operations: traversing and accessing. More specifically, add, delete, search, alter. 
 - Must-master data structures:
   - Arrays, Linked list, Stacks, Queues, Sets, Maps, Binary tress, Heaps, Graphs ([Google Code Interview 2:38](https://www.youtube.com/watch?v=6ZZX9iIgFoo))    
 
