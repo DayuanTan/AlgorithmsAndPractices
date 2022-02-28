@@ -33,11 +33,11 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 - Algorithms with Time complexity O(n):
   - 考得频率Test freq.: 2 pointers >> 打擂台算法 ~= 单调栈算法 ~= 单调队列算法
 
-# 1. Two Pointers Method
+# 1. Two Pointers Method (most frequent) - O(n)
 
 ## Theory:
 
-1. Face to Face Two Pointers 相向双指针 
+1. Face to Face Two Pointers 相向双指针 (most frequent) 
    - Two Sum type
      - sum of two numbers. 
      - sum of three numbers. 
@@ -47,8 +47,15 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
    - Partition type
      - quick sort. 
      - color sort.
-2. Back to Back Two Pointers 背向双指针 （最长回文串）
+2. Back to Back Two Pointers 背向双指针 (only below 3 tyeps:)
+   - Longest Palindromic Substring 最长回文子串 - 中心线枚举算法
+   - Find K closet elements (also in binary search)
+   - Square of sorted array
 3. Same Direction Two Pointers 同向双指针  
+   - Sliding Window 滑动窗口类
+   - Fast & Slow pointers 快慢指针类 
+
+
 
 
 ||Time Complexity|Space Complexity|
@@ -56,7 +63,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 |Use HashTable| O(n)|O(n)|
 |USe (sort +) 2 pointers|O(nlogn)|O(1)|
 
-
+做完这几个题目 然后就是第八章了
 
   
 ## Practice:
@@ -86,8 +93,15 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
        - Easy [703. Kth Largest Element in a Stream](leetcode/703.Kth_Largest_Element_in_a_Stream.md)
        - Medium [215. Kth Largest Element in an Array](leetcode/215.Kth_Largest_Element_in_an_Array.md)
        - Medium [75. sort colors](leetcode/75.sort_colors.md)
-2. Back to Back Two Pointers 背向双指针 （最长回文串）
+2. Back to Back Two Pointers 背向双指针 (only below 3 tyeps:)
+   - Longest Palindromic Substring 最长回文子串 - 中心线枚举算法
+   - Find K closet elements (also in binary search)
+   - Square of sorted array
 3. Same Direction Two Pointers 同向双指针  
+   - Sliding Window 滑动窗口类
+   - Fast & Slow pointers 快慢指针类 
+
+
 
 
 # 2. Recursion, Heap and Stack (Hardware), Tree
