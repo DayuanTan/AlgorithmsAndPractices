@@ -60,7 +60,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 ||Time Complexity|Space Complexity|
 |-|-|-|
-|Use HashTable| O(n)|O(n)|
+|Use hashmap| O(n)|O(n)|
 |Use [sort O(nlogn)+] 2 pointers O(n)|O(nlogn)|O(1)|
 
 
@@ -71,9 +71,9 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 1. Face to Face Two Pointers 相向双指针 (**most frequently asked**)
    - Two Sum type
      - sum of two numbers.  
-       - ❗️Easy [1. Two Sum](leetcode/1.twosum.md) (2 pointer base - O(nlogn), hashtable O(n)); 
+       - ❗️Easy [1. Two Sum](leetcode/1.twosum.md) (2 pointer base - O(nlogn), hashmap O(n)); 
        - ❗️Easy [170. Two Sum III - Data structure design](leetcode/170.Two_Sum_III-Data_structure_design.md)
-       - ❗️[Two sum note, 2 pointers VS Hashtable](note/twosumnote.md)
+       - ❗️[Two sum note, 2 pointers VS hashmap](note/twosumnote.md)
        - Easy [167. Two Sum II - Input array is sorted](leetcode/167.Two_Sum_II_Input_array_is_sorted.md);  
        - Easy [1099. Two Sum - Less than or equal to target](leetcode/1099.Two_Sum_Less_than_or_equal_to_target.md) 
        - Easy [611. Valid Triangle Number](leetcode/611.Valid_Triangle_Number.md) 

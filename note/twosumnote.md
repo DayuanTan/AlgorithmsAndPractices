@@ -1,6 +1,6 @@
 # Part 1: Two Sum
 
-## Use hashtable
+## Use hashmap
 
 - Time complexity O(n)
 - Space complexity O(n)
@@ -19,17 +19,17 @@ Note space complexity means the extra needed space, excluding input and output.
 ## follow up 1
 
 - If it is sorted, which is better?
-  - 2 pointers > hashtable
+  - 2 pointers > hashmap
 
 ## follow up 2
 - If ask you return the indices of the two found elements, which is better?
-  - hashtable > 2 pointers
+  - hashmap > 2 pointers
 
 ------
 
 # Part 2: Two Sum Data Structure Design
 
-||2 pointers just add|2 pointers add and keep sorted|hashtable|
+||2 pointers just add|2 pointers add and keep sorted|hashmap|
 |-|-|-|-|
 |AddNumber|O(1)|O(n)|O(1)|
 |FindTwoSum|O(nlogn)|O(n)|O(n)|
@@ -40,7 +40,7 @@ Note space complexity means the extra needed space, excluding input and output.
 - Just add: Time complexity O(1). (This is better for the situation wherer there are much more add than find.)
 - Add and keep sorted: Insert sorting: O(n)
 
-## Use hashtable 
+## Use hashmap 
 - Time complexity O(1) 
 
 
@@ -51,7 +51,7 @@ Note space complexity means the extra needed space, excluding input and output.
 - Just add in Add(): Time complexity O(nlogn)
 - Add and keep sorted in Add(): O(n)
 
-## Use hashtable
+## Use hashmap
 - Time complexity O(n) 
 
 # Follow up: What if keep the data sorted when adding? Will this better?
