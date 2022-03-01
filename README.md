@@ -37,7 +37,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 ## Theory:
 
-1. Face to Face Two Pointers 相向双指针 (most frequent) 
+1. Face to Face Two Pointers 相向双指针 (**most frequently asked**) 
    - Two Sum type
      - sum of two numbers. 
      - sum of three numbers. 
@@ -68,11 +68,12 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
   
 ## Practice:
 
-1. Face to Face Two Pointers 相向双指针 
+1. Face to Face Two Pointers 相向双指针 (**most frequently asked**)
    - Two Sum type
      - sum of two numbers.  
        - Easy [1. Two Sum](leetcode/1.twosum.md) (2 pointer base - O(nlogn), hashtable O(n)); 
-       - [Two sum note](note/twosumnote.md)
+       - Easy [170. Two Sum III - Data structure design](leetcode/170.Two_Sum_III-Data_structure_design.md)
+       - [Two sum note, 2 pointers VS Hashtable](note/twosumnote.md)
        - Easy [167. Two Sum II - Input array is sorted](leetcode/167.Two_Sum_II_Input_array_is_sorted.md);  
        - Easy [1099. Two Sum - Less than or equal to target](leetcode/1099.Two_Sum_Less_than_or_equal_to_target.md) 
        - Easy [611. Valid Triangle Number](leetcode/611.Valid_Triangle_Number.md) 
@@ -94,7 +95,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
        - Easy [703. Kth Largest Element in a Stream](leetcode/703.Kth_Largest_Element_in_a_Stream.md) 抽空练习
        - Medium [1985. Find the Kth Largest Integer in the Array](leetcode/1985.Find_the_Kth_Largest_Integer_in_the_Array.md) 抽空练习
        - Medium [75. sort colors](leetcode/75.sort_colors.md) 抽空练习
-       - Hard [295. Find Median from Data Stream](leetcode/295.Find_Median_from_Data_Stream.md)
+       - Hard [295. Find Median from Data Stream](leetcode/295.Find_Median_from_Data_Stream.md) 抽空练习
 2. Back to Back Two Pointers 背向双指针 (only below 3 tyeps:)
    - Longest Palindromic Substring 最长回文子串 - 中心线枚举算法
    - Find K closet elements (also in binary search)
