@@ -36,7 +36,7 @@ Note space complexity means the extra needed space, excluding input and output.
 
 # Add() - Two Sum Data Structure Design
 
-## Use 2 pointters 
+## Use 2 pointers 
 - Just add: Time complexity O(1). (This is better for the situation wherer there are much more add than find.)
 - Add and keep sorted: Insert sorting: O(n)
 
@@ -47,7 +47,7 @@ Note space complexity means the extra needed space, excluding input and output.
 
 # Find() - Two Sum Data Structure Design
 
-## Use 2 pointters
+## Use 2 pointers
 - Just add in Add(): Time complexity O(nlogn)
 - Add and keep sorted in Add(): O(n)
 

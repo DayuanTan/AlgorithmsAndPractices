@@ -31,7 +31,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
   - Graph traversal, breadth- depth-first  
 
 - Algorithms with Time complexity O(n):
-  - 考得频率Test freq.: 2 pointers >> 打擂台算法 ~= 单调栈算法 ~= 单调队列算法
+  - 考得频率Test freq.: 2 pointers (without sort) >> 打擂台算法 ~= 单调栈算法 ~= 单调队列算法
 
 # 1. Two Pointers Method (most frequent) - O(n)
 
@@ -61,9 +61,9 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 ||Time Complexity|Space Complexity|
 |-|-|-|
 |Use HashTable| O(n)|O(n)|
-|USe (sort +) 2 pointers|O(nlogn)|O(1)|
+|Use [sort O(nlogn)+] 2 pointers O(n)|O(nlogn)|O(1)|
 
-做完这几个题目 然后就是第八章了
+
 
   
 ## Practice:
