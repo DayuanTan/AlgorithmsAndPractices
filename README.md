@@ -80,7 +80,8 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
        - [Note ask for plans and plan count 求具体方案和方案个数](note/plans_and_plan_count.md)
      - sum of three numbers. 
        - Medium [15. 3 Sum](leetcode/15.3sum.md)
-       - Medium [18. 4 sum](leetcode/18.4sum.md)
+       - Medium [18. 4 sum](leetcode/18.4sum.md), same array, ask for plan combinations
+       - Medium [454. 4sum_II.md](leetcode/454.4sum_II.md), 1 arrays, ask for plans count. Barely meet. 折半搜索. O(n^k) -> O(n^(k/2))
    - Reverse type     
      - palindrome 判断回文串. 
        - Easy [125. Valid Palindrome (corner cases, help func)](leetcode/125.Valid_Palindrome.md) 
