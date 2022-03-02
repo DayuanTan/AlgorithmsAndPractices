@@ -88,10 +88,10 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
        - Easy [125. Valid Palindrome (corner cases, help func)](leetcode/125.Valid_Palindrome.md) 
        - Easy [680. Valid Palindrome II (repeated code)](leetcode/680.Valid_Palindrome_II.md) 
      - flip string 翻转字符串. 
-   - Partition type
+   - Partition type (**Must partition if ask for no extra mem**)
      - quick sort. 
-       - ❗️[Quick sort merge sort note](note/quick_sort_merge_sort_note.md)
-       - ❗️Medium [912. Sort an Array (quick & merge sort)](leetcode/912.sort_an_array.md) **Partition template**
+       - ❗️[Quick sort merge sort quick select note](note/quick_sort_merge_sort_note.md)  **Partition template**
+       - ❗️Medium [912. Sort an Array (quick & merge sort)](leetcode/912.sort_an_array.md)
        - merge sort. Easy [88. Merge Sorted Array](leetcode/88.Merge_Sorted_Array.md)
        - Hard [493. Reverse Pairs](leetcode/493.Reverse_Pairs.md) MS 抽空练习
      - quick select

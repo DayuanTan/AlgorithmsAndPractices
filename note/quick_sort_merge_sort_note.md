@@ -1,12 +1,16 @@
 
+# Partition template
+
+![](partition.png)
+
 # Quick sort
 
 1. pick a pivot p
    - pivot need the value, not index
    - pivot selection: random() > middle point (lower possibility to be worst case) > start or end point (higher possibility to be worst case). 
 2. partition:
-   - put <=p left
-   - put >=p right
+   - put those alredy on right while <=p go to left, 挪动已经在右边但是<=p的那些到左边 
+   - put those alredy on left while >=p go to right, 挪动已经在左边但是>=p的那些到右边
 3. Note "==p" be both left and right. This is used to avoid all left or all right extreme worst case. 
 4. Partition之后对左右两部分递归。先整体有序，再局部有序。After partition we parition the left and right parts using recursion, this is thought firstly global sorted then local sorted.
 
@@ -16,6 +20,22 @@
 - left和right比较是总是<=。 一共四个地方。
 - A[]和pivot比较时总是<。一共两个地方。
 
+
+```python
+left, right = start, end
+pivotvalue = nums[int((start + end) / 2)]
+
+while (left <= right):
+   while left <= right and nums[left] < pivotvalue:
+      left += 1
+   while left <= right and nums[right] > pivotvalue:
+      right -= 1
+
+   if left <= right:
+      nums[left], nums[right] = nums[right], nums[left]
+      left += 1
+      right -= 1
+```
 
 # Merge sort
 
@@ -44,6 +64,20 @@ Like if you have 2', 1, 3, 2'',
 after sorting, 
 - if stable: 1, 2', 2'', 3
 - if not stable: 1, 2'', 2', 3
+
+## In-place sorting: (aka constant space, O(1) space, no extra memory)
+   - Quick sort, O(nlogn), worst O(n^2)
+   - Heap sort, O(nlogn)
+   - Bubble sort, O(n^2)
+   - Insert sort, O(n^2)
+
+***It must be partiion if ask for no extra memory.*** 
+
+## O(nlogn) sort
+   - heap sort, in-place
+   - quick sort, in-place
+   - merge sort, in-place
+
 
 
 
