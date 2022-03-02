@@ -9,7 +9,7 @@ Explanation: Valid combinations are:
 2,2,3
 ```
 
-- Have to count one by one. 
+- Have to count one by one. C^3_n.
 - E.g. ask for all valid triangles and specific combination, it's O(n^3)
 
 

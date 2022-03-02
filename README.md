@@ -1,6 +1,6 @@
 This repo is about my notes and a record of my practicing of algorithms on Leetcode. 
 
-(It is wrote mainly in English and little Chinese. Ignoring the Chinese parts doens't affect the understanding of this repo.)    
+(It is wrote mainly in English and barely Chinese. Ignoring the Chinese parts doens't affect the understanding of this repo.)    
 
 # 0. Steps for all questions
 
@@ -80,6 +80,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
        - [Note ask for plans and plan count 求具体方案和方案个数](note/plans_and_plan_count.md)
      - sum of three numbers. 
        - Medium [15. 3 Sum](leetcode/15.3sum.md)
+       - Medium [18. 4 sum](leetcode/18.4sum.md)
    - Reverse type     
      - palindrome 判断回文串. 
        - Easy [125. Valid Palindrome (corner cases, help func)](leetcode/125.Valid_Palindrome.md) 
