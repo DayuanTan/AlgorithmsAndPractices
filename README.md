@@ -76,7 +76,8 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
        - ❗️[Two sum note, 2 pointers VS hashmap](note/twosumnote.md)
        - Easy [167. Two Sum II - Input array is sorted](leetcode/167.Two_Sum_II_Input_array_is_sorted.md);  
        - Easy [1099. Two Sum - Less than or equal to target](leetcode/1099.Two_Sum_Less_than_or_equal_to_target.md) 
-       - Easy [611. Valid Triangle Number](leetcode/611.Valid_Triangle_Number.md) 
+       - Medium [611. Valid Triangle Number](leetcode/611.Valid_Triangle_Number.md) 
+       - [Note ask for plans and plan count 求具体方案和方案个数](note/plans_and_plan_count.md)
      - sum of three numbers. 
        - Medium [15. 3 Sum](leetcode/15.3sum.md)
    - Reverse type     
