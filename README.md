@@ -77,11 +77,12 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
        - Easy [167. Two Sum II - Input array is sorted](leetcode/167.Two_Sum_II_Input_array_is_sorted.md);  
        - Easy [1099. Two Sum - Less than or equal to target](leetcode/1099.Two_Sum_Less_than_or_equal_to_target.md) 
        - Medium [611. Valid Triangle Number](leetcode/611.Valid_Triangle_Number.md) 
-       - [Note ask for plans and plan count 求具体方案和方案个数](note/plans_and_plan_count.md)
+       - [Note ask for plan combinations and plans count 求具体方案和方案个数](note/plancombinations_and_plans_count.md)
      - sum of three numbers. 
        - Medium [15. 3 Sum](leetcode/15.3sum.md)
        - Medium [18. 4 sum](leetcode/18.4sum.md), same array, ask for plan combinations
        - Medium [454. 4sum_II.md](leetcode/454.4sum_II.md), 1 arrays, ask for plans count. Barely meet. 折半搜索. O(n^k) -> O(n^(k/2))
+       - Hard [i89. K sum](leetcode/i89.ksum.md) DFS DP 抽空练习
    - Reverse type     
      - palindrome 判断回文串. 
        - Easy [125. Valid Palindrome (corner cases, help func)](leetcode/125.Valid_Palindrome.md) 
