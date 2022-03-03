@@ -118,7 +118,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 
 
-# 2. Recursion, Heap and Stack (Hardware), Tree
+# 2. Recursion, Heap and Stack (Hardware), Tree 整理中
 
 ## Theory
 
