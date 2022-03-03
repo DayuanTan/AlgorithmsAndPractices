@@ -95,6 +95,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
        - merge sort. Easy [88. Merge Sorted Array](leetcode/88.Merge_Sorted_Array.md)
        - Hard [493. Reverse Pairs](leetcode/493.Reverse_Pairs.md) MS 抽空练习
        - Medium [i144. Interleaving Positive and Negative Numbers](leetcode/i144.Interleaving_Positive_and_Negative_Numbers.md)
+       - Easy [i373. Partition Array by Odd and Even](leetcode/i373.Partition_Array_by_Odd_and_Even.md)
      - quick select
        - ❗️Medium [215. Kth Largest Element in an Array](leetcode/215.Kth_Largest_Element_in_an_Array.md) sort/partition/priority queue/heap
        - Easy [703. Kth Largest Element in a Stream](leetcode/703.Kth_Largest_Element_in_a_Stream.md) 抽空练习
