@@ -101,7 +101,8 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
        - ❗️Medium [215. Kth Largest Element in an Array](leetcode/215.Kth_Largest_Element_in_an_Array.md) sort/partition/priority queue/heap
        - Easy [703. Kth Largest Element in a Stream](leetcode/703.Kth_Largest_Element_in_a_Stream.md) 抽空练习
        - Medium [1985. Find the Kth Largest Integer in the Array](leetcode/1985.Find_the_Kth_Largest_Integer_in_the_Array.md) 抽空练习
-       - Medium [75. sort colors](leetcode/75.sort_colors.md) 抽空练习
+     - color sort  
+       - ❗️Medium [75. sort colors](leetcode/75.sort_colors.md) 
        - Hard [295. Find Median from Data Stream](leetcode/295.Find_Median_from_Data_Stream.md) 抽空练习
 2. Back to Back Two Pointers 背向双指针 (only below 3 tyeps:)
    - Longest Palindromic Substring 最长回文子串 - 中心线枚举算法
