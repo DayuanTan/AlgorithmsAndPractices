@@ -1,5 +1,5 @@
 
-# Partition template
+# Partition template O(n)
 
 ![](partition.png)
 
