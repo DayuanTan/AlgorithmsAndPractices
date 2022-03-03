@@ -71,7 +71,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 1. Face to Face Two Pointers 相向双指针 (**most frequently asked**)
    - Two Sum type
      - sum of two numbers.  
-       - ❗️Easy [1. Two Sum](leetcode/1.twosum.md) (2 pointer base - O(nlogn), hashmap O(n)); 
+       - ❗️Easy [1. Two Sum](leetcode/1.twosum.md) (2 pointer base - O(nlogn), hashmap O(n)); **2pointers template**
        - ❗️Easy [170. Two Sum III - Data structure design](leetcode/170.Two_Sum_III-Data_structure_design.md)
        - ❗️[Two sum note, 2 pointers VS hashmap](note/twosumnote.md)
        - Easy [167. Two Sum II - Input array is sorted](leetcode/167.Two_Sum_II_Input_array_is_sorted.md);  
@@ -96,6 +96,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
        - Hard [493. Reverse Pairs](leetcode/493.Reverse_Pairs.md) MS 抽空练习
        - Medium [i144. Interleaving Positive and Negative Numbers](leetcode/i144.Interleaving_Positive_and_Negative_Numbers.md)
        - Easy [i373. Partition Array by Odd and Even](leetcode/i373.Partition_Array_by_Odd_and_Even.md)
+       - Medium [i49. Sort Letters by Case](leetcode/i49.Sort_Letters_by_Case.md)
      - quick select
        - ❗️Medium [215. Kth Largest Element in an Array](leetcode/215.Kth_Largest_Element_in_an_Array.md) sort/partition/priority queue/heap
        - Easy [703. Kth Largest Element in a Stream](leetcode/703.Kth_Largest_Element_in_a_Stream.md) 抽空练习
