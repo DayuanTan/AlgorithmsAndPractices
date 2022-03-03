@@ -102,7 +102,9 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
        - Easy [703. Kth Largest Element in a Stream](leetcode/703.Kth_Largest_Element_in_a_Stream.md) 抽空练习
        - Medium [1985. Find the Kth Largest Integer in the Array](leetcode/1985.Find_the_Kth_Largest_Integer_in_the_Array.md) 抽空练习
      - color sort  
-       - ❗️Medium [75. sort colors](leetcode/75.sort_colors.md) 
+       - ❗️Medium [75. sort colors](leetcode/75.sort_colors.md) O(n)
+       - Medium [i143. rainbow sort, k-colors sort](leetcode/i143.rainbow_sort_kcolors_sort.md) O(nlogk) 抽空练习
+       - Easy 
        - Hard [295. Find Median from Data Stream](leetcode/295.Find_Median_from_Data_Stream.md) 抽空练习
 2. Back to Back Two Pointers 背向双指针 (only below 3 tyeps:)
    - Longest Palindromic Substring 最长回文子串 - 中心线枚举算法
@@ -111,6 +113,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 3. Same Direction Two Pointers 同向双指针  
    - Sliding Window 滑动窗口类
    - Fast & Slow pointers 快慢指针类 
+     - Easy [283. Move zeroes](leetcode/283.move_zeroes.md)
 
 
 
