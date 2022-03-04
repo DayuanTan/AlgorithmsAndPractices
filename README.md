@@ -171,7 +171,8 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 这里继续
 
 
-Easy [1807/509. Fibonacci easy, O(2^n)](9chapters/lintcode/1807.Fibonacci_easy.md)   | 
+Easy [509. Fibonacci easy, O(2^n)](leetcode/509.Fibonacci_easy.md)   
+
 
 [366. Fibonacci (time limited O(n), recursion overtime)](9chapters/lintcode/366.Fibonacci.md) | 
 
@@ -227,13 +228,13 @@ Hard [94. 124. Binary Tree Maximum Path Sum](9chapters/lintcode/94.124.md)
 ---
 
 551
-551. Nested List Weight Sum
+1.   Nested List Weight Sum
 
 Judge: https://www.lintcode.com/problem/nested-list-weight-sum/description
 
 Solution: https://www.jiuzhang.com/solution/nested-list-weight-sum/
 
-1359. Convert Sorted Array to Binary Search Tree
+1.    Convert Sorted Array to Binary Search Tree
 
 Judge: https://www.lintcode.com/problem/convert-sorted-array-to-binary-search-tree/description
 
@@ -241,7 +242,7 @@ Solution: https://www.jiuzhang.com/solution/convert-sorted-array-to-binary-searc
 
 coding...
 
-1106. Maximum Binary Tree
+1.    Maximum Binary Tree
 
 Judge: https://www.lintcode.com/problem/maximum-binary-tree/description
 
@@ -249,7 +250,7 @@ Solution: https://www.jiuzhang.com/solution/maximum-binary-tree/
 
 coding...
 
-469. Same Tree
+1.   Same Tree
 
 Judge: https://www.lintcode.com/problem/same-tree/description
 
@@ -258,7 +259,7 @@ Solution: https://www.jiuzhang.com/solution/same-tree/
 coding...
 
 
-470. Tweaked Identical Binary Tree
+1.   Tweaked Identical Binary Tree
 
 Judge: https://www.lintcode.com/problem/tweaked-identical-binary-tree/description
 
@@ -266,7 +267,7 @@ Solution: https://www.jiuzhang.com/solution/tweaked-identical-binary-tree/
 
 coding...
 
-169. Tower of Hanoi
+1.   Tower of Hanoi
 
 Judge: https://www.lintcode.com/problem/tower-of-hanoi/description
 
