@@ -168,10 +168,11 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 ## Practice
 
+
+
+Easy [509. Fibonacci, O(2^n) -> O(n)](leetcode/509.Fibonacci.md)  Recursion, Mem Search, Rolling Array  
+
 这里继续
-
-
-Easy [509. Fibonacci easy, O(2^n)](leetcode/509.Fibonacci_easy.md)   
 
 
 [366. Fibonacci (time limited O(n), recursion overtime)](9chapters/lintcode/366.Fibonacci.md) | 
