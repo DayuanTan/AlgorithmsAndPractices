@@ -122,7 +122,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 ## Theory
 
-[Note recursion](note/recursion.md)
+[Note recursion (more details inside if needed)](note/recursion.md) 
 
 ## 2.1 Recursion 3 key elementts:
   - Definition, Stopping Condition, Divide. 递归的定义，出口，拆解。
