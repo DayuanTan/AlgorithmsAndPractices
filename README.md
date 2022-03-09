@@ -1,8 +1,15 @@
-This repo is about my notes and a record of my practicing of algorithms on Leetcode. 
+This repo is about my notes and a record of my practicing of algorithms on Leetcode/lintcode. 
 
 (It is wrote mainly in English and barely Chinese. Ignoring the Chinese parts doens't affect the understanding of this repo.)    
 
-# 0. Steps for all questions
+# 0. Before Starting
+
+## Recommended Steps:
+1. Read through this whole README.md. Get fimilar with "Theory" subsection of each section. No need to dive into those linked files.
+2. Go through those problems marked with "❗️".
+3. Go through left problems.
+
+## Steps for all questions
 
 1. Clarification. Confirm questions with interviewer, including input, output, examples; discuss about corner cases examples.
 2. Think out loud. Describe your idea/thoughts before coding. Talk before write.
@@ -120,9 +127,8 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 # 2. Recursion, Heap and Stack (Hardware), Tree 整理中
 
-## Theory
+## Theory:
 
-[Note recursion (more details inside if needed)](note/recursion.md) 
 
 ## 2.1 Recursion 3 key elementts:
   - Definition, Stopping Condition, Divide. 递归的定义，出口，拆解。
@@ -166,18 +172,21 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 - Construct binary tree from 2 traversals
   - from Inorder and (Preorder or Postorder Traversal)
 
-## Practice
+
+[Note recursion (more details inside if needed)](note/recursion.md) 
+
+## Practice:
 
 
 
-Easy [509. Fibonacci, O(2^n) -> O(n)](leetcode/509.Fibonacci.md)  Recursion, Mem Search, Rolling Array  
+- ❗️Easy [509. Fibonacci, O(2^n) -> O(n)](leetcode/509.Fibonacci.md)  Recursion, Mem Search, Rolling Array  
 
 这里继续
 
 
-[366. Fibonacci (time limited O(n), recursion overtime)](9chapters/lintcode/366.Fibonacci.md) | 
 
-[771. Double Factorial](9chapters/lintcode/771.Double_Factorial.md)| 
+
+[i771. Double Factorial](leetcode/i771.Double_Factorial.md)| 
 
 Easy  [1333/190. Reverse Bits](9chapters/lintcode/1333.Reverse_Bits.md) |
 Easy   [822. Reverse Order Storage/206. Reverse Linked List](9chapters/lintcode/822.ReverseOrderStorage.md) | 
