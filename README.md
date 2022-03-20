@@ -180,20 +180,19 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 
 - ❗️Easy [509. Fibonacci, O(2^n) -> O(n)](leetcode/509.Fibonacci.md)  Recursion, Mem Search, Rolling Array  
+  - Easy [i771. Double Factorial](leetcode/i771.Double_Factorial.md) 
+  - Easy [190. Reverse Bits](leetcode/190.Reverse_Bits.md) 抽空练习
+  - Easy   [206. Reverse Linked List](leetcode/206.Reverse_linked_list.md) 
+  - Easy [104. Maximum Depth of Binary Tree](leetcode/104.Maximum_Depth_of_Binary_Tree.md)
+
+
+
+
+
+
+
 
 这里继续
-
-
-
-
-[i771. Double Factorial](leetcode/i771.Double_Factorial.md)| 
-
-Easy  [1333/190. Reverse Bits](9chapters/lintcode/1333.Reverse_Bits.md) |
-Easy   [822. Reverse Order Storage/206. Reverse Linked List](9chapters/lintcode/822.ReverseOrderStorage.md) | 
-Easy [97/104. Maximum Depth of Binary Tree](9chapters/lintcode/97.Maximum_Depth_of_Binary_Tree.md)
-
-
----
 
 
 [457/704. Classical Binary Search](../lintcode/457.704.Classical_Binary_Search.md)
