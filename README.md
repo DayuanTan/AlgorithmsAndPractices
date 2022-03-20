@@ -184,6 +184,8 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
   - Easy [190. Reverse Bits](leetcode/190.Reverse_Bits.md) 抽空练习
   - Easy   [206. Reverse Linked List](leetcode/206.Reverse_linked_list.md) 
   - Easy [104. Maximum Depth of Binary Tree](leetcode/104.Maximum_Depth_of_Binary_Tree.md)
+  - [704. Classical Binary Search](leetcode/704.Classical_Binary_Search.md)
+
 
 
 
