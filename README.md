@@ -187,6 +187,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
   - Easy [704. Classical Binary Search](leetcode/704.Classical_Binary_Search.md)
   - Medium [251. Flatten 2D Vector](leetcode/251.Flatten_2D_Vector.md)
 - ❗️Easy [94. Binary Tree Inorder Traversal](leetcode/94.Binary_Tree_Inorder_Traversal.md)
+  - 144
 
 
 
@@ -209,12 +210,12 @@ https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/
 Flatten list 列表扁平化
 [22.Flatten list 列表扁平化 2解法](../lintcode/22.flatten_list.md)
 
+[67/94. Binary Tree Inorder Traversal](../lintcode/67.94.Binary_Tree_Inorder_Traversal.md)
+
 
 
 这里继续
 
-
-[67/94. Binary Tree Inorder Traversal](../lintcode/67.94.Binary_Tree_Inorder_Traversal.md)
 
 
 [66/144. Binary Tree Preorder Traversal](../lintcode/66.144.Binary_Tree_Preorder_Traversal.md)   
@@ -292,3 +293,12 @@ Judge: https://www.lintcode.com/problem/tower-of-hanoi/description
 Solution: https://www.jiuzhang.com/solution/tower-of-hanoi/
 
 coding...
+
+
+
+# 9. Dynamic Programming - Memoization 记忆化搜索 
+
+## Theory:
+
+
+## Practice:
