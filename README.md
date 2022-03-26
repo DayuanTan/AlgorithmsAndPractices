@@ -186,15 +186,16 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
   - Easy [104. Maximum Depth of Binary Tree](leetcode/104.Maximum_Depth_of_Binary_Tree.md)
   - Easy [704. Classical Binary Search](leetcode/704.Classical_Binary_Search.md)
   - Medium [251. Flatten 2D Vector](leetcode/251.Flatten_2D_Vector.md)
-- ❗️[94. Binary Tree Inorder Traversal](leetcode/94.Binary_Tree_Inorder_Traversal.md)
+- ❗️Easy [94. Binary Tree Inorder Traversal](leetcode/94.Binary_Tree_Inorder_Traversal.md)
+
 
 
 251类似题目 以后联系
 
-1.   Flatten Nested List Iterator
+Flatten Nested List Iterator
 https://leetcode-cn.com/problems/flatten-nested-list-iterator/
 
-1.   Flatten Binary Tree to Linked List
+Flatten Binary Tree to Linked List
 https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/
 
 
