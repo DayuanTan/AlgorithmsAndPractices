@@ -184,12 +184,18 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
   - Easy [190. Reverse Bits](leetcode/190.Reverse_Bits.md) 抽空练习
   - Easy   [206. Reverse Linked List](leetcode/206.Reverse_linked_list.md) 
   - Easy [104. Maximum Depth of Binary Tree](leetcode/104.Maximum_Depth_of_Binary_Tree.md)
-  - [704. Classical Binary Search](leetcode/704.Classical_Binary_Search.md)
+  - Easy [704. Classical Binary Search](leetcode/704.Classical_Binary_Search.md)
+  - Medium [251. Flatten 2D Vector](leetcode/251.Flatten_2D_Vector.md)
+- ❗️[94. Binary Tree Inorder Traversal](leetcode/94.Binary_Tree_Inorder_Traversal.md)
 
 
+251类似题目 以后联系
 
+1.   Flatten Nested List Iterator
+https://leetcode-cn.com/problems/flatten-nested-list-iterator/
 
-
+1.   Flatten Binary Tree to Linked List
+https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/
 
 
 
@@ -199,12 +205,12 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 [457/704. Classical Binary Search](../lintcode/457.704.Classical_Binary_Search.md)
 
-
----
-
-
 Flatten list 列表扁平化
 [22.Flatten list 列表扁平化 2解法](../lintcode/22.flatten_list.md)
+
+
+
+这里继续
 
 
 [67/94. Binary Tree Inorder Traversal](../lintcode/67.94.Binary_Tree_Inorder_Traversal.md)
