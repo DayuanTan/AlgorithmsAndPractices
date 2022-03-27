@@ -186,7 +186,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
   - Easy [104. Maximum Depth of Binary Tree](leetcode/104.Maximum_Depth_of_Binary_Tree.md)
   - Easy [704. Classical Binary Search](leetcode/704.Classical_Binary_Search.md)
   - Medium [251. Flatten 2D Vector](leetcode/251.Flatten_2D_Vector.md)
-- ❗️Easy [94. Binary Tree Inorder Traversal](leetcode/94.Binary_Tree_Inorder_Traversal.md)
+- ❗️Easy [94. Binary Tree Inorder Traversal](leetcode/94.Binary_Tree_Inorder_Traversal.md) Recursion/Stack
   - 144
 
 
@@ -296,9 +296,53 @@ coding...
 
 
 
-# 9. Dynamic Programming - Memoization 记忆化搜索 
+# 9. Dynamic Programming - Memoization 记忆化搜索 动态规划
 
 ## Theory:
+## 9.1 DFS-Traverse -> DC -> DC-with-Hashmap/Memoization Search
 
+- ❗️Easy [120 Triangle](120.triangle.md) 
+  - DFS-Traverse O(2^n), 
+  - Divide & Conquer O(2^n), 
+  - DC-with-Hashmap/Memoization Search O(n^2)
+
+- Memoization Search 记忆化搜索
+  - Use Hashmap/Dict to record intermidiate results of searching process, to avoid repeated calculation
+  - Record the result of calculation, so next time meet same arguments, directly return record withoug calculating again
+  - Reduce exponential time complexity to polynomial lelve (O(2^n) to O(n^2))
+
+- Memoization Search Usage Limit 对这个函数的限制
+  - The function must have argument and return value. If not then cannot hashmap it. 
+  - The function need to  be pure function, which  means the return value is only affected by the arguments
+  - Like cache in Architecture/System Design
+
+- Memoization Search Essence: is DP
+  - MS is an implementation method of DP
+  - DP implementation  methods:
+    - Memoization Search
+    - Non-recursion/Multi-level for loop
+- MS vs DC
+  - Key difference is: whether has repeated computing
+  - After Divide step:
+    - If left and right sub-parts have overlap => is DP
+    - If not => is DC
+
+## 记忆化搜索-本质：动态规划
+动态规划 和分治 的区别： 重复计算 （triangle中有重复部分，和binary tree不一样）
+- 分完之后左右部分有交集=》动态规划
+- 分完之后左右部分没有交集=》分治法
+
+## 记忆化搜索是动态规划的一种 实现方式
+搜索实现方式 ：
+- BFS
+- DFS 
+  - Recursion
+  - Stack/non-recursion
+  
+动态规划实现方式：
+- Memoization search
+- non-recursion/for loop  
+
+[Note DP (more details inside if needed)](note/DP.md)
 
 ## Practice:
