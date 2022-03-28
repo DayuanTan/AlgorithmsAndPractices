@@ -322,11 +322,63 @@ coding...
   - DP implementation  methods:
     - Memoization Search
     - Non-recursion/Multi-level for loop
+    - see more in below subsection
 - MS vs DC
   - Key difference is: whether has repeated computing
   - After Divide step:
     - If left and right sub-parts have overlap => is DP
     - If not => is DC
+- MS advantages and disadvantages:
+  - cons
+    - If Time complexity is O(n) and Recursion Depth is O(n) then it will stackoverflow
+      - Recursion Depth should < 100,000
+      - Easy [i1300 Bash Game](./leetcode/i1300.bashgame.md) 
+    - If Time complexity is O(n^2) and Recursion Depth is O(n) then it will not stackoverflow
+    - MS is not suitable for O(n) problems becuase of the risk of stackoverflow
+  - pros
+    - Add few lines from DC
+    - State Transition is simple
+  
+## 9.2 Dynamic Programming
+- DP is a thought, not an algorithm
+  - Key: Divide big problems into smaller problem 核心思想：由大化小
+  - Algorithms using same thought:
+    - Recursion
+    - Divide and Conquer (DC)
+- DP vs DC 
+  - whether there is overlap subproblems 
+    - For example:
+      - Binary tree, left sub-tree and right sub-tree: on overlap => DC
+      - Triangle problem: left child and right child: have overlap => DP
+    - also see "MS vs DC" above    
+- DP vs Greedy
+  - DP would loss of current benefits for long-term benefits
+  - Greedy always pursue the maximization of current benefits
+- DP implementation
+  - Memoization
+  - For-loop
+    - Top-down
+    - Bottom-up
+- DP 4 elements:
+  - State 动规的状态
+  - Function (state transition function) 动规的方程
+  - Initialize (base case) 动规的初始化
+  - Answer 动规的答案
+- DP 4 elements 1-to-1 correspond with Recursion 3 elements
+  - DP State -- Recursion Definition. 动规的状态 —— 递归的定义
+    - ```dp[i]``` or ```dp[i][j]``` for sub-problems. 用 ```dp[i]``` 或者 ```dp[i][j]``` 代表在某些特定条件下某个规模更小的问题的答案
+    - 规模更小用参数 i,j 之类的来划定
+  - DP Function -- Recursion Divide. 动规的方程 —— 递归的拆解
+    - How problems are divided into sub-problems. 大问题如何拆解为小问题
+    - Use smaller scale state to derive ```dp[i][j]```. ```dp[i][j]``` = 通过规模更小的一些状态求 max / min / sum / or 来进行推导
+  - DP Initialize -- Recursion Stop Condition. 动规的初始化 —— 递归的出口
+    - Base case. 设定无法再拆解的极限小的状态下的值
+    - E.g. ```dp[i][0]``` or ```dp[0][i]```
+  - DP Answer -- Recursion Calling. 动规的答案 —— 递归的调用
+    - What is asked for? 最后要求的答案是什么
+    - E.g. ```dp[n][m]``` or ```max(dp[n][0], dp[n][1] … dp[n][m])```
+  - This is whay Memoization (using recursion) can be one implementation of DP.
+
   
 
 [Note DP (more details inside if needed)](note/DP.md)
@@ -334,3 +386,4 @@ coding...
 ## Practice:
 - Memoization
   - Easy [i1300 Bash Game](./leetcode/i1300.bashgame.md) 
+- DP
