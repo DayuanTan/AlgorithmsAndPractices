@@ -305,6 +305,7 @@ coding...
   - DFS-Traverse O(2^n), 
   - Divide & Conquer O(2^n), 
   - DC-with-Hashmap/Memoization Search O(n^2)
+  - 以后还待加上DP
 
 - Memoization Search 记忆化搜索
   - Use Hashmap/Dict to record intermidiate results of searching process, to avoid repeated calculation
@@ -316,7 +317,7 @@ coding...
   - The function need to  be pure function, which  means the return value is only affected by the arguments
   - Like cache in Architecture/System Design
 
-- Memoization Search Essence: is DP
+- Memoization Search Essence: is DP 记忆化搜索的本质就是动态规划
   - MS is an implementation method of DP
   - DP implementation  methods:
     - Memoization Search
@@ -331,3 +332,5 @@ coding...
 [Note DP (more details inside if needed)](note/DP.md)
 
 ## Practice:
+- Memoization
+  - Easy [i1300 Bash Game](./leetcode/i1300.bashgame.md) 
