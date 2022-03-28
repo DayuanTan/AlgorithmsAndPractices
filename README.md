@@ -326,22 +326,7 @@ coding...
   - After Divide step:
     - If left and right sub-parts have overlap => is DP
     - If not => is DC
-
-## 记忆化搜索-本质：动态规划
-动态规划 和分治 的区别： 重复计算 （triangle中有重复部分，和binary tree不一样）
-- 分完之后左右部分有交集=》动态规划
-- 分完之后左右部分没有交集=》分治法
-
-## 记忆化搜索是动态规划的一种 实现方式
-搜索实现方式 ：
-- BFS
-- DFS 
-  - Recursion
-  - Stack/non-recursion
   
-动态规划实现方式：
-- Memoization search
-- non-recursion/for loop  
 
 [Note DP (more details inside if needed)](note/DP.md)
 
