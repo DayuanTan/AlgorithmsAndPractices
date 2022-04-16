@@ -217,12 +217,6 @@ Flatten list 列表扁平化
 
   
 
-[68/
-
-
-
-
-
 
 
 Medium [72/106. Construct Binary Tree from Inorder and Postorder Traversal](../lintcode/72.106.md)  |
