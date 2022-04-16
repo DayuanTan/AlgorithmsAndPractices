@@ -189,6 +189,14 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 - ❗️Easy [94. Binary Tree Inorder Traversal](leetcode/94.Binary_Tree_Inorder_Traversal.md) Recursion/Stack
   - Easy [144. Binary Tree Preorder Traversal](leetcode/144.Binary_Tree_Preorder_Traversal.md) 
   - Easy [145. Binary Tree Postorder Traversal](leetcode/145.Binary_Tree_Postorder_Traversal.md)
+- Medium [106. Construct Binary Tree from Inorder and Postorder Traversal](leetcode/106.Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.md)  |
+
+Medium [73/105. Construct Binary Tree from Preorder and Inorder Traversal](../lintcode/73.105.md)   |
+
+Medium [1593/889. Construct Binary Tree from Preorder and Postorder Traversal](../lintcode/1593.889.md) 
+
+
+Medium [none/1008. Construct Binary Search Tree from Preorder Traversal](../lintcode/none.1008.md)
 
 
 
@@ -216,17 +224,6 @@ Flatten list 列表扁平化
 
 
   
-
-
-
-Medium [72/106. Construct Binary Tree from Inorder and Postorder Traversal](../lintcode/72.106.md)  |
-
-Medium [73/105. Construct Binary Tree from Preorder and Inorder Traversal](../lintcode/73.105.md)   |
-
-Medium [1593/889. Construct Binary Tree from Preorder and Postorder Traversal](../lintcode/1593.889.md) 
-
-
-Medium [none/1008. Construct Binary Search Tree from Preorder Traversal](../lintcode/none.1008.md)
 
 
 ---
