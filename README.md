@@ -179,7 +179,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 
 
-- ❗️Easy [509. Fibonacci, O(2^n) -> O(n)](leetcode/509.Fibonacci.md)  Recursion, Mem Search, Rolling Array  
+- ❗️Easy [509. Fibonacci, O(2^n) -> O(n)](leetcode/509.Fibonacci.md)  Recursion, Memorized Search, Rolling Array  
   - Easy [i771. Double Factorial](leetcode/i771.Double_Factorial.md) 
   - Easy [190. Reverse Bits](leetcode/190.Reverse_Bits.md) 抽空练习
   - Easy   [206. Reverse Linked List](leetcode/206.Reverse_linked_list.md) 
@@ -187,7 +187,8 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
   - Easy [704. Classical Binary Search](leetcode/704.Classical_Binary_Search.md)
   - Medium [251. Flatten 2D Vector](leetcode/251.Flatten_2D_Vector.md)
 - ❗️Easy [94. Binary Tree Inorder Traversal](leetcode/94.Binary_Tree_Inorder_Traversal.md) Recursion/Stack
-  - 144
+  - Easy [144. Binary Tree Preorder Traversal](leetcode/144.Binary_Tree_Preorder_Traversal.md) 
+  - Easy [145. Binary Tree Postorder Traversal](leetcode/145.Binary_Tree_Postorder_Traversal.md)
 
 
 
@@ -204,13 +205,9 @@ https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/
 
 这里继续
 
-
-[457/704. Classical Binary Search](../lintcode/457.704.Classical_Binary_Search.md)
-
 Flatten list 列表扁平化
 [22.Flatten list 列表扁平化 2解法](../lintcode/22.flatten_list.md)
 
-[67/94. Binary Tree Inorder Traversal](../lintcode/67.94.Binary_Tree_Inorder_Traversal.md)
 
 
 
@@ -218,9 +215,9 @@ Flatten list 列表扁平化
 
 
 
-[66/144. Binary Tree Preorder Traversal](../lintcode/66.144.Binary_Tree_Preorder_Traversal.md)   
+  
 
-[68/145. Binary Tree Postorder Traversal](../lintcode/68.145.Binary_Tree_Postorder_Traversal.md)
+[68/
 
 
 
