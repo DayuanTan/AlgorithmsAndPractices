@@ -15,7 +15,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 2. Think out loud. Describe your idea/thoughts before coding. Talk before write.
 3. Point out your assumption. Like arguments/inputs are in memory, are they sorted already or not.
 4. Talk through. Write your code while explaining it.
-5. Introduce your tests and run tests. Test in real time, use examples given, then edge cases. 
+5. Introduce your tests and run tests and error handling. Test in real time, use examples given, then edge cases. 
 6. Time and space complexity analysis. Scale analysis.
 7. Optimal solution or follow up.
 
@@ -30,7 +30,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 ## Algorithms 
 - Must-master algorithms: ([Google Code Interview 3:04](https://www.youtube.com/watch?v=6ZZX9iIgFoo)) 
-  - sorting, searching, binary searching
+  - Sorting, searching, binary searching
   - Divide and conquer
   - Dynamic programming and memorizaiton
   - Greedy algorithms
@@ -364,20 +364,16 @@ coding...
   - Function (state transition function) 动规的方程
   - Initialize (base case) 动规的初始化
   - Answer 动规的答案
-- DP 4 elements 1-to-1 correspond with Recursion 3 elements
-  - DP State -- Recursion Definition. 动规的状态 —— 递归的定义
-    - ```dp[i]``` or ```dp[i][j]``` for sub-problems. 用 ```dp[i]``` 或者 ```dp[i][j]``` 代表在某些特定条件下某个规模更小的问题的答案
-    - 规模更小用参数 i,j 之类的来划定
-  - DP Function -- Recursion Divide. 动规的方程 —— 递归的拆解
-    - How problems are divided into sub-problems. 大问题如何拆解为小问题
-    - Use smaller scale state to derive ```dp[i][j]```. ```dp[i][j]``` = 通过规模更小的一些状态求 max / min / sum / or 来进行推导
-  - DP Initialize -- Recursion Stop Condition. 动规的初始化 —— 递归的出口
-    - Base case. 设定无法再拆解的极限小的状态下的值
-    - E.g. ```dp[i][0]``` or ```dp[0][i]```
-  - DP Answer -- Recursion Calling. 动规的答案 —— 递归的调用
-    - What is asked for? 最后要求的答案是什么
-    - E.g. ```dp[n][m]``` or ```max(dp[n][0], dp[n][1] … dp[n][m])```
-  - This is whay Memoization (using recursion) can be one implementation of DP.
+- DP 4 elements ***1-to-1 correspond*** with Recursion 3 elements 一一对应
+
+|DP|一一对应|Recursion|
+|-|-|-|
+|DP State 动规的状态| ```dp[i]``` or ```dp[i][j]``` for sub-problems. 用 ```dp[i]``` 或者 ```dp[i][j]``` 代表在某些特定条件下某个规模更小的问题的答案。 规模更小用参数 i,j 之类的来划定|Recursion Definition 递归的定义|
+|DP Function 动规的方程|How problems are divided into sub-problems. 大问题如何拆解为小问题.Use smaller scale state to derive ```dp[i][j]```. ```dp[i][j]``` = 通过规模更小的一些状态求 max / min / sum / or 来进行推导|Recursion Divide 递归的拆解|
+|DP Initialize 动规的初始化|Base case. 设定无法再拆解的极限小的状态下的值. E.g. ```dp[i][0]``` or ```dp[0][i]```|Recursion Stop Condition 递归的出口|
+|DP Answer 动规的答案|What is asked for? 最后要求的答案是什么. E.g. ```dp[n][m]``` or ```max(dp[n][0], dp[n][1] … dp[n][m])```|Recursion Calling 递归的调用|
+
+  - This is why Memoization (using recursion) can be one implementation of DP.
 
   
 
