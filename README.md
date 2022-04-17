@@ -244,7 +244,7 @@ while start + 1 < end: # point 1
     else: 
         end = mid
 
-if nums[start] == target: # point 4
+if nums[start] == target: # point 4. These 2 if may exchange
     return start
 if nums[end] == target:
     return end
@@ -256,9 +256,13 @@ return -1
 
 ## Practice:
 - ❗️Easy [704. Classical Binary Search](leetcode/704.Classical_Binary_Search.md) BS, Recursion
+  - Easy [i458.Last_Position_of_Target](leetcode/i458.Last_Position_of_Target.md) 
+  - Easy [i14.First_Position_of_Target.md](leetcode/i14.First_Position_of_Target.md) 
+
+- ❗️Medium [i585.Maximum_Number_in_Mountain_Sequence.md ](leetcode/i585.Maximum_Number_in_Mountain_Sequence.md)  Increase firstly and then decrease. == [剑指 Offer II 069. 山峰数组的顶部](https://leetcode-cn.com/problems/B1IidL/)
 
 
-
+work on  chap9
 
 
 # 9. Dynamic Programming - Memoization 记忆化搜索 动态规划
