@@ -35,6 +35,8 @@
 
 <img src="recursion1.png">
 
+<img src="chapter6-2.png">
+
 
 
 
@@ -71,7 +73,7 @@
   - “RuntimeError: maximum recursion depth exceeded”. 
   - Inside the setting of python, the max levels of recursion is set as about 999. 
 
-
+[More about stack and heap and stackoverflow 更多关于栈、堆和溢出](recursion_stackheap_more.md)
 
 # 3. 值传递与引用传递 Pass by value vs Pass by reference 
 

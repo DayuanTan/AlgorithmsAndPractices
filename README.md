@@ -40,6 +40,20 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 - Algorithms with Time complexity O(n):
   - 考得频率Test freq.: 2 pointers (without sort) >> 打擂台算法 ~= 单调栈算法 ~= 单调队列算法
 
+- Common Time Complexity:
+  
+|Time Complexity	|Possible corresponding Syntax|	Note|
+|-|-|-|
+|O(1)	|Bit Operation 位运算	|Usually won't be asked. 常数级复杂度，一般面试中不会有|
+|O(logn)	|Binary Search 二分法, Doubling 倍增法, Fast exponentiation algorithm 快速幂算法, Euclidean algorithm 辗转相除法	||
+|O(n)	|Enumeration 枚举法, Two Pointers (w/o sorting) 双指针算法, Monotonic Stack Algorithm 单调栈算法, KMP KMP算法，Rabin Karp，Manacher's Algorithm|	A.k.a linear time complexity. 又称作线性时间复杂度|
+|O(nlogn)	|Quick Sort 快速排序, Merge Sort 归并排序, Heap Sort 堆排序	||
+|O(n^2)	|Enumeration 枚举法, Dynamic Programming 动态规划, Dijkstra	||
+|O(n^3)	|Enumeration 枚举法, Dynamic Programming 动态规划, Floyd ||
+|O(2^n)	||Combination related search questions. 与组合有关的搜索问题	|
+|O(n!)	||Permutation related search questions. 与排列有关的搜索问题|
+||
+
 # 1. Two Pointers Method (most frequent) - O(n)
 
 ## Theory:
@@ -196,6 +210,19 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
   - Medium [1008. Construct Binary Search Tree from Preorder Traversal](leetcode/1008.Construct_Binary_Tree_from_Preorder_Traversal.md)
 - ❗️Medium [113. Path Sum II](leetcode/113.path_sum_ii.md) DFS 
   - Easy [112. Path Sum](leetcode/112.path_sum.md) 
+
+# 3. Binary Search O(logn)
+
+## Theory:
+
+
+
+
+[Note Binary Search (more details inside if needed)](note/binarysearch.md) 
+
+
+## Practice:
+
 
 
 
