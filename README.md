@@ -182,17 +182,17 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 - ❗️Easy [509. Fibonacci, O(2^n) -> O(n)](leetcode/509.Fibonacci.md)  Recursion, Memorized Search, Rolling Array  
   - Easy [i771. Double Factorial](leetcode/i771.Double_Factorial.md) 
   - Easy [190. Reverse Bits](leetcode/190.Reverse_Bits.md) 抽空练习
-  - Easy   [206. Reverse Linked List](leetcode/206.Reverse_linked_list.md) 
+  
   - Easy [104. Maximum Depth of Binary Tree](leetcode/104.Maximum_Depth_of_Binary_Tree.md)
   - Easy [704. Classical Binary Search](leetcode/704.Classical_Binary_Search.md)
   - Medium [251. Flatten 2D Vector](leetcode/251.Flatten_2D_Vector.md)
+- ❗️Easy [206. Reverse Linked List](leetcode/206.Reverse_linked_list.md) 
 - ❗️Easy [94. Binary Tree Inorder Traversal](leetcode/94.Binary_Tree_Inorder_Traversal.md) Recursion/Stack
   - Easy [144. Binary Tree Preorder Traversal](leetcode/144.Binary_Tree_Preorder_Traversal.md) 
   - Easy [145. Binary Tree Postorder Traversal](leetcode/145.Binary_Tree_Postorder_Traversal.md)
 - ❗️Medium [106. Construct Binary Tree from Inorder and Postorder Traversal](leetcode/106.Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.md)  
   - Medium [105. Construct Binary Tree from Preorder and Inorder Traversal](leetcode/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md)   |
-
-Medium [1593/889. Construct Binary Tree from Preorder and Postorder Traversal](../lintcode/1593.889.md) 
+  - Medium [889. Construct Binary Tree from Preorder and Postorder Traversal](leetcode/889.Construct_Binary_Tree_from_Preorder_and_Postorder_Traversal.md) 
 
 
 Medium [none/1008. Construct Binary Search Tree from Preorder Traversal](../lintcode/none.1008.md)
