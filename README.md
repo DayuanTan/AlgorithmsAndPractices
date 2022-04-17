@@ -194,6 +194,8 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
   - Medium [105. Construct Binary Tree from Preorder and Inorder Traversal](leetcode/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md)   |
   - Medium [889. Construct Binary Tree from Preorder and Postorder Traversal](leetcode/889.Construct_Binary_Tree_from_Preorder_and_Postorder_Traversal.md) 
   - Medium [1008. Construct Binary Search Tree from Preorder Traversal](leetcode/1008.Construct_Binary_Tree_from_Preorder_Traversal.md)
+- ❗️Medium [113. Path Sum II](leetcode/113.path_sum_ii.md) DFS 
+  - Easy [112. Path Sum](leetcode/112.path_sum.md) 
 
 
 
@@ -225,7 +227,7 @@ Flatten list 列表扁平化
 
 ---
 还没做:
-Medium [376 · Binary Tree Path Sum 113. Path Sum II](9chapters/lintcode/376.113.md) 
+
 
 Hard [94. 124. Binary Tree Maximum Path Sum](9chapters/lintcode/94.124.md) 
 
