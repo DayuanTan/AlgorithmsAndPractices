@@ -198,7 +198,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
   - Easy [190. Reverse Bits](leetcode/190.Reverse_Bits.md) 抽空练习
   
   - Easy [104. Maximum Depth of Binary Tree](leetcode/104.Maximum_Depth_of_Binary_Tree.md)
-  - Easy [704. Classical Binary Search](leetcode/704.Classical_Binary_Search.md)
+  - Easy [704. Classical Binary Search](leetcode/704.Classical_Binary_Search.md) Recursion, BS
   - Medium [251. Flatten 2D Vector](leetcode/251.Flatten_2D_Vector.md)
 - ❗️Easy [206. Reverse Linked List](leetcode/206.Reverse_linked_list.md) 
 - ❗️Easy [94. Binary Tree Inorder Traversal](leetcode/94.Binary_Tree_Inorder_Traversal.md) Recursion/Stack
@@ -215,13 +215,48 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 ## Theory:
 
+## 3.1 Prerequiste: 
+- The array must be sorted (ascending or descending).   
 
+## 3.2 Binary Search V.S. Regular Search
 
+||Time Complexity|Space Complexity|Muse be sorted?|
+|-|-|-|-|
+|Binary Search|O(logn)|Same|Ask the array to be sorted.|
+|For-loop Search|O(N)|Same|No|
+|| 
 
-[Note Binary Search (more details inside if needed)](note/binarysearch.md) 
+## 3.3 Binary Search Template
+- Attention Point 1: start + 1 < end
+- Attention Point 2: start + (end - start) / 2. Overflow if mid = (start + end ) / 2 in Java/C++. 
+- Attention Point 3: Seperate cases for =, <, >. Don't change mid value.
+- Attention Point 4: Deal with start and end after while-loop.
+- Overall idea: Down the range from n to 2 (start or end); Deal with Start and End. (If use while start < end or start <= end, you may encounter dead-loop.)
+
+```py
+start, end = 0, len(nums) - 1     
+while start + 1 < end: # point 1
+    mid = start + (end - start) / 2 # point 2
+    if nums[mid] < target: # point 3
+        start = mid
+    elif nums[mid] == target:
+        end = mid # (if ask for first pos)  or return mid (if ask for exist)
+    else: 
+        end = mid
+
+if nums[start] == target: # point 4
+    return start
+if nums[end] == target:
+    return end
+return -1
+```
+
+[Note Binary Search (more details inside if needed), **Template**](note/binarysearch.md) 
 
 
 ## Practice:
+- ❗️Easy [704. Classical Binary Search](leetcode/704.Classical_Binary_Search.md) BS, Recursion
+
 
 
 
