@@ -193,8 +193,8 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 |-|-|
 |If interviewer ask so.|If interviewer ask not.|
 |Recursion depth is not big. No Stackoverflow would happen|Recutsion depth is deep. May stackoverflow.|
-|Cannot implement using non-recursion.|Easy to implement using non-recursion.|
-||Don't use recursion on LinkedList.|
+||Don't use recursion on LinkedList (Easy to have 100k nodes).
+|Cannot implement using non-recursion.|Easy to implement using non-recursion (like binary rearch).|
 |Common: DFS uses recursion.|Common: Binary tree inorder traversal uses non-recursion.|
 ||Other algorithms often use non-recursion.|
 ||
@@ -220,7 +220,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
   - Medium [105. Construct Binary Tree from Preorder and Inorder Traversal](leetcode/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md)   |
   - Medium [889. Construct Binary Tree from Preorder and Postorder Traversal](leetcode/889.Construct_Binary_Tree_from_Preorder_and_Postorder_Traversal.md) 
   - Medium [1008. Construct Binary Search Tree from Preorder Traversal](leetcode/1008.Construct_Binary_Tree_from_Preorder_Traversal.md)
-- ❗️Medium [113. Path Sum II](leetcode/113.path_sum_ii.md) DFS 
+- ❗️Medium [113. Path Sum II](leetcode/113.path_sum_ii.md) DFS, Backtrack 
   - Easy [112. Path Sum](leetcode/112.path_sum.md) 
 
 # 3. Binary Search O(logn)
@@ -285,7 +285,10 @@ return -1
   - Easy [i14.First_Position_of_Target.md](leetcode/i14.First_Position_of_Target.md) 
 
 - ❗️Medium [i585.Maximum_Number_in_Mountain_Sequence.md ](leetcode/i585.Maximum_Number_in_Mountain_Sequence.md)  Increase firstly and then decrease. == [剑指 Offer II 069. 山峰数组的顶部](https://leetcode-cn.com/problems/B1IidL/)
-
+- Medium [i447. Search in a Big Sorted Array](leetcode/i447.Search_in_a_Big_Sorted_Array.md) Exponential Backoff 倍增法
+  - Other uses EB:
+    - Dynamic Array (ArrayList in Java, Vector in C++)
+    - Network Retry
 
 work on  chap9
 
