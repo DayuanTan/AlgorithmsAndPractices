@@ -45,9 +45,10 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 |Time Complexity	|Possible corresponding Syntax|	Note|
 |-|-|-|
 |O(1)	|Bit Operation 位运算	|Usually won't be asked. 常数级复杂度，一般面试中不会有|
-|O(logn)	|Binary Search 二分法, Doubling 倍增法, Fast exponentiation algorithm 快速幂算法, Euclidean algorithm 辗转相除法	||
+|O(logn)	|Binary Search 二分法, Doubling 倍增法, Fast exponentiation algorithm 快速幂算法, Euclidean algorithm 辗转相除法	|Mainly BS. 比O(n)更好几乎一定是BS。|
+|O(sqrt(n))|Factorization/Decomposition prime factors 分解质因数|Barely 极少|
 |O(n)	|Enumeration 枚举法, Two Pointers (w/o sorting) 双指针算法, Monotonic Stack Algorithm 单调栈算法, KMP KMP算法，Rabin Karp，Manacher's Algorithm|	A.k.a linear time complexity. 又称作线性时间复杂度|
-|O(nlogn)	|Quick Sort 快速排序, Merge Sort 归并排序, Heap Sort 堆排序	||
+|O(nlogn)	|Quick Sort 快速排序, Merge Sort 归并排序, Heap Sort 堆排序.	Or work on O(logn) data structure.| O(logn) Data Structure includes Balanced Tree, Heap, RB-tree.|
 |O(n^2)	|Enumeration 枚举法, Dynamic Programming 动态规划, Dijkstra	||
 |O(n^3)	|Enumeration 枚举法, Dynamic Programming 动态规划, Floyd ||
 |O(2^n)	||Combination related search questions. 与组合有关的搜索问题	|
@@ -186,6 +187,17 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 - Construct binary tree from 2 traversals
   - from Inorder and (Preorder or Postorder Traversal)
 
+## 2.5 Use Recursion V.S. Non-Recursion (Iteration)
+
+|Use Recursion |Don't Use Recursion|
+|-|-|
+|If interviewer ask so.|If interviewer ask not.|
+|Recursion depth is not big. No Stackoverflow would happen|Recutsion depth is deep. May stackoverflow.|
+|Cannot implement using non-recursion.|Easy to implement using non-recursion.|
+||Don't use recursion on LinkedList.|
+|Common: DFS uses recursion.|Common: Binary tree inorder traversal uses non-recursion.|
+||Other algorithms often use non-recursion.|
+||
 
 [Note recursion (more details inside if needed)](note/recursion.md) 
 
@@ -215,8 +227,16 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 ## Theory:
 
-## 3.1 Prerequiste: 
-- The array must be sorted (ascending or descending).   
+## 3.0 Make question smaller 由大化小:
+- Recursion
+- Binary Search
+- Divide and Conqer
+- Dynamic Programming
+
+## 3.1 Prerequiste and BS Application: 
+- For BS, the array must be sorted (ascending or descending).   
+- BS also works for some question may not be sorted, like i585.Maximum_Number_in_Mountain_Sequence
+- BS on answer-set instead of question-input.
 
 ## 3.2 Binary Search V.S. Regular Search
 
@@ -225,6 +245,11 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 |Binary Search|O(logn)|Same|Ask the array to be sorted.|
 |For-loop Search|O(N)|Same|No|
 || 
+
+## Implementation
+- Recursion
+- For-loop (best choice)
+- Both
 
 ## 3.3 Binary Search Template
 - Attention Point 1: start + 1 < end
