@@ -284,8 +284,11 @@ return -1
   - Easy [i458.Last_Position_of_Target](leetcode/i458.Last_Position_of_Target.md) 
   - Easy [i14.First_Position_of_Target.md](leetcode/i14.First_Position_of_Target.md) 
 
-- ❗️Medium [i585.Maximum_Number_in_Mountain_Sequence.md ](leetcode/i585.Maximum_Number_in_Mountain_Sequence.md)  Increase firstly and then decrease. == [剑指 Offer II 069. 山峰数组的顶部](https://leetcode-cn.com/problems/B1IidL/)
-- Medium [i447. Search in a Big Sorted Array](leetcode/i447.Search_in_a_Big_Sorted_Array.md) Exponential Backoff 倍增法
+- **Split array to OO|XX two parts**. 
+  - ❗️Medium [i585.Maximum_Number_in_Mountain_Sequence.md ](leetcode/i585.Maximum_Number_in_Mountain_Sequence.md)  Increase firstly and then decrease. == [剑指 Offer II 069. 山峰数组的顶部](https://leetcode-cn.com/problems/B1IidL/)
+  - Medium [658. Find K Closest Elements](leetcode/658.Find_K_Closest_Elements.md)
+  - Medium [153. Find Minimum in Rotated Sorted Array](leetcode/153.Find_Minimum_in_Rotated_Sorted_Array.md)
+- ❗️Medium [i447. Search in a Big Sorted Array](leetcode/i447.Search_in_a_Big_Sorted_Array.md) Exponential Backoff 倍增法
   - Other uses EB:
     - Dynamic Array (ArrayList in Java, Vector in C++)
     - Network Retry
