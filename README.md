@@ -303,7 +303,13 @@ return -1
     - Dynamic Array (ArrayList in Java, Vector in C++)
     - Network Retry
 
-work on  chap9
+
+
+
+
+# 4. Queue
+
+next: work on chapter 10 queue
 
 
 # 9. Dynamic Programming - Memoization 记忆化搜索 动态规划
