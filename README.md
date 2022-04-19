@@ -288,8 +288,8 @@ return -1
   - ❗️Medium [i585.Maximum_Number_in_Mountain_Sequence.md ](leetcode/i585.Maximum_Number_in_Mountain_Sequence.md)  Increase firstly and then decrease. == [剑指 Offer II 069. 山峰数组的顶部](https://leetcode-cn.com/problems/B1IidL/)
   - Medium [658. Find K Closest Elements](leetcode/658.Find_K_Closest_Elements.md)
   - ❗️Medium [153. Find Minimum in Rotated Sorted Array (Unique elements)](leetcode/153.Find_Minimum_in_Rotated_Sorted_Array.md) O(logn)
-  - Hard [154. Find Minimum in Rotated Sorted Array II (duplicate elements)](leetcode/154.Find_Minimum_in_Rotated_Sorted_Array_II.md) O(logn)~O(n)
-  - Medium [33. Search in Rotated Sorted Array](leetcode/33.Search_in_Rotated_Sorted_Array.md)
+    - ❗️Hard [154. Find Minimum in Rotated Sorted Array II (duplicate elements)](leetcode/154.Find_Minimum_in_Rotated_Sorted_Array_II.md) O(logn)~ Worst O(n)
+  - ❗️Medium [33. Search in Rotated Sorted Array](leetcode/33.Search_in_Rotated_Sorted_Array.md) 2times BS, 1time BS
 - ❗️Medium [i447. Search in a Big Sorted Array](leetcode/i447.Search_in_a_Big_Sorted_Array.md) Exponential Backoff 倍增法
   - Other uses EB:
     - Dynamic Array (ArrayList in Java, Vector in C++)
