@@ -217,9 +217,9 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
   - Easy [144. Binary Tree Preorder Traversal](leetcode/144.Binary_Tree_Preorder_Traversal.md) 
   - Easy [145. Binary Tree Postorder Traversal](leetcode/145.Binary_Tree_Postorder_Traversal.md)
 - ❗️Medium [106. Construct Binary Tree from Inorder and Postorder Traversal](leetcode/106.Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.md)  
-  - Medium [105. Construct Binary Tree from Preorder and Inorder Traversal](leetcode/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md)   |
+  - Medium [105. Construct Binary Tree from Preorder and Inorder Traversal](leetcode/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md)   
   - Medium [889. Construct Binary Tree from Preorder and Postorder Traversal](leetcode/889.Construct_Binary_Tree_from_Preorder_and_Postorder_Traversal.md) 
-  - Medium [1008. Construct Binary Search Tree from Preorder Traversal](leetcode/1008.Construct_Binary_Tree_from_Preorder_Traversal.md)
+  - Medium [1008. Construct Binary Search Tree from Preorder Traversal](leetcode/1008.Construct_Binary_Tree_from_Preorder_Traversal.md) BST
 - ❗️Medium [113. Path Sum II](leetcode/113.path_sum_ii.md) DFS, Backtrack 
   - Easy [112. Path Sum](leetcode/112.path_sum.md) 
 
@@ -285,11 +285,19 @@ return -1
   - Easy [i14.First_Position_of_Target.md](leetcode/i14.First_Position_of_Target.md) 
 
 - **Split array to OO|XX two parts**. 
-  - ❗️Medium [i585.Maximum_Number_in_Mountain_Sequence.md ](leetcode/i585.Maximum_Number_in_Mountain_Sequence.md)  Increase firstly and then decrease. == [剑指 Offer II 069. 山峰数组的顶部](https://leetcode-cn.com/problems/B1IidL/)
+  - ❗️Medium [852. Peak Index in a Mountain Array](leetcode/852.Peak_Index_in_a_Mountain_Array.md)  Increase firstly and then decrease.
   - Medium [658. Find K Closest Elements](leetcode/658.Find_K_Closest_Elements.md)
   - ❗️Medium [153. Find Minimum in Rotated Sorted Array (Unique elements)](leetcode/153.Find_Minimum_in_Rotated_Sorted_Array.md) O(logn)
     - ❗️Hard [154. Find Minimum in Rotated Sorted Array II (duplicate elements)](leetcode/154.Find_Minimum_in_Rotated_Sorted_Array_II.md) O(logn)~ Worst O(n)
-  - ❗️Medium [33. Search in Rotated Sorted Array](leetcode/33.Search_in_Rotated_Sorted_Array.md) 2times BS, 1time BS
+  - ❗️Medium [33. Search in Rotated Sorted Array (Unique elements)](leetcode/33.Search_in_Rotated_Sorted_Array.md) 2times BS, 1time BS
+    - Medium [81. Search in Rotated Sorted Array II (duplicate elements)](leetcode/81.Search_in_Rotated_Sorted_Array_II.md)
+- BS on unorderred array
+  - ❗️Medium [162. Find Peak Element](leetcode/162.Find_Peak_Element.md)
+    - Medium [1901. Find a Peak Element II](leetcode/1901.Find_Peak_Element_II.md) 还没做
+- BS on answer set
+  - ❗️Hard [i183. Wood Cut](leetcode/i183.wood_cut.md) O(n log MAX(L))
+    - Easy [69. Sqrt(x)](leetcode/69.sqrt_x.md) 
+    - Hard [302. Smallest Rectangle Enclosing Black Pixels](leetcode/302.Smallest_Rectangle_Enclosing_Black_Pixels.md) 还没做
 - ❗️Medium [i447. Search in a Big Sorted Array](leetcode/i447.Search_in_a_Big_Sorted_Array.md) Exponential Backoff 倍增法
   - Other uses EB:
     - Dynamic Array (ArrayList in Java, Vector in C++)
