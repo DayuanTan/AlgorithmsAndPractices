@@ -317,7 +317,7 @@ next: work on chapter 10 queue
 ## Theory:
 ## 9.1 DFS-Traverse -> DC -> DC-with-Hashmap/Memoization Search
 
-- ❗️Easy [120 Triangle](120.triangle.md) 
+- ❗️Easy [120 Triangle](leetcode/120.triangle.md) 
   - DFS-Traverse O(2^n), 
   - Divide & Conquer O(2^n), 
   - DC-with-Hashmap/Memoization Search O(n^2)
