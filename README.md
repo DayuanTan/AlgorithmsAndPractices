@@ -311,6 +311,13 @@ return -1
 
 next: work on chapter 10 queue
 
+# 5. BFS + Graph
+
+# 6. DC - Divide and Conquer
+
+# 7. DFS
+
+# 8. HashMap + Heap
 
 # 9. Dynamic Programming - Memoization 记忆化搜索 动态规划
 
