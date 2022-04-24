@@ -207,6 +207,8 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
 ||Those class elements with 'final'.||
 |Python|Python Value types. Similar to Java|Python Reference types. Similar to Java|
 |C++|Default|Parameters with '&'|
+|Diff: copy content?|Yes. (more space/time, don't affect upper level)|No. (affect upper level)|
+||
 
 
 
