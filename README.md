@@ -55,9 +55,29 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 |O(n!)	||Permutation related search questions. 与排列有关的搜索问题|
 ||
 
+
+
+
+## Contents
+
+1. [Two Pointers Method - O(n)](#1-two-pointers-method-most-frequent---on)
+   - [Theory](#1theory)
+   - [Practice](#1practice)
+2. [Recursion, Heap and Stack (Hardware), Tree](#2-recursion-heap-and-stack-hardware-tree)
+   - [Theory](#2theory)
+   - [Practice](#2practice)
+3. [Binary Search O(logn)](#3-binary-search-ologn)
+   - [Theory](#3theory)
+   - [Practice](#3practice)
+4. [Queue/Stack, Set/Map/List](#4-queuestack-setmaplist)
+   - [Theory](#4theory)
+   - [Practice](#4practice)
+
+
+
 # 1. Two Pointers Method (most frequent) - O(n)
 
-## Theory:
+## 1Theory:
 
 1. Face to Face Two Pointers 相向双指针 (**most frequently asked**) 
    - Two Sum type
@@ -88,7 +108,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 
   
-## Practice:
+## 1Practice:
 
 1. Face to Face Two Pointers 相向双指针 (**most frequently asked**)
    - Two Sum type
@@ -140,9 +160,9 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 
 
-# 2. Recursion, Heap and Stack (Hardware), Tree 整理中
+# 2. Recursion, Heap and Stack (Hardware), Tree
 
-## Theory:
+## 2Theory:
 
 
 ## 2.1 Recursion 3 key elementts:
@@ -201,7 +221,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 [Note recursion (more details inside if needed)](note/recursion.md) 
 
-## Practice:
+## 2Practice:
 
 
 
@@ -225,7 +245,7 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 # 3. Binary Search O(logn)
 
-## Theory:
+## 3Theory:
 
 ## 3.0 Make question smaller 由大化小:
 - Recursion
@@ -279,7 +299,7 @@ return -1
 [Note Binary Search (more details inside if needed), **Template**](note/binarysearch.md) 
 
 
-## Practice:
+## 3Practice:
 - ❗️Easy [704. Classical Binary Search](leetcode/704.Classical_Binary_Search.md) BS, Recursion
   - Easy [i458.Last_Position_of_Target](leetcode/i458.Last_Position_of_Target.md) 
   - Easy [i14.First_Position_of_Target.md](leetcode/i14.First_Position_of_Target.md) 
@@ -307,9 +327,73 @@ return -1
 
 
 
-# 4. Queue
+# 4. Queue/Stack, Set/Map/List
 
-next: work on chapter 10 queue
+## 4Practice:
+- Queue: FIFO, abstract data type.
+
+- Two ways to store elements internally for queue:
+  - Array: Better performance for random access: O(1).
+  - LinkedList: Better performance for insert and delete: O(1).
+
+- Queue Implementation:
+  - Use Array
+  - Use Array to implement Circular Queue
+  - Use LinkedList
+  - Use ArrayList
+  - Java Interface Queue (Class PriorityQueue, AbstractQueue)
+  - Java Interface Deque (Class ArrayDeque)
+
+- Java common Interfaces:
+  - Set
+  - Map
+  - List
+  - Queue
+
+|Set|Duplicate|Null|Order|
+|-|-|-|-|
+|HashSet|No duplicate elements|Can have null|Non Order|
+|TreeSet|No duplicate elements|Cannot have null|In Order (Default alphabet order)|
+||
+
+|Map|Duplicate|Null|Order|
+|-|-|-|-|
+|HashMap|key cannot duplicate，value can|key and value both can be null|Non order|
+|TreeMap|key cannot duplicate，value can|no null|In Order (by key)|
+||
+
+|List|Better at|
+|-|-|
+|LinkedList|Random access: get, set. O(1)|
+|ArrayList|Add, Delete (Given position). O(1)|
+||
+
+|Queue|Under Infrastructure|FIFO|
+|-|-|-|
+|PriorityQueue|Implement base on Heap|Non-FIFO (order by natural order if no comparator designed, or order by priority if designed)|
+|Queue|Implement base on LinkedList|FIFO|
+||
+
+- Interfaces VS Abstract Class
+
+||Interface|Abstract Class|
+|-|-|-|
+|Keyword|"implements"|"extends"|
+|Methods|Abstract and non-abstract methods.  (Java 8 has default and static methods).|Only abstract methods.  Abstract methods in Abstract class must be implemented by sub-calss.|
+|Class Variables|Final (default), static|Final, non-final, static, non-static|
+|Class Members|Public (default)|Public, Private, Protected|
+|Multiple Inheritance|Yes|No (C++: Yes)|
+|Implementation of each other|Cannot impl Abstract Class|Can impl Interface|
+|Extend|Can extend other interfaces|Can extend other one class and implement multiple interfaces|
+|Java/C++|Partially Interexchangable in Java|C++ only has abstract class|
+
+
+[Note Queue (more details inside if needed)](note/queue.md) 
+
+
+## 4Practice:
+
+- Easy [232. Implement Queue using Array, Array (Circular Queue), Class LinkedList, Interface Queue (Class PriorityQueue, Abstract Class AbstractQueue), Interface Deque (Class ArrayDeque), Class Stack](leetcode/232.implement_queue.md)
 
 # 5. BFS + Graph
 
