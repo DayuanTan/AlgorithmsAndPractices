@@ -179,6 +179,11 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
 
 ## 2.1 Recursion 3 key elementts:
   - Definition, Stopping Condition, Divide. 递归的定义，出口，拆解。
+  - 递归的定义：接受什么参数，返回什么值，代表什么意思
+  - 递归的拆解：每次递归都是为了让问题规模变⼩
+  - 递归的出⼝：必须有⼀个明确的结束条件
+
+=> 得到⼀个可供其他函数调⽤的递归函数
 
 ## 2.2 Heap, stack and overflow
 
