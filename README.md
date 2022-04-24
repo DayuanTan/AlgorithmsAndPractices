@@ -1,5 +1,7 @@
 This repo is about my notes and a record of my practicing of algorithms on Leetcode/lintcode. 
 
+Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. Thanks to them.
+
 (It is wrote mainly in English and barely Chinese. Ignoring the Chinese parts doens't affect the understanding of this repo.)    
 
 # 0. Before Starting
@@ -416,6 +418,8 @@ return -1
 - - find all connected cell
 - - non-recursion implementation for find-all-plans problem
 - topological sort 拓扑排序
+- - can also be done using DFS
+- - BFS much easier
 
 # 6. DC - Divide and Conquer
 
