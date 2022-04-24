@@ -55,6 +55,15 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 |O(n!)	||Permutation related search questions. 与排列有关的搜索问题|
 ||
 
+## Problems
+- Find all plans/solutions
+- - DFS (with recursion)
+- - BFS
+- Find best among all solutions
+- - Iteration/loop
+- - Greedy/ Eplison Greedy
+- - Dynamic Programming
+
 
 
 
@@ -396,6 +405,16 @@ return -1
 - Easy [232. Implement Queue using Array, Array (Circular Queue), Class LinkedList, Interface Queue (Class PriorityQueue, Abstract Class AbstractQueue), Interface Deque (Class ArrayDeque), Class Stack](leetcode/232.implement_queue.md)
 
 # 5. BFS + Graph
+
+## Three scenarios for BFS
+
+- layer level traversal 分层遍历
+- - traversal hierarchical a Grapg, Tree, Matrix
+- - shortest path for simple Graph (all edge length are 1)
+- connected block problem 连通块问题
+- - find all connected cell
+- - non-recursion implementation for find-all-plans problem
+- topological sort 拓扑排序
 
 # 6. DC - Divide and Conquer
 
