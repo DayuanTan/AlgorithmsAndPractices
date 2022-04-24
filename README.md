@@ -57,12 +57,13 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 ## Problems
 - Find all plans/solutions
-- - DFS (with recursion)
-- - BFS
+  - DFS (with recursion)
+  - BFS
 - Find best among all solutions
-- - Iteration/loop
-- - Greedy/ Eplison Greedy
-- - Dynamic Programming
+  - Iteration/loop
+  - Greedy/ Eplison Greedy
+  - Dynamic Programming
+  - MDP/ Reinforcement Learning
 
 
 
