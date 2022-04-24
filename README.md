@@ -419,14 +419,14 @@ return -1
 ## Three scenarios BFS fits
 
 - layer level traversal 分层遍历
-- - traversal hierarchical a Grapg, Tree, Matrix
-- - shortest path for simple Graph (all edge length are 1)
+  - traversal hierarchical a Grapg, Tree, Matrix
+  - shortest path for simple Graph (all edge length are 1)
 - connected block problem 连通块问题
-- - find all connected cell
-- - non-recursion implementation for find-all-plans problem
+  - find all connected cell
+  - non-recursion implementation for find-all-plans problem
 - topological sort 拓扑排序
-- - can also be done using DFS
-- - BFS much easier
+  - can also be done using DFS
+  - BFS much easier
 
 ## Three implementation ways
 - Single Queue (simplest, recommend)
