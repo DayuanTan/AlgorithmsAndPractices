@@ -409,7 +409,7 @@ return -1
 
 # 5. BFS + Graph
 
-## Three scenarios for BFS
+## Three scenarios BFS fits
 
 - layer level traversal 分层遍历
 - - traversal hierarchical a Grapg, Tree, Matrix
@@ -420,6 +420,11 @@ return -1
 - topological sort 拓扑排序
 - - can also be done using DFS
 - - BFS much easier
+
+## Three implementation ways
+- Single Queue (simplest, recommend)
+- Double Queue
+- Dummy Node
 
 # 6. DC - Divide and Conquer
 
