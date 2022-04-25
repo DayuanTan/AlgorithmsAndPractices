@@ -431,7 +431,7 @@ return -1
 ## Three implementation ways
 - Single Queue (simplest, recommend)
 - Two Queues (easier understand)
-- Dummy Node
+- Dummy Node 哨兵节点
 
 # 6. DC - Divide and Conquer
 
