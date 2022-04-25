@@ -432,6 +432,8 @@ return -1
 - Single Queue (simplest, recommend)
 - Two Queues (easier understand)
 - Dummy Node 哨兵节点
+  - Usually point to first node in LinkedList
+  - pop(): delete head node. '''DummyNode.next = DummyNode.next.next.'''
 
 # 6. DC - Divide and Conquer
 
