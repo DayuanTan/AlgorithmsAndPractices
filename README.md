@@ -4,6 +4,26 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
 
 (It is wrote mainly in English and barely Chinese. Ignoring the Chinese parts doens't affect the understanding of this repo.)    
 
+
+## Contents
+
+1. [Two Pointers Method - O(n)](#1-two-pointers-method-most-frequent---on)
+   - [Theory](#1theory)
+   - [Practice](#1practice)
+2. [Recursion, Heap and Stack (Hardware), Tree](#2-recursion-heap-and-stack-hardware-tree)
+   - [Theory](#2theory)
+   - [Practice](#2practice)
+3. [Binary Search O(logn)](#3-binary-search-ologn)
+   - [Theory](#3theory)
+   - [Practice](#3practice)
+4. [Queue/Stack, Set/Map/List](#4-queuestack-setmaplist)
+   - [Theory](#4theory)
+   - [Practice](#4practice)
+5. [BFS, Graph](#5-bfs--graph)
+   - [Theory](#5theory)
+   - [Practice](#5practice)
+
+
 # 0. Before Starting
 
 ## Recommended Steps:
@@ -68,22 +88,6 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
   - MDP/ Reinforcement Learning
 
 
-
-
-## Contents
-
-1. [Two Pointers Method - O(n)](#1-two-pointers-method-most-frequent---on)
-   - [Theory](#1theory)
-   - [Practice](#1practice)
-2. [Recursion, Heap and Stack (Hardware), Tree](#2-recursion-heap-and-stack-hardware-tree)
-   - [Theory](#2theory)
-   - [Practice](#2practice)
-3. [Binary Search O(logn)](#3-binary-search-ologn)
-   - [Theory](#3theory)
-   - [Practice](#3practice)
-4. [Queue/Stack, Set/Map/List](#4-queuestack-setmaplist)
-   - [Theory](#4theory)
-   - [Practice](#4practice)
 
 
 
@@ -348,14 +352,15 @@ return -1
 
 # 4. Queue/Stack, Set/Map/List
 
-## 4Practice:
+## 4Theory:
+
 - Queue: FIFO, abstract data type.
 
-- Two ways to store elements internally for queue:
+## 4.1 Two ways to store elements internally for queue:
   - Array: Better performance for random access: O(1).
   - LinkedList: Better performance for insert and delete: O(1).
 
-- Queue Implementation:
+## 4.2 Queue Implementation:
   - Use Array
   - Use Array to implement Circular Queue
   - Use LinkedList
@@ -363,7 +368,7 @@ return -1
   - Java Interface Queue (Class PriorityQueue, AbstractQueue)
   - Java Interface Deque (Class ArrayDeque)
 
-- Java common Interfaces:
+## 4.3 Java common Interfaces:
   - Set
   - Map
   - List
@@ -389,11 +394,11 @@ return -1
 
 |Queue|Under Infrastructure|FIFO|
 |-|-|-|
-|PriorityQueue|Implement base on Heap|Non-FIFO (order by natural order if no comparator designed, or order by priority if designed)|
+|PriorityQueue|Implement base on Heap|Non-FIFO (order by natural order (alphabet order) if no comparator designed, or order by priority if designed)|
 |Queue|Implement base on LinkedList|FIFO|
 ||
 
-- Interfaces VS Abstract Class
+## 4.4 Interfaces VS Abstract Class
 
 ||Interface|Abstract Class|
 |-|-|-|
@@ -416,8 +421,8 @@ return -1
   - using Array, 
   - Array (Circular Queue), 
   - Class LinkedList, 
-  - Interface Queue (Class PriorityQueue), 
-  - Interface Queue (Abstract Class AbstractQueue), 
+  - Interface Queue (Class LinkedList), 
+  - Abstract Class (AbstractQueue), 
   - Interface Deque (Class ArrayDeque), 
   - Class Stack
 - Easy 225. Implement Stack
@@ -428,7 +433,9 @@ return -1
 
 # 5. BFS + Graph
 
-## Three scenarios BFS fits
+## 5Theory
+
+## 5.1 Three scenarios BFS fits
 
 - layer level traversal 分层遍历
   - traversal hierarchical a Grapg, Tree, Matrix
@@ -440,14 +447,20 @@ return -1
   - can also be done using DFS
   - BFS much easier
 
-## Three implementation ways
+## 5.2 Three implementation ways
 - Single Queue (simplest, recommend)
 - Two Queues (easier understand)
 - Dummy Node 哨兵节点
   - Usually point to first node in LinkedList
-  - pop(): delete head node. '''DummyNode.next = DummyNode.next.next.'''
+  - pop(): delete head node. ```DummyNode.next = DummyNode.next.next```
   - In BFS: used to indicate end of each level.
   - Advantage: reduce one for-loop.
+
+
+## 5Practice
+
+
+
 
 # 6. DC - Divide and Conquer
 
