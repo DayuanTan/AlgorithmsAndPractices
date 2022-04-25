@@ -7,21 +7,53 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
 
 ## Contents
 
-1. [Two Pointers Method - O(n)](#1-two-pointers-method-most-frequent---on)
-   - [Theory](#1theory)
-   - [Practice](#1practice)
-2. [Recursion, Heap and Stack (Hardware), Tree](#2-recursion-heap-and-stack-hardware-tree)
-   - [Theory](#2theory)
-   - [Practice](#2practice)
-3. [Binary Search O(logn)](#3-binary-search-ologn)
-   - [Theory](#3theory)
-   - [Practice](#3practice)
-4. [Queue/Stack, Set/Map/List](#4-queuestack-setmaplist)
-   - [Theory](#4theory)
-   - [Practice](#4practice)
-5. [BFS, Graph](#5-bfs--graph)
-   - [Theory](#5theory)
-   - [Practice](#5practice)
+- [0. Before Starting](#0-before-starting)
+  - [Recommended Steps:](#recommended-steps)
+  - [Steps for all questions](#steps-for-all-questions)
+  - [Data structure](#data-structure)
+  - [Algorithms](#algorithms)
+  - [Problems](#problems)
+- [1. Two Pointers Method (most frequent) - O(n)](#1-two-pointers-method-most-frequent---on)
+  - [1Theory:](#1theory)
+  - [1Practice:](#1practice)
+- [2. Recursion, Heap and Stack (Hardware), Tree](#2-recursion-heap-and-stack-hardware-tree)
+  - [2Theory:](#2theory)
+  - [2.1 Recursion 3 key elementts:](#21-recursion-3-key-elementts)
+  - [2.2 Heap, stack and overflow](#22-heap-stack-and-overflow)
+    - [Stack and Heap in Memory 内存中的堆栈](#stack-and-heap-in-memory-内存中的堆栈)
+    - [Stack overflow](#stack-overflow)
+  - [2.3 Pass by value vs Pass by reference  值传递与引用传递](#23-pass-by-value-vs-pass-by-reference--值传递与引用传递)
+  - [2.4 Recursion with Tree, Binary Search递归版本](#24-recursion-with-tree-binary-search递归版本)
+  - [2.5 Use Recursion V.S. Non-Recursion (Iteration)](#25-use-recursion-vs-non-recursion-iteration)
+  - [2Practice:](#2practice)
+- [3. Binary Search O(logn)](#3-binary-search-ologn)
+  - [3Theory:](#3theory)
+  - [3.0 Make question smaller 由大化小:](#30-make-question-smaller-由大化小)
+  - [3.1 Prerequiste and BS Application:](#31-prerequiste-and-bs-application)
+  - [3.2 Binary Search V.S. Regular Search](#32-binary-search-vs-regular-search)
+  - [Implementation](#implementation)
+  - [3.3 Binary Search Template](#33-binary-search-template)
+  - [3Practice:](#3practice)
+- [4. Queue/Stack, Set/Map/List](#4-queuestack-setmaplist)
+  - [4Theory:](#4theory)
+  - [4.1 Two ways to store elements internally for queue:](#41-two-ways-to-store-elements-internally-for-queue)
+  - [4.2 Queue Implementation:](#42-queue-implementation)
+  - [4.3 Java common Interfaces:](#43-java-common-interfaces)
+  - [4.4 Interfaces VS Abstract Class](#44-interfaces-vs-abstract-class)
+  - [4Practice:](#4practice)
+- [5. BFS + Graph](#5-bfs--graph)
+  - [5Theory](#5theory)
+  - [5.1 Three scenarios BFS fits](#51-three-scenarios-bfs-fits)
+  - [5.2 Three implementation ways](#52-three-implementation-ways)
+  - [5Practice](#5practice)
+- [6. DC - Divide and Conquer](#6-dc---divide-and-conquer)
+- [7. DFS](#7-dfs)
+- [8. HashMap + Heap](#8-hashmap--heap)
+- [9. Dynamic Programming - Memoization 记忆化搜索 动态规划](#9-dynamic-programming---memoization-记忆化搜索-动态规划)
+  - [9Theory:](#9theory)
+  - [9.1 DFS-Traverse -> DC -> DC-with-Hashmap/Memoization Search](#91-dfs-traverse---dc---dc-with-hashmapmemoization-search)
+  - [9.2 Dynamic Programming](#92-dynamic-programming)
+  - [9Practice:](#9practice)
 
 
 # 0. Before Starting
@@ -354,7 +386,7 @@ return -1
 
 ## 4Theory:
 
-- Queue: FIFO, abstract data type.
+- Queue: FIFO, abstract data type. Widely used for BFS.
 
 ## 4.1 Two ways to store elements internally for queue:
   - Array: Better performance for random access: O(1).
@@ -412,21 +444,36 @@ return -1
 |Java/C++|Partially Interexchangable in Java|C++ only has abstract class|
 
 
-[Note Queue (more details inside if needed)](note/queue.md) 
+[Note Interface, Abstract Class (more details inside if needed)](note/queue.md) 
 
 
 ## 4Practice:
 
 - Easy [232. Implement Queue](leetcode/232.implement_queue.md)
-  - using Array, 
-  - Array (Circular Queue), 
-  - Class LinkedList, 
-  - Interface Queue (Class LinkedList), 
-  - Abstract Class (AbstractQueue), 
-  - Interface Deque (Class ArrayDeque), 
-  - Class Stack
-- Easy 225. Implement Stack
-
+  - Java:
+    - Using Array 
+    - Array (Circular Queue) 
+    - Class LinkedList 
+    - Interface Queue (Class LinkedList) 
+    - Abstract Class (AbstractQueue) 
+    - Interface Deque (Class ArrayDeque) 
+    - Class ArrayList
+    - Implement Queue Using Stack (Use 2 stacks)
+  - Python:
+    - list (data type)
+    - collections (module, containers datatypes) - Class deque
+    - queue module - Queue class
+- Easy [225. Implement Stack](leetcode/225.implement_stack.md)
+  - Java:
+    - Class Stack 
+    - Class LinkedList
+    - Class ArrayList
+    - Interface Deque (Class ArrayDeque) 
+    - Implement Stack Using Queue (Sol1: use 2 queues; Sol2: use 1 queue)
+  - Python:
+    - list (data type)
+    - collections (module, containers datatypes) - Class deque
+    - queue module - LifoQueue class
 
 
 
@@ -470,7 +517,7 @@ return -1
 
 # 9. Dynamic Programming - Memoization 记忆化搜索 动态规划
 
-## Theory:
+## 9Theory:
 ## 9.1 DFS-Traverse -> DC -> DC-with-Hashmap/Memoization Search
 
 - ❗️Easy [120 Triangle](leetcode/120.triangle.md) 
@@ -551,7 +598,7 @@ return -1
 
 [Note DP (more details inside if needed)](note/DP.md)
 
-## Practice:
+## 9Practice:
 - Memoization
   - Easy [i1300 Bash Game](./leetcode/i1300.bashgame.md) 
 - DP
