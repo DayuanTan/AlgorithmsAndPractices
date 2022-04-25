@@ -434,6 +434,8 @@ return -1
 - Dummy Node 哨兵节点
   - Usually point to first node in LinkedList
   - pop(): delete head node. '''DummyNode.next = DummyNode.next.next.'''
+  - In BFS: used to indicate end of each level.
+  - Advantage: reduce one for-loop.
 
 # 6. DC - Divide and Conquer
 
