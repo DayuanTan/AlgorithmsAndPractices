@@ -393,7 +393,19 @@ return -1
 
 ## 4Practice:
 
-- Easy [232. Implement Queue using Array, Array (Circular Queue), Class LinkedList, Interface Queue (Class PriorityQueue, Abstract Class AbstractQueue), Interface Deque (Class ArrayDeque), Class Stack](leetcode/232.implement_queue.md)
+- Easy [232. Implement Queue](leetcode/232.implement_queue.md)
+  - using Array, 
+  - Array (Circular Queue), 
+  - Class LinkedList, 
+  - Interface Queue (Class PriorityQueue), 
+  - Interface Queue (Abstract Class AbstractQueue), 
+  - Interface Deque (Class ArrayDeque), 
+  - Class Stack
+- Easy 225. Implement Stack
+
+
+
+
 
 # 5. BFS + Graph
 
