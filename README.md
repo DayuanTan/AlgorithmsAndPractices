@@ -430,7 +430,7 @@ return -1
 
 ## Three implementation ways
 - Single Queue (simplest, recommend)
-- Double Queue
+- Two Queues (easier understand)
 - Dummy Node
 
 # 6. DC - Divide and Conquer
