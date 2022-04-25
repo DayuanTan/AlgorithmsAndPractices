@@ -1,5 +1,7 @@
 This repo is about my notes and a record of my practicing of algorithms on Leetcode/lintcode. 
 
+Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. Thanks to them.
+
 (It is wrote mainly in English and barely Chinese. Ignoring the Chinese parts doens't affect the understanding of this repo.)    
 
 # 0. Before Starting
@@ -54,6 +56,16 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 |O(2^n)	||Combination related search questions. 与组合有关的搜索问题	|
 |O(n!)	||Permutation related search questions. 与排列有关的搜索问题|
 ||
+
+## Problems
+- Find all plans/solutions
+  - DFS (with recursion)
+  - BFS
+- Find best among all solutions
+  - Iteration/loop
+  - Greedy/ Eplison Greedy
+  - Dynamic Programming
+  - MDP/ Reinforcement Learning
 
 
 
@@ -167,6 +179,11 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 
 ## 2.1 Recursion 3 key elementts:
   - Definition, Stopping Condition, Divide. 递归的定义，出口，拆解。
+  - 递归的定义：接受什么参数，返回什么值，代表什么意思
+  - 递归的拆解：每次递归都是为了让问题规模变⼩
+  - 递归的出⼝：必须有⼀个明确的结束条件
+
+=> 得到⼀个可供其他函数调⽤的递归函数
 
 ## 2.2 Heap, stack and overflow
 
@@ -195,6 +212,8 @@ This repo is about my notes and a record of my practicing of algorithms on Leetc
 ||Those class elements with 'final'.||
 |Python|Python Value types. Similar to Java|Python Reference types. Similar to Java|
 |C++|Default|Parameters with '&'|
+|Diff: copy content?|Yes. (more space/time, don't affect upper level)|No. (affect upper level)|
+||
 
 
 
@@ -408,6 +427,27 @@ return -1
 
 
 # 5. BFS + Graph
+
+## Three scenarios BFS fits
+
+- layer level traversal 分层遍历
+  - traversal hierarchical a Grapg, Tree, Matrix
+  - shortest path for simple Graph (all edge length are 1)
+- connected block problem 连通块问题
+  - find all connected cell
+  - non-recursion implementation for find-all-plans problem
+- topological sort 拓扑排序
+  - can also be done using DFS
+  - BFS much easier
+
+## Three implementation ways
+- Single Queue (simplest, recommend)
+- Two Queues (easier understand)
+- Dummy Node 哨兵节点
+  - Usually point to first node in LinkedList
+  - pop(): delete head node. '''DummyNode.next = DummyNode.next.next.'''
+  - In BFS: used to indicate end of each level.
+  - Advantage: reduce one for-loop.
 
 # 6. DC - Divide and Conquer
 
