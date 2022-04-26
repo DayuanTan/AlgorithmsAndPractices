@@ -512,7 +512,7 @@ return -1
 |push|myqueue.append(x) |push| mystack.appendleft(x)|
 |pop|myqueue.popleft()|pop| mystack.popleft()|
 |peek|if myqueue:return myqueue[0] else: return -1|top| if mystack: return mystack[0]|
-|empty|len(self.myqueue) == 0|empty| len(mystack) == 0|
+|empty|len(myqueue) == 0|empty| len(mystack) == 0|
 
 
 
