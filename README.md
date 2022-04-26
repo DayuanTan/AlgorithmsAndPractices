@@ -483,46 +483,39 @@ return -1
 > 
 > It's better to use ArrayDeque instead of LinkedList when implementing Stack and Queue in Java. ArrayDeque is likely to be faster than Stack interface (while Stack is thread-safe) when used as a stack, and faster than LinkedList when used as a queue. [Refer Link](https://stackoverflow.com/a/38078886/9593219).
 > 
-> ```Queue<E> myqueue = new ArrayDeque<E>();``` (interface Deque extends interface Queue )
+> ```Deque/Queue<E> myqueue = new ArrayDeque<E>();``` (interface Deque extends interface Queue )
 > 
 > ```Deque<E> mystack = new ArrayDeque<E>();``` (use like a stack)
 
-|Queue Method (Use this column methods directly)	|Equivalent Deque Method|
-|-:|-|
-|add(e)	|addLast(e)|
-|offer(e)|offerLast(e)|
-|remove()|removeFirst()|
-|poll()|pollFirst()|
-|element()|getFirst()|
-|peek()|peekFirst()|
+|Queue Method (Use this column methods directly)	|Equivalent Deque Method|Stack Method (Use this column methods directly)|Equivalent Deque Method|
+|-:|-|-:|-|
+|add(e)	|addLast(e)|push(e)|addFirst(e)|
+|offer(e)|offerLast(e)|||
+|remove()|removeFirst()|||
+|poll()|pollFirst()|pop()|removeFirst()|
+|element()|getFirst()|||
+|peek()|peekFirst()|peek()|peekFirst()|
 
-|Stack Method (Use this column methods directly)|Equivalent Deque Method|
-|-:|-|
-|push(e)|addFirst(e)|
-|pop()|removeFirst()|
-|peek()|peekFirst()|
+
 
 > Python:
 > 
 > from collections import deque
 > 
-> mystack = deque() # left as top/head/first
+> mystack = deque() # left as top
+>
+> myqueue = deque() (left as head/first)|
 
-|Queue Method (Use this column methods directly)	|Equivalent collections.deque Method|
-|-:|-|
-|instance|myqueue = deque() (left as head/first)|
-|push|myqueue.append(x) |
-|pop|myqueue.popleft()|
-|peek|if myqueue:return myqueue[0] else: return -1|
-|empty|len(self.myqueue) == 0|
 
-|Stack Method (Use this column methods directly)|Equivalent collections.deque Method|
-|-:|-|
-|instance|mystack = deque() (left as top)|
-|push| mystack.appendleft(x)|
-|pop| mystack.popleft()|
-|top| if mystack: return mystack[0]|
-|empty| len(mystack) == 0|
+|Queue Method (Use this column methods directly)	|Equivalent collections.deque Method|Stack Method (Use this column methods directly)|Equivalent collections.deque Method|
+|-:|-|-:|-|
+|push|myqueue.append(x) |push| mystack.appendleft(x)|
+|pop|myqueue.popleft()|pop| mystack.popleft()|
+|peek|if myqueue:return myqueue[0] else: return -1|top| if mystack: return mystack[0]|
+|empty|len(self.myqueue) == 0|empty| len(mystack) == 0|
+
+
+
 
 
 # 5. BFS + Graph
