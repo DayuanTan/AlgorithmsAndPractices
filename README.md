@@ -546,7 +546,8 @@ return -1
 
 ## 5Practice
 
-- Medium [102. Binary Tree Level Order Traversal](leetcode/102.Binary_Tree_Level_Order_Traversal.md)
+- Medium [102. Binary Tree Level Order Traversal](leetcode/102.Binary_Tree_Level_Order_Traversal.md) 3 implementation ways
+- Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) BFS + Pruning
 
 
 
