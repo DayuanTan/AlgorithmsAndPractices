@@ -44,7 +44,12 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
 - [5. BFS + Graph](#5-bfs--graph)
   - [5Theory](#5theory)
   - [5.1 Three scenarios BFS fits](#51-three-scenarios-bfs-fits)
-  - [5.2 Three implementation ways](#52-three-implementation-ways)
+  - [5.2 Implementation](#52-implementation)
+    - [5.2.1 Use Queue and hashset](#521-use-queue-and-hashset)
+    - [5.2.2 Three implementation ways](#522-three-implementation-ways)
+    - [5.2.3 layered or non-layered 分层还是不分层](#523-layered-or-non-layered-分层还是不分层)
+    - [5.2.4 If BFS and DFS both work](#524-if-bfs-and-dfs-both-work)
+  - [5.3 Other notable points:](#53-other-notable-points)
   - [5Practice](#5practice)
 - [6. DC - Divide and Conquer](#6-dc---divide-and-conquer)
 - [7. DFS](#7-dfs)
@@ -53,6 +58,7 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
   - [9Theory:](#9theory)
   - [9.1 DFS-Traverse -> DC -> DC-with-Hashmap/Memoization Search](#91-dfs-traverse---dc---dc-with-hashmapmemoization-search)
   - [9.2 Dynamic Programming](#92-dynamic-programming)
+  - [9.3 DP usually used for 3 types of problems:](#93-dp-usually-used-for-3-types-of-problems)
   - [9Practice:](#9practice)
 
 
@@ -118,6 +124,12 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
   - Greedy/ Eplison Greedy
   - Dynamic Programming
   - MDP/ Reinforcement Learning
+- Shortest Path problems
+  - BFS (simple Graph)
+  - Floyd, Dijkstra, Bellman-ford, SPFA (complex graph)
+- Longest Path 
+  - Graph can be layered: DP
+  - Cannot: DFS
 
 
 
@@ -450,7 +462,7 @@ return -1
 ## 4Practice:
 
 
-- Easy [232. Implement Queue](leetcode/232.implement_queue.md)
+- ❗️Easy [232. Implement Queue](leetcode/232.implement_queue.md)
   - Java:
     - Using Array 
     - Array (Circular Queue) 
@@ -464,7 +476,7 @@ return -1
     - list (data type)
     - collections (module, containers datatypes) - Class deque
     - queue class (synchronized) -  Queue (no peek() method)
-- Easy [225. Implement Stack](leetcode/225.implement_stack.md)
+- ❗️Easy [225. Implement Stack](leetcode/225.implement_stack.md)
   - Java:
     - Class Stack 
     - Class LinkedList
@@ -485,7 +497,7 @@ return -1
 > 
 > ```Deque/Queue<E> myqueue = new ArrayDeque<E>();``` (interface Deque extends interface Queue )
 > 
-> ```Deque<E> mystack = new ArrayDeque<E>();``` (use like a stack)
+> ```Deque<E> mystack = new ArrayDeque<E>();``` (use like a stack) (ArrayDeque  is faster than LinkedList)
 
 |Queue Method (Use this column methods directly)	|Equivalent Deque Method|Stack Method (Use this column methods directly)|Equivalent Deque Method|
 |-:|-|-:|-|
@@ -500,11 +512,11 @@ return -1
 
 > Python:
 > 
-> from collections import deque
+> ```from collections import deque```
 > 
-> mystack = deque() # left as top
+> ```mystack = deque()``` # left as top
 >
-> myqueue = deque() (left as head/first)|
+> ```myqueue = deque()``` (left as head/first)(synchronize Queue is slower)
 
 
 |Queue Method (Use this column methods directly)	|Equivalent collections.deque Method|Stack Method (Use this column methods directly)|Equivalent collections.deque Method|
@@ -524,17 +536,34 @@ return -1
 
 ## 5.1 Three scenarios BFS fits
 
-- layer level traversal 分层遍历
+- level order traversal 分层遍历
   - traversal hierarchical a Grapg, Tree, Matrix
+    - BFS on tree
+    - BFS on Graph: O(V+E) 
+    - BFS on Matrix: O(row * col)
   - shortest path for simple Graph (all edge length are 1)
-- connected block problem 连通块问题
+- connected component 连通块问题
   - find all connected cell
   - non-recursion implementation for find-all-plans problem
 - topological sort 拓扑排序
-  - can also be done using DFS
-  - BFS much easier
+  - can also be done using DFS. BFS much easier
+  - find any topo sort 
+  - whether there is topo sort
+  - find the topo order with min dict order
+  - find whether only one topo sort
 
-## 5.2 Three implementation ways
+## 5.2 Implementation 
+### 5.2.1 Use Queue and hashset
+- Queue is used to record which nodes need to be process
+- Hashtable to record visited nodes if necessary:
+  - to avoid repeated calculation
+  - to prune in tree 
+  - to avlid cycle in graph
+  - Java: HashSet/HashMap
+  - Python: set/dict
+  - C++: unordered_set/unordered_map
+
+### 5.2.2 Three implementation ways
 - Single Queue (simplest, recommend)
 - Two Queues (easier understand)
 - Dummy Node 哨兵节点
@@ -543,13 +572,49 @@ return -1
   - In BFS: used to indicate end of each level.
   - Advantage: reduce one for-loop.
 
+### 5.2.3 layered or non-layered 分层还是不分层
+  - ❗️[BFS Template](note/bfs_template.md) Queue record nodes to process. HashTable record visited node to prune or avoid cycle.
+### 5.2.4 If BFS and DFS both work
+  - Use BFS (always easier)
+  - You barely write BFS wrongly  
+
+
+## 5.3 Other notable points:
+- BFS for shorted path
+  - Simple graph: BFS
+  - Complex graph: Floyd, Dijkstra, Bellman-ford, SPFA. (Usually not appear in interviews)
+- Longest path:
+  - The graph can be layered (directed, no cycle): DP
+  - Cannot: DFS
+- BFS for Binary Tree vs BFS for Graph
+  - Tree has no circle
+  - Hashtable  -> record visited nodes
+    - Possible circle in graph, where one node will be enqueued more than 1 times -> record visited nodes
+
+
 
 ## 5Practice
 
-- Medium [102. Binary Tree Level Order Traversal](leetcode/102.Binary_Tree_Level_Order_Traversal.md) 3 implementation ways
-- [BFS Template](note/bfs_template.md)
-- Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) BFS + Pruning, DP等多解法
+- level order traversal 分层遍历
+  - ❗️Medium [102. Binary Tree Level Order Traversal](leetcode/102.Binary_Tree_Level_Order_Traversal.md) 3 implementation ways 
+    - Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) BFS + Pruning, DP等多解法
+    - ❗️[BFS Template](note/bfs_template.md) Queue record nodes to process. HashTable record visited node to prune or avoid cycle.
+  - Simple graph shortest path 简单图最短路径
+    - Hard [127. Word Ladder](leetcode/127.word_ladder.md)
+- Connected component 连通块问题
+  - Medium [133. Clone Graph](leetcode/133.clone_graph.md)
+  - BFS on Matrix (Change coordinates)
+    - Medium [200. Number of Islands](leetcode/200.number_of_islands.md)
+    - Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) 上面做过
 
+
+207. Course Schedule
+210. Course Schedule II
+444. Sequence Reconstruction
+269. Alien Dictionary
+BFS on graph
+	261. Graph Valid Tree
+323. Number of Connected Components in an Undirected Graph
 
 
 # 6. DC - Divide and Conquer
@@ -627,6 +692,11 @@ return -1
   - Initialize (base case) 动规的初始化
   - Answer 动规的答案
 - DP 4 elements ***1-to-1 correspond*** with Recursion 3 elements 一一对应
+
+## 9.3 DP usually used for 3 types of problems:
+- min value/max value 最值问题
+- number of all plans 方案总数
+- feasibility 可行性
 
 |DP|一一对应|Recursion|
 |-|-|-|

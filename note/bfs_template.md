@@ -1,5 +1,16 @@
 #  BFS Template
 
+- Queue is used to record which nodes need to be process
+- Hashtable to record visited nodes if necessary:
+  - to avoid repeated calculation
+  - to prune in tree 
+  - to avlid cycle in graph
+  - Java: HashMap/HashSet
+  - Python: dict/set
+  - C++: unordered_map/unordered_set
+
+这个模版最简洁 分不分层都可以用 
+
 python
 
 ```py
@@ -41,4 +52,42 @@ while (!queue.isEmpty()){
         distance.put(neighbor, distance.get(node) + 1);
     }
 }
+```
+
+
+# 分层 VS 不分层
+
+有些问题要求分层， 比如102 解法1
+
+## 不分层
+
+```py
+def find_nodes_by_bfs(self, node):
+    queue = collections.deque([node])
+    visited = set([node])
+    while queue:
+        curr_node = queue.popleft()
+        for neighbor in curr_node.neighbors():
+            if nieghbor in visited:
+                continue
+            visited.add(neighbor)
+            queue.append(neighbor)
+    return list(visited)
+```
+
+
+## 分层 （仅一行区别）
+```py
+def find_nodes_by_bfs(self, node):
+    queue = collections.deque([node])
+    visited = set([node])
+    while queue:
+        for _ in range(len(queue)): # 仅一行区别
+            curr_node = queue.popleft()
+            for neighbor in curr_node.neighbors():
+                if nieghbor in visited:
+                    continue
+                visited.add(neighbor)
+                queue.append(neighbor)
+    return list(visited)
 ```
