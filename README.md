@@ -623,23 +623,24 @@ return -1
 
 - level order traversal 分层遍历
   - ❗️Medium [102. Binary Tree Level Order Traversal](leetcode/102.Binary_Tree_Level_Order_Traversal.md) 3 implementation ways 
-    - 探索Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) BFS + Pruning, DP等多解法
+    - ❗️探索Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) BFS + Pruning, DP等多解法
     - ❗️总结[BFS Template](note/bfs_template.md) Queue record nodes to process. HashTable record visited node to prune or avoid cycle.
   - Simple graph shortest path 简单图最短路径
     - Hard [127. Word Ladder](leetcode/127.word_ladder.md)
 - Connected component 连通块问题
-  - Medium [133. Clone Graph](leetcode/133.clone_graph.md)
+  - ❗️Medium [133. Clone Graph](leetcode/133.clone_graph.md)
   - BFS on Matrix (Change coordinates)
     - Medium [200. Number of Islands](leetcode/200.number_of_islands.md)
     - Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) 上面做过
 - Topological Sorting 拓扑排序 (BFS on Graph)
   - find any Topological order
-    - [i127 Topological Sorting](leetcode/i127.topological_sort.md)
+    - ❗️Medium [i127 Topological Sorting](leetcode/i127.topological_sort.md)
+    - Medium [207. Course Schedule](leetcode/207.course_schedule.md)
   - whether there is TO (a graph may have #TO >= 0)
   - find whether only one TO
   - find the TO with min lexicographical order
 
-207. Course Schedule
+
 210. Course Schedule II
 444. Sequence Reconstruction
 269. Alien Dictionary
