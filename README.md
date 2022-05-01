@@ -44,12 +44,14 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
 - [5. BFS + Graph](#5-bfs--graph)
   - [5Theory](#5theory)
   - [5.1 Three scenarios BFS fits](#51-three-scenarios-bfs-fits)
+  - [Min/Max -> use PriorityQueue in  Java / heapqueue in Python](#minmax---use-priorityqueue-in--java--heapqueue-in-python)
   - [5.2 Implementation](#52-implementation)
     - [5.2.1 Use Queue and hashset](#521-use-queue-and-hashset)
     - [5.2.2 Three implementation ways](#522-three-implementation-ways)
     - [5.2.3 layered or non-layered 分层还是不分层](#523-layered-or-non-layered-分层还是不分层)
     - [5.2.4 If BFS and DFS both work](#524-if-bfs-and-dfs-both-work)
   - [5.3 Other notable points:](#53-other-notable-points)
+  - [5.4 Bidirectional BFS 双向](#54-bidirectional-bfs-双向)
   - [5Practice](#5practice)
 - [6. DC - Divide and Conquer](#6-dc---divide-and-conquer)
 - [7. DFS](#7-dfs)
@@ -116,10 +118,10 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
 ||
 
 ## Problems
-- Find all plans/solutions
+- Find all plans/solutions problems
   - DFS (with recursion)
   - BFS
-- Find best among all solutions
+- Find best among all solutions problems
   - Iteration/loop
   - Greedy/ Eplison Greedy
   - Dynamic Programming
@@ -127,7 +129,7 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
 - Shortest Path problems
   - BFS (simple Graph)
   - Floyd, Dijkstra, Bellman-ford, SPFA (complex graph)
-- Longest Path 
+- Longest Path problems
   - Graph can be layered: DP
   - Cannot: DFS
 
@@ -545,12 +547,31 @@ return -1
 - connected component 连通块问题
   - find all connected cell
   - non-recursion implementation for find-all-plans problem
-- topological sort 拓扑排序
-  - can also be done using DFS. BFS much easier
-  - find any topo sort 
-  - whether there is topo sort
-  - find the topo order with min dict order
-  - find whether only one topo sort
+- topological sort 拓扑排序 ```（几乎每个公司面试都会有一道拓扑排序题）```
+  - Can also be done using DFS. BFS much easier. (When both can, always use BFS).
+  - TS must for DAG (Directed Acyclic Graph). If not DAG then no TS. If DG has not TS then it must be cyclic.
+  - Examples: Course Select, Compile Order
+  - Questions:
+    - find any Topological order
+    - whether there is TO (a graph may have #TO >= 0)
+      - If len(the answer of previous one) == #nodes then exist. Or don't exist.
+    - find whether only one TO
+      - Yes if queue.size == 1 during whole process. (bc only one choose for next node)
+      - If at some step queue.size > 1 then not only one. (more than 1 choose)
+    - find the TO with min lexicographical order
+      - Min/Max -> use PriorityQueue 
+  
+## Min/Max -> use PriorityQueue in  Java / heapqueue in Python
+- Java: 
+  - ```Queue<> myqueue = new PriorityQueue<>()``` 
+  - ```myqueue.poll()``` 
+  - ```myqueue.offer(newnode)```
+- Python: 
+  - ```myqueue = []``` 
+  - ```heapify(myqueue)``` 
+  - ```heappop(myqueue)``` 
+  - ```heappush(myqueue, newnode)```
+    
 
 ## 5.2 Implementation 
 ### 5.2.1 Use Queue and hashset
@@ -575,7 +596,9 @@ return -1
 ### 5.2.3 layered or non-layered 分层还是不分层
   - ❗️[BFS Template](note/bfs_template.md) Queue record nodes to process. HashTable record visited node to prune or avoid cycle.
 ### 5.2.4 If BFS and DFS both work
-  - Use BFS (always easier)
+  - Use BFS (always easier). 
+    - DFS recursion easily stackoverflow.
+    - DFS iteration is hard and interviewer may also don't understand. 
   - You barely write BFS wrongly  
 
 
@@ -591,14 +614,17 @@ return -1
   - Hashtable  -> record visited nodes
     - Possible circle in graph, where one node will be enqueued more than 1 times -> record visited nodes
 
+## 5.4 Bidirectional BFS 双向
+如果同时给了start and end point
+图的话一般是无向图
 
 
 ## 5Practice
 
 - level order traversal 分层遍历
   - ❗️Medium [102. Binary Tree Level Order Traversal](leetcode/102.Binary_Tree_Level_Order_Traversal.md) 3 implementation ways 
-    - Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) BFS + Pruning, DP等多解法
-    - ❗️[BFS Template](note/bfs_template.md) Queue record nodes to process. HashTable record visited node to prune or avoid cycle.
+    - 探索Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) BFS + Pruning, DP等多解法
+    - ❗️总结[BFS Template](note/bfs_template.md) Queue record nodes to process. HashTable record visited node to prune or avoid cycle.
   - Simple graph shortest path 简单图最短路径
     - Hard [127. Word Ladder](leetcode/127.word_ladder.md)
 - Connected component 连通块问题
@@ -606,7 +632,12 @@ return -1
   - BFS on Matrix (Change coordinates)
     - Medium [200. Number of Islands](leetcode/200.number_of_islands.md)
     - Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) 上面做过
-
+- Topological Sorting 拓扑排序 (BFS on Graph)
+  - find any Topological order
+    - [i127 Topological Sorting](leetcode/i127.topological_sort.md)
+  - whether there is TO (a graph may have #TO >= 0)
+  - find whether only one TO
+  - find the TO with min lexicographical order
 
 207. Course Schedule
 210. Course Schedule II
