@@ -51,7 +51,8 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
     - [5.2.3 layered or non-layered 分层还是不分层](#523-layered-or-non-layered-分层还是不分层)
     - [5.2.4 If BFS and DFS both work](#524-if-bfs-and-dfs-both-work)
   - [5.3 Other notable points:](#53-other-notable-points)
-  - [5.4 Bidirectional BFS 双向](#54-bidirectional-bfs-双向)
+  - [5.4 Graph Data Structure](#54-graph-data-structure)
+  - [5.5 Bidirectional BFS 双向](#55-bidirectional-bfs-双向)
   - [5Practice](#5practice)
 - [6. DC - Divide and Conquer](#6-dc---divide-and-conquer)
 - [7. DFS](#7-dfs)
@@ -610,11 +611,78 @@ return -1
   - The graph can be layered (directed, no cycle): DP
   - Cannot: DFS
 - BFS for Binary Tree vs BFS for Graph
-  - Tree has no circle
-  - Hashtable  -> record visited nodes
-    - Possible circle in graph, where one node will be enqueued more than 1 times -> record visited nodes
+  - Tree is a special Graph
+  - Tree has no circle so no need to record visited nodes
+  - HashSet/dict/unordered_map  -> record visited nodes
+    - Possible circle in graph, where one node will be enqueued more than 1 times -> SOL: record visited nodes
 
-## 5.4 Bidirectional BFS 双向
+## 5.4 Graph Data Structure  
+
+1. Adjacency Matrix 
+   - ```int[][] matrix```; 2D array.
+   - Space: O(n^2) 
+```
+[
+[1,0,0,1],
+[0,1,1,0],
+[0,1,1,0],
+[1,0,0,1]
+]
+```
+2. Adjacency List (More frequently used) 
+   - Each node records its neighbors.
+   - Space O(E). Worst case O(n^2). 
+   - Implement an Adjacency List:
+     - Use self-defined Class 
+       - more popular in Software Engineered, recommend if enough time
+     - Use HashMap<T, HashSet>  
+       - ```Map<Integer, Set<Integer>> myGraph = new HashMap<>(); myGraph.put(0, new HashSet<Integer>();``` 
+       - (less code)
+
+```
+[
+[1],
+[0,2,3],
+[1],
+[1]
+]
+```
+
+
+Java:
+```java
+class DirectedGraphNode {
+  int label;
+  List neighbors;
+  ...
+}
+```
+Python:
+```python
+def DirectedGraphNode:
+  def init(self, label):
+    self.label = label
+    self.neighbors = [] # a list of DirectedGraphNode's
+    ...
+```
+
+Java:
+```java
+Map<Integer, Set<Integer>> myGraph = new HashMap<Integer, HashSet>(); 
+myGraph.put(0, new HashSet<Integer>();
+```
+Python:
+```python
+adjacency_list = {x:set() for x in nodes}
+```
+```python
+adjacency_list = {}
+for x in nodes:
+  adjacency_list[x] = set()
+```
+
+
+## 5.5 Bidirectional BFS 双向
 如果同时给了start and end point
 图的话一般是无向图
 
@@ -630,7 +698,7 @@ return -1
 - Connected component 连通块问题
   - ❗️Medium [133. Clone Graph](leetcode/133.clone_graph.md)
   - BFS on Matrix (Change coordinates)
-    - Medium [200. Number of Islands](leetcode/200.number_of_islands.md)
+    - Medium [200. Number of Islands](leetcode/200.number_of_islands.md) BFS / Union Find
     - Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) 上面做过
 - Topological Sorting 拓扑排序 (BFS on Graph)
   - find any Topological order
@@ -644,9 +712,20 @@ return -1
     - ❗️Hard [269. Alien Dictionary](leetcode/269.alien_dictionary.md)
 
 
-BFS on graph
-	1.   Graph Valid Tree
-1.   Number of Connected Components in an Undirected Graph
+More BFS on graph
+- Medium [261. Graph Valid Tree]() https://leetcode-cn.com/problems/graph-valid-tree/
+- Medium i618. Search Graph Nodes https://www.lintcode.com/problem/618/
+
+- Medium 323. Number of Connected Components in an Undirected Graph https://leetcode-cn.com/problems/number-of-connected-components-in-an-undirected-graph/
+
+More BFD on Matrix
+- i598. Zombie in Matrix https://www.lintcode.com/problem/598/
+- i573. Build Post Office II https://www.lintcode.com/problem/573/
+- i1179. Friend Circles https://www.lintcode.com/problem/1179/  BFS / Union Find
+
+- i630. Knight Shortest Path II https://www.lintcode.com/problem/630/
+
+
 
 
 # 6. DC - Divide and Conquer
