@@ -28,7 +28,7 @@ while queue:
     # step 3 extend to next level 扩展相邻节点
     # 找到当前节点的相邻节点，并加入queue并在distance中存储距离
     for neighbor in node.getneighbors():
-        if neighbor not in distance: # already visited
+        if neighbor in distance: # already visited
             continue 
         queue.append(neighbor)
         distance[neighbor] = distance[node] + 1

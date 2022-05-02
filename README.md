@@ -637,16 +637,16 @@ return -1
     - ❗️Medium [i127 Topological Sorting](leetcode/i127.topological_sort.md)
     - Medium [207. Course Schedule](leetcode/207.course_schedule.md)
   - whether there is TO (a graph may have #TO >= 0)
-    - ❗️MediumMedium [210. Course Schedule II](leetcode/210.course_schedule_ii.md)
+    - ❗️Medium [210. Course Schedule II](leetcode/210.course_schedule_ii.md)
   - find whether only one TO
-    - ❗️MediumMedium [444. Sequence Reconstruction](leetcode/444.sequence_reconstruction.md)
+    - ❗️Medium [444. Sequence Reconstruction](leetcode/444.sequence_reconstruction.md)
   - find the TO with min lexicographical order
+    - ❗️Hard [269. Alien Dictionary](leetcode/269.alien_dictionary.md)
 
 
-269. Alien Dictionary
 BFS on graph
-	261. Graph Valid Tree
-323. Number of Connected Components in an Undirected Graph
+	1.   Graph Valid Tree
+1.   Number of Connected Components in an Undirected Graph
 
 
 # 6. DC - Divide and Conquer
