@@ -43,16 +43,17 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
   - [4Practice:](#4practice)
 - [5. BFS + Graph](#5-bfs--graph)
   - [5Theory](#5theory)
-  - [5.1 Three scenarios BFS fits](#51-three-scenarios-bfs-fits)
+  - [5.1 Graph Data Structure](#51-graph-data-structure)
+  - [5.2 Three scenarios BFS fits](#52-three-scenarios-bfs-fits)
   - [Min/Max -> use PriorityQueue in  Java / heapqueue in Python](#minmax---use-priorityqueue-in--java--heapqueue-in-python)
-  - [5.2 Implementation](#52-implementation)
-    - [5.2.1 Use Queue and hashset](#521-use-queue-and-hashset)
-    - [5.2.2 Three implementation ways](#522-three-implementation-ways)
-    - [5.2.3 layered or non-layered 分层还是不分层](#523-layered-or-non-layered-分层还是不分层)
-    - [5.2.4 If BFS and DFS both work](#524-if-bfs-and-dfs-both-work)
-  - [5.3 Other notable points:](#53-other-notable-points)
-  - [5.4 Graph Data Structure](#54-graph-data-structure)
-  - [5.5 Bidirectional BFS 双向](#55-bidirectional-bfs-双向)
+  - [5.3 Implementation](#53-implementation)
+    - [5.3.1 Use Queue and hashset](#531-use-queue-and-hashset)
+    - [5.3.2 Three implementation ways](#532-three-implementation-ways)
+    - [5.3.3 layered or non-layered 分层还是不分层](#533-layered-or-non-layered-分层还是不分层)
+    - [5.3.4 If BFS and DFS both work](#534-if-bfs-and-dfs-both-work)
+  - [5.4 Other notable points:](#54-other-notable-points)
+  - [5.5 BFS for “all plans” problems 使用宽度优先搜索找所有方案](#55-bfs-for-all-plans-problems-使用宽度优先搜索找所有方案)
+  - [5.6 Bidirectional BFS 双向](#56-bidirectional-bfs-双向)
   - [5Practice](#5practice)
 - [6. DC - Divide and Conquer](#6-dc---divide-and-conquer)
 - [7. DFS](#7-dfs)
@@ -537,86 +538,7 @@ return -1
 
 ## 5Theory
 
-## 5.1 Three scenarios BFS fits
-
-- level order traversal 分层遍历
-  - traversal hierarchical a Grapg, Tree, Matrix
-    - BFS on tree
-    - BFS on Graph: O(V+E) 
-    - BFS on Matrix: O(row * col)
-  - shortest path for simple Graph (all edge length are 1)
-- connected component 连通块问题
-  - find all connected cell
-  - non-recursion implementation for find-all-plans problem
-- topological sort 拓扑排序 ```（几乎每个公司面试都会有一道拓扑排序题）```
-  - Can also be done using DFS. BFS much easier. (When both can, always use BFS).
-  - TS must for DAG (Directed Acyclic Graph). If not DAG then no TS. If DG has not TS then it must be cyclic.
-  - Examples: Course Select, Compile Order
-  - Questions:
-    - find any Topological order
-    - whether there is TO (a graph may have #TO >= 0)
-      - If len(the answer of previous one) == #nodes then exist. Or don't exist.
-    - find whether only one TO
-      - Yes if queue.size == 1 during whole process. (bc only one choose for next node)
-      - If at some step queue.size > 1 then not only one. (more than 1 choose)
-    - find the TO with min lexicographical order
-      - Min/Max -> use PriorityQueue 
-  
-## Min/Max -> use PriorityQueue in  Java / heapqueue in Python
-- Java: 
-  - ```Queue<> myqueue = new PriorityQueue<>()``` 
-  - ```myqueue.poll()``` 
-  - ```myqueue.offer(newnode)```
-- Python: 
-  - ```myqueue = []``` 
-  - ```heapify(myqueue)``` 
-  - ```heappop(myqueue)``` 
-  - ```heappush(myqueue, newnode)```
-    
-
-## 5.2 Implementation 
-### 5.2.1 Use Queue and hashset
-- Queue is used to record which nodes need to be process
-- Hashtable to record visited nodes if necessary:
-  - to avoid repeated calculation
-  - to prune in tree 
-  - to avlid cycle in graph
-  - Java: HashSet/HashMap
-  - Python: set/dict
-  - C++: unordered_set/unordered_map
-
-### 5.2.2 Three implementation ways
-- Single Queue (simplest, recommend)
-- Two Queues (easier understand)
-- Dummy Node 哨兵节点
-  - Usually point to first node in LinkedList
-  - pop(): delete head node. ```DummyNode.next = DummyNode.next.next```
-  - In BFS: used to indicate end of each level.
-  - Advantage: reduce one for-loop.
-
-### 5.2.3 layered or non-layered 分层还是不分层
-  - ❗️[BFS Template](note/bfs_template.md) Queue record nodes to process. HashTable record visited node to prune or avoid cycle.
-### 5.2.4 If BFS and DFS both work
-  - Use BFS (always easier). 
-    - DFS recursion easily stackoverflow.
-    - DFS iteration is hard and interviewer may also don't understand. 
-  - You barely write BFS wrongly  
-
-
-## 5.3 Other notable points:
-- BFS for shorted path
-  - Simple graph: BFS
-  - Complex graph: Floyd, Dijkstra, Bellman-ford, SPFA. (Usually not appear in interviews)
-- Longest path:
-  - The graph can be layered (directed, no cycle): DP
-  - Cannot: DFS
-- BFS for Binary Tree vs BFS for Graph
-  - Tree is a special Graph
-  - Tree has no circle so no need to record visited nodes
-  - HashSet/dict/unordered_map  -> record visited nodes
-    - Possible circle in graph, where one node will be enqueued more than 1 times -> SOL: record visited nodes
-
-## 5.4 Graph Data Structure  
+## 5.1 Graph Data Structure  
 
 1. Adjacency Matrix 
    - ```int[][] matrix```; 2D array.
@@ -682,10 +604,95 @@ for x in nodes:
 ```
 
 
-## 5.5 Bidirectional BFS 双向
+## 5.2 Three scenarios BFS fits
+
+- level order traversal 分层遍历
+  - traversal hierarchical a Grapg, Tree, Matrix
+    - BFS on tree
+    - BFS on Graph: O(V+E) 
+    - BFS on Matrix: O(row * col)
+  - shortest path for simple Graph (all edge length are 1)
+- connected component 连通块问题
+  - find all connected cell
+  - non-recursion implementation for find-all-plans problem
+- topological sort 拓扑排序 ```（几乎每个公司面试都会有一道拓扑排序题）```
+  - Can also be done using DFS. BFS much easier. (When both can, always use BFS).
+  - TS must for DAG (Directed Acyclic Graph). If not DAG then no TS. If DG has not TS then it must be cyclic.
+  - Examples: Course Select, Compile Order
+  - Questions:
+    - find any Topological order
+    - whether there is TO (a graph may have #TO >= 0)
+      - If len(the answer of previous one) == #nodes then exist. Or don't exist.
+    - find whether only one TO
+      - Yes if queue.size == 1 during whole process. (bc only one choose for next node)
+      - If at some step queue.size > 1 then not only one. (more than 1 choose)
+    - find the TO with min lexicographical order
+      - Min/Max -> use PriorityQueue 
+  
+## Min/Max -> use PriorityQueue in  Java / heapqueue in Python
+- Java: 
+  - ```Queue<> myqueue = new PriorityQueue<>()``` 
+  - ```myqueue.poll()``` 
+  - ```myqueue.offer(newnode)```
+- Python: 
+  - ```myqueue = []``` 
+  - ```heapify(myqueue)``` 
+  - ```heappop(myqueue)``` 
+  - ```heappush(myqueue, newnode)```
+    
+
+## 5.3 Implementation 
+### 5.3.1 Use Queue and hashset
+- Queue is used to record which nodes need to be process
+- Hashtable to record visited nodes if necessary:
+  - to avoid repeated calculation
+  - to prune in tree 
+  - to avlid cycle in graph
+  - Java: HashSet/HashMap
+  - Python: set/dict
+  - C++: unordered_set/unordered_map
+
+### 5.3.2 Three implementation ways
+- Single Queue (simplest, recommend)
+- Two Queues (easier understand)
+- Dummy Node 哨兵节点
+  - Usually point to first node in LinkedList
+  - pop(): delete head node. ```DummyNode.next = DummyNode.next.next```
+  - In BFS: used to indicate end of each level.
+  - Advantage: reduce one for-loop.
+
+### 5.3.3 layered or non-layered 分层还是不分层
+  - ❗️[BFS Template](note/bfs_template.md) Queue record nodes to process. HashTable record visited node to prune or avoid cycle.
+### 5.3.4 If BFS and DFS both work
+  - Use BFS (always easier). 
+    - DFS recursion easily stackoverflow.
+    - DFS iteration is hard and interviewer may also don't understand. 
+  - You barely write BFS wrongly  
+
+
+## 5.4 Other notable points:
+- BFS for shorted path
+  - Simple graph: BFS
+  - Complex graph: Floyd, Dijkstra, Bellman-ford, SPFA. (Usually not appear in interviews)
+- Longest path:
+  - The graph can be layered (directed, no cycle): DP
+  - Cannot: DFS
+- BFS for Binary Tree vs BFS for Graph
+  - Tree is a special Graph
+  - Tree has no circle so no need to record visited nodes
+  - HashSet/dict/unordered_map  -> record visited nodes
+    - Possible circle in graph, where one node will be enqueued more than 1 times -> SOL: record visited nodes
+
+
+## 5.5 BFS for “all plans” problems 使用宽度优先搜索找所有方案
+- One plan == one path
+  - All plans == find all paths (like connected-component problems)
+  - Medium [78. Subsets]() https://leetcode-cn.com/problems/subsets/
+  - Hard [297. Serialize and Deserialize Binary Tree] https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/
+## 5.6 Bidirectional BFS 双向
 如果同时给了start and end point
 图的话一般是无向图
-
+BBFS Template
 
 ## 5Practice
 
@@ -711,7 +718,13 @@ for x in nodes:
   - find the TO with min lexicographical order
     - ❗️Hard [269. Alien Dictionary](leetcode/269.alien_dictionary.md)
 
+Bi-BFS
+Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md)
+[i630 · Knight Shortest Path II] https://www.lintcode.com/problem/630/
+- Hard [127. Word Ladder](leetcode/127.word_ladder.md)
 
+
+还没做：
 More BFS on graph
 - Medium [261. Graph Valid Tree]() https://leetcode-cn.com/problems/graph-valid-tree/
 - Medium i618. Search Graph Nodes https://www.lintcode.com/problem/618/
