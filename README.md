@@ -681,7 +681,7 @@ for x in nodes:
   - Tree is a special Graph
   - Tree has no circle so no need to record visited nodes
   - HashSet/dict/unordered_map  -> record visited nodes
-    - Possible circle in graph, where one node will be enqueued more than 1 times -> SOL: record visited nodes
+    - Possible circle in graph, where one node will be enqueued more than 1 times -> olution: record visited nodes
 
 
 ## 5.5 BFS for “all plans” problems 使用宽度优先搜索找所有方案
@@ -689,10 +689,11 @@ for x in nodes:
   - All plans == find all paths (like connected-component problems)
   - Medium [78. Subsets]() https://leetcode-cn.com/problems/subsets/
   - Hard [297. Serialize and Deserialize Binary Tree] https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/
+
 ## 5.6 Bidirectional BFS 双向
 如果同时给了start and end point
 图的话一般是无向图
-BBFS Template
+Bi-BFS Template
 
 ## 5Practice
 
@@ -719,9 +720,12 @@ BBFS Template
     - ❗️Hard [269. Alien Dictionary](leetcode/269.alien_dictionary.md)
 
 Bi-BFS
+
 Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md)
+
 [i630 · Knight Shortest Path II] https://www.lintcode.com/problem/630/
-- Hard [127. Word Ladder](leetcode/127.word_ladder.md)
+
+Hard [127. Word Ladder](leetcode/127.word_ladder.md)
 
 
 还没做：
@@ -744,6 +748,8 @@ More BFD on Matrix
 # 6. DC - Divide and Conquer
 
 # 7. DFS
+
+
 
 # 8. HashMap + Heap
 
