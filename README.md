@@ -708,6 +708,10 @@ Bi-BFS Template
   - BFS on Matrix (Change coordinates)
     - Medium [200. Number of Islands](leetcode/200.number_of_islands.md) BFS / Union Find
     - Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) 上面做过
+  - BFS on Graph
+    - Medium [261. Graph Valid Tree](leetcode/261.graph_valid_tree.md)
+    - Medium [323. Number of Connected Components in an Undirected Graph](leetcode/323. Number_of_Connected_Components_in_an_Undirected_Graph.md)
+
 - Topological Sorting 拓扑排序 (BFS on Graph)
   - find any Topological order
     - ❗️Medium [i127 Topological Sorting](leetcode/i127.topological_sort.md)
@@ -730,10 +734,10 @@ Hard [127. Word Ladder](leetcode/127.word_ladder.md)
 
 还没做：
 More BFS on graph
-- Medium [261. Graph Valid Tree]() https://leetcode-cn.com/problems/graph-valid-tree/
+-  
 - Medium i618. Search Graph Nodes https://www.lintcode.com/problem/618/
 
-- Medium 323. Number of Connected Components in an Undirected Graph https://leetcode-cn.com/problems/number-of-connected-components-in-an-undirected-graph/
+
 
 More BFD on Matrix
 - i598. Zombie in Matrix https://www.lintcode.com/problem/598/
