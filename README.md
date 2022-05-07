@@ -56,9 +56,11 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
   - [5.6 Bidirectional BFS 双向](#56-bidirectional-bfs-双向)
   - [5Practice](#5practice)
 - [6. HashMap + Heap](#6-hashmap--heap)
+  - [Java - HashMap  vs HashSet](#java---hashmap--vs-hashset)
+  - [Collision](#collision)
 - [7. DC - Divide and Conquer](#7-dc---divide-and-conquer)
 - [8. DFS](#8-dfs)
-  - [8Theory](#8theory)
+  - [8Theory 记得用java再做一遍](#8theory-记得用java再做一遍)
   - [8.1 Combination and Permutation BFS](#81-combination-and-permutation-bfs)
   - [8Practice](#8practice)
 - [9. Dynamic Programming - Memoization 记忆化搜索 动态规划](#9-dynamic-programming---memoization-记忆化搜索-动态规划)
@@ -753,6 +755,45 @@ More BFD on Matrix
 
 # 6. HashMap + Heap
 
+O(1) 
+- get(key), set(key, value)
+- actually O(size of keys)
+
+## Java - HashMap  vs HashSet
+|HashMap|	HashSet| HashTable|
+|-|-|-|
+|Implement Map interface|	Implement Set intergace|Implement Map interface. Inherits Dictionary class.|
+|Store key-value pair|	Store object|Store key-value pair|
+|Unique key|Unique element|Unique key|
+|One null as key. Multiple null can be values.|One null element allowed||No null as key neither value|
+|put() - add element|add() - add element|put() - add element|
+|HashMap uses key to calculate Hashcode	|HashSet uses the member object to calculate the hashcode value. The hashcode may be the same for two objects, so use the equals() method to determine the equality of the objects. If the two objects are different, return false|HashTable uses key to calculate Hashcode	|
+|It is not Thread-Safe because it is not Synchronized but it gives better performance.	|Like HashMap, it is not Thread-Safe because it is not Synchronized.|	It is Thread-Safe because it is Synchronized.|
+||
+
+|HashSet|	TreeSet	|LinkedHashSet|
+|-|-|-|
+|HashSet is fastest than LinkedHashSet and TreeSet|	TreeSet is slow when compared with both Hashset and LinkedHashSet	|LinkedHashSet is second fastest next to HashSet|
+|HashSet does not maintain any order|	TreeSet maintains Sorting Order	|LinkedHashSet maintains insertion order|
+|HashSet allows null|	TreeSet does not allow null	|LinkedHashSet allows null|
+|HashSet uses equals() method	|TreeSet uses compareTo() method	|LinkedHashSet uses equals() method|
+|HashSet backed by HashMap|	TreeSet backed by NavigableMap	|LinkedHashSet backed by HashSet|
+||
+
+
+
+- Python - set()/dict()
+  - Collision: open-hashing.
+- C++ - unordered_set() / unordered_map()
+
+## Collision
+- open hashing /  closed addressing / seperate chaining 
+  - keys are stored in linked lists attached to cells of a hash table.
+- closed hashing / open addressing/ linear probing
+  - all keys are stored in the hash table itself without the use of linked lists.
+  - double hashing (avoid hitting clumps)
+
+[Note Hash more](note/hash.md)
 
 
 # 7. DC - Divide and Conquer
@@ -761,7 +802,7 @@ More BFD on Matrix
 
 # 8. DFS
 
-## 8Theory
+## 8Theory 记得用java再做一遍
 
 ## 8.1 Combination and Permutation BFS  
 - 90% of DFS is combination or permutation problems. Especially combination. 
