@@ -771,7 +771,8 @@ More BFD on Matrix
       - Solution 1 Combination Special DFS
       - Solution 2 General DFS
       - Other Solutions: Can also do BFS (未写)
-    - Medium [90. Subset ii](leetcode/90.subset_ii.md)
+    - Medium [90. Subset ii](leetcode/90.subset_ii.md) Duplicate elements
+      - Remove duplicate while searching
 - BFS with Permutations
 
 
