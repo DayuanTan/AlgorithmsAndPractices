@@ -56,6 +56,7 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
   - [5.6 Bidirectional BFS 双向](#56-bidirectional-bfs-双向)
   - [5Practice](#5practice)
 - [6. HashMap + Heap](#6-hashmap--heap)
+  - [HashMap](#hashmap)
   - [Java - HashMap  vs HashSet](#java---hashmap--vs-hashset)
   - [Collision](#collision)
 - [7. DC - Divide and Conquer](#7-dc---divide-and-conquer)
@@ -755,9 +756,14 @@ More BFD on Matrix
 
 # 6. HashMap + Heap
 
-O(1) 
-- get(key), set(key, value)
-- actually O(size of keys)
+## HashMap
+- O(1) 
+  - get(key), set(key, value)
+  - actually O(size of keys)
+- Capacity, load factor, rehash
+  - Java HashMap: default initial capacity (16) and the default load factor (0.75).
+  - HashSet: the backing HashMap instance has default initial capacity (16) and load factor (0.75).
+  - rehash when size >= 16 * 0.75 = 12
 
 ## Java - HashMap  vs HashSet
 |HashMap|	HashSet| HashTable|
@@ -765,7 +771,7 @@ O(1)
 |Implement Map interface|	Implement Set intergace|Implement Map interface. Inherits Dictionary class.|
 |Store key-value pair|	Store object|Store key-value pair|
 |Unique key|Unique element|Unique key|
-|One null as key. Multiple null can be values.|One null element allowed||No null as key neither value|
+|One null as key. Multiple null can be values.|One null element allowed|No null as key neither value|
 |put() - add element|add() - add element|put() - add element|
 |HashMap uses key to calculate Hashcode	|HashSet uses the member object to calculate the hashcode value. The hashcode may be the same for two objects, so use the equals() method to determine the equality of the objects. If the two objects are different, return false|HashTable uses key to calculate Hashcode	|
 |It is not Thread-Safe because it is not Synchronized but it gives better performance.	|Like HashMap, it is not Thread-Safe because it is not Synchronized.|	It is Thread-Safe because it is Synchronized.|
@@ -791,7 +797,8 @@ O(1)
   - keys are stored in linked lists attached to cells of a hash table.
 - closed hashing / open addressing/ linear probing
   - all keys are stored in the hash table itself without the use of linked lists.
-  - double hashing (avoid hitting clumps)
+  - tomb (deleted element flag)
+  - double hashing (reduce hitting clumps possibility)
 
 [Note Hash more](note/hash.md)
 
