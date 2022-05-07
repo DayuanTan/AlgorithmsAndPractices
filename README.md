@@ -55,12 +55,12 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
   - [5.5 BFS for “all plans” problems 使用宽度优先搜索找所有方案](#55-bfs-for-all-plans-problems-使用宽度优先搜索找所有方案)
   - [5.6 Bidirectional BFS 双向](#56-bidirectional-bfs-双向)
   - [5Practice](#5practice)
-- [6. DC - Divide and Conquer](#6-dc---divide-and-conquer)
-- [7. DFS](#7-dfs)
-  - [7Theory](#7theory)
-  - [7.1 Combination and Permutation BFS](#71-combination-and-permutation-bfs)
-  - [7Practice](#7practice)
-- [8. HashMap + Heap](#8-hashmap--heap)
+- [6. HashMap + Heap](#6-hashmap--heap)
+- [7. DC - Divide and Conquer](#7-dc---divide-and-conquer)
+- [8. DFS](#8-dfs)
+  - [8Theory](#8theory)
+  - [8.1 Combination and Permutation BFS](#81-combination-and-permutation-bfs)
+  - [8Practice](#8practice)
 - [9. Dynamic Programming - Memoization 记忆化搜索 动态规划](#9-dynamic-programming---memoization-记忆化搜索-动态规划)
   - [9Theory:](#9theory)
   - [9.1 DFS-Traverse -> DC -> DC-with-Hashmap/Memoization Search](#91-dfs-traverse---dc---dc-with-hashmapmemoization-search)
@@ -751,16 +751,19 @@ More BFD on Matrix
 
 
 
-
-# 6. DC - Divide and Conquer
-
+# 6. HashMap + Heap
 
 
-# 7. DFS
 
-## 7Theory
+# 7. DC - Divide and Conquer
 
-## 7.1 Combination and Permutation BFS  
+
+
+# 8. DFS
+
+## 8Theory
+
+## 8.1 Combination and Permutation BFS  
 - 90% of DFS is combination or permutation problems. Especially combination. 
 - BFS with Combinations
   - Implicit graph search problem
@@ -773,15 +776,14 @@ More BFD on Matrix
       - Other Solutions: Can also do BFS (未写)
     - Medium [90. Subset ii](leetcode/90.subset_ii.md) Duplicate elements
       - Remove duplicate while searching
+        - Sort and compare to avoid duplicate
+        - Hash (Python: set/dict; Java: HashSet/HashMap)
 - BFS with Permutations
 
 
-## 7Practice
+## 8Practice
 
 
-
-
-# 8. HashMap + Heap
 
 # 9. Dynamic Programming - Memoization 记忆化搜索 动态规划
 
