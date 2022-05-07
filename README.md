@@ -57,6 +57,9 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
   - [5Practice](#5practice)
 - [6. DC - Divide and Conquer](#6-dc---divide-and-conquer)
 - [7. DFS](#7-dfs)
+  - [7Theory](#7theory)
+  - [7.1 Combination and Permutation BFS](#71-combination-and-permutation-bfs)
+  - [7Practice](#7practice)
 - [8. HashMap + Heap](#8-hashmap--heap)
 - [9. Dynamic Programming - Memoization 记忆化搜索 动态规划](#9-dynamic-programming---memoization-记忆化搜索-动态规划)
   - [9Theory:](#9theory)
@@ -751,7 +754,29 @@ More BFD on Matrix
 
 # 6. DC - Divide and Conquer
 
+
+
 # 7. DFS
+
+## 7Theory
+
+## 7.1 Combination and Permutation BFS  
+- 90% of DFS is combination or permutation problems. Especially combination. 
+- BFS with Combinations
+  - Implicit graph search problem
+    - If one problem doesn't tell you what are vertexes and edges but ask you to search, then it's implicit graph searching problem.
+    - Firstly we need to figure out what are vertexes and edges.
+    - Medium [78. Subset](leetcode/78.subset.md) 
+      - Find all plans problem -> Use DFS
+      - Solution 1 Combination Special DFS
+      - Solution 2 General DFS
+      - Other Solutions: Can also do BFS (未写)
+    - Medium [90. Subset ii](leetcode/90.subset_ii.md)
+- BFS with Permutations
+
+
+## 7Practice
+
 
 
 
