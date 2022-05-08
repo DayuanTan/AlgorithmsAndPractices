@@ -816,6 +816,7 @@ More BFD on Matrix
 ## 8.1 Combination and Permutation BFS  
 - 90% of DFS is combination or permutation problems. Especially combination. 
 - BFS with Combinations
+  - C(n, k) = n! / {k! (n-k)!}
   - Implicit graph search problem
     - If one problem doesn't tell you what are vertexes and edges but ask you to search, then it's implicit graph searching problem.
     - Firstly we need to figure out what are vertexes and edges.
@@ -829,7 +830,7 @@ More BFD on Matrix
         - Sort and compare to avoid duplicate
         - Hash (Python: set/dict; Java: HashSet/HashMap)
 - BFS with Permutations
-
+  - Permutation considers order. P(n, k) = A(n, k) =  n factorial = n!
 
 ## 8Practice
 
