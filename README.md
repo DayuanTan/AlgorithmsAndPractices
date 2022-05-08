@@ -802,6 +802,8 @@ More BFD on Matrix
 
 [Note Hash more](note/hash.md)
 
+- Easy [706. Design HashMap](leetcode/706.design_hashmap.md)
+- Easy [705. Design HashSet](leetcode/705.design_hashset.md)
 
 # 7. DC - Divide and Conquer
 
