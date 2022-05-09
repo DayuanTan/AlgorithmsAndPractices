@@ -712,11 +712,11 @@ Bi-BFS Template
 - Connected component 连通块问题
   - ❗️Medium [133. Clone Graph](leetcode/133.clone_graph.md)
   - BFS on Matrix (Change coordinates)
-    - Medium [200. Number of Islands](leetcode/200.number_of_islands.md) BFS / Union Find
+    - ❗️Medium [200. Number of Islands](leetcode/200.number_of_islands.md) BFS / Union Find
     - Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) 上面做过
   - BFS on Graph
-    - Medium [261. Graph Valid Tree](leetcode/261.graph_valid_tree.md)
-    - Medium [323. Number of Connected Components in an Undirected Graph](leetcode/323. Number_of_Connected_Components_in_an_Undirected_Graph.md)
+    - ❗️Medium [261. Graph Valid Tree](leetcode/261.graph_valid_tree.md)
+    - Medium [323. Number of Connected Components in an Undirected Graph](leetcode/323.Number_of_Connected_Components_in_an_Undirected_Graph.md)
 
 - Topological Sorting 拓扑排序 (BFS on Graph)
   - find any Topological order
@@ -815,24 +815,36 @@ More BFD on Matrix
 
 ## 8.1 Combination and Permutation BFS  
 - 90% of DFS is combination or permutation problems. Especially combination. 
-- BFS with Combinations
+- DFS with Combinations
   - C(n, k) = n! / {k! (n-k)!}
   - Implicit graph search problem
     - If one problem doesn't tell you what are vertexes and edges but ask you to search, then it's implicit graph searching problem.
     - Firstly we need to figure out what are vertexes and edges.
-    - Medium [78. Subset](leetcode/78.subset.md) 
+    - ❗️Medium [78. Subset](leetcode/78.subset.md) 
       - Find all plans problem -> Use DFS
       - Solution 1 Combination Special DFS
       - Solution 2 General DFS
       - Other Solutions: Can also do BFS (未写)
-    - Medium [90. Subset ii](leetcode/90.subset_ii.md) Duplicate elements
+    - ❗️Medium [90. Subset ii](leetcode/90.subset_ii.md) Duplicate elements
       - Remove duplicate while searching
         - Sort and compare to avoid duplicate
         - Hash (Python: set/dict; Java: HashSet/HashMap)
-- BFS with Permutations
+- DFS with Permutations
   - Permutation considers order. P(n, k) = A(n, k) =  n factorial = n!
+  - ❗️Medium [46. Permutations](leetcode/46.permutations.md) 1.DFS-Permutation-Recursion / 2.Non-Recursion
+- Combination DFS vs Permutation DFS
+  - Search Tree shape
+  - Templates
+- DFS Time Complexition
+  - O(#all-plans * time-to-build-one-plan) 
+    - Combinations: O(2^N * N)
+    - Permutations: O(N! * N)
 
 ## 8Practice
+
+- Combinations  
+  - 77. Combinations
+- Permutations
 
 
 
