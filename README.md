@@ -63,6 +63,8 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
 - [8. DFS](#8-dfs)
   - [8Theory 记得用java再做一遍](#8theory-记得用java再做一遍)
   - [8.1 Combination and Permutation BFS](#81-combination-and-permutation-bfs)
+  - [8.2 All-plans problems](#82-all-plans-problems)
+  - [8.3 When to use DFS vs BFS](#83-when-to-use-dfs-vs-bfs)
   - [8Practice](#8practice)
 - [9. Dynamic Programming - Memoization 记忆化搜索 动态规划](#9-dynamic-programming---memoization-记忆化搜索-动态规划)
   - [9Theory:](#9theory)
@@ -127,6 +129,7 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
 
 ## Problems
 - Find all plans/solutions problems
+  - paths == plans == nodes combinations/permutations
   - DFS (with recursion)
   - BFS
 - Find best among all solutions problems
@@ -814,7 +817,7 @@ More BFD on Matrix
 ## 8Theory 记得用java再做一遍
 
 ## 8.1 Combination and Permutation BFS  
-- 90% of DFS is combination or permutation problems. Especially combination. 
+- Except Binary Tree, 90% of DFS is combination or permutation problems. Especially combination. 
 - DFS with Combinations
   - C(n, k) = n! / {k! (n-k)!}
   - Implicit graph search problem
@@ -839,6 +842,30 @@ More BFD on Matrix
   - O(#all-plans * time-to-build-one-plan) 
     - Combinations: O(2^N * N)
     - Permutations: O(N! * N)
+    - => small depth and may large width => DFS
+
+## 8.2 All-plans problems
+- Find all plans meet requirements 找所有满足某个条件的方案
+- Find all paths 找到图中的所有满足条件的路径
+  - 路径 == 方案 == 图中节点的排列组合
+- Can be solved using BFS?
+  - Yes
+  - Need to convert find-all-paths to find-all-nodes
+
+## 8.3 When to use DFS vs BFS
+
+- The space complexity of BFS depends on its width 宽度优先搜索的空间复杂度取决于宽度 
+- The space complexity of DFS depends on its depth 深度优先搜索的空间复杂度取决于深度
+- If the search tree is deep but not wide then BFS
+  - Matrix uses BFS
+    - For example, in matrix, the width is <= sqrt(n) while depth is <= n^2 so it's better to use BFS.
+- If the search tree is wide but not deep then DFS
+  - Combinations/Permutations use DFS
+    - They are O(2^n)/O(n!) so the n cannot be large => the depth won't be large but the width might be large => DFS
+
+
+
+
 
 ## 8Practice
 
