@@ -834,7 +834,7 @@ More BFD on Matrix
         - Hash (Python: set/dict; Java: HashSet/HashMap)
 - DFS with Permutations
   - Permutation considers order. P(n, k) = A(n, k) =  n factorial = n!
-  - ❗️Medium [46. Permutations](leetcode/46.permutations.md) 1.DFS-Permutation-Recursion / 2.Non-Recursion
+  - ❗️Medium [46. Permutations](leetcode/46.permutations.md) Distinct elements. 1.DFS-Permutation-Recursion / 2.Non-Recursion (Stack)
 - Combination DFS vs Permutation DFS
   - Search Tree shape
   - Templates
@@ -874,10 +874,19 @@ More BFD on Matrix
     - Medium [40. Combination Sum II](leetcode/40.combination_sum2.md) duplicate
     - Medium [216. Combination Sum III](leetcode/216.combination_sum3.md) k members sum up to target (Medium ==i90. K Sum II)
     - Medium [377. Combination Sum IV](leetcode/377.combination_sum4.md) total amount of combinations  (== Hard i89. K Sum) - DP 以后再做
-  - Medium [77. Combinations](leetcode/77.combinations.md)
+  - Medium [77. Combinations](leetcode/77.combinations.md) Recursion, Stack
+  - Medium [17. Letter Combinations of a Phone Number]
+  
+  - 79. Word Search
+  - 212. Word Search II
+  - i1848 · Word Search III
+
+  - 127. Word Ladder
+  - 126. Word Ladder II
+
 - Permutations
-
-
+  - Medium [47. Permutations II]() duplicate elements.
+ 
 
 # 9. Dynamic Programming - Memoization 记忆化搜索 动态规划
 
