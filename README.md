@@ -870,6 +870,10 @@ More BFD on Matrix
 ## 8Practice
 
 - Combinations  
+  - Medium [39. Combination Sum](leetcode/39.combination_sum.md) distinct
+    - Medium [40. Combination Sum II](leetcode/40.combination_sum2.md) duplicate
+    - Medium [216. Combination Sum III](leetcode/216.combination_sum3.md) k members sum up to target (Medium ==i90. K Sum II)
+    - Medium [377. Combination Sum IV](leetcode/377.combination_sum4.md) total amount of combinations  (== Hard i89. K Sum) - DP 以后再做
   - 77. Combinations
 - Permutations
 
