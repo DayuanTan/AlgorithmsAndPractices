@@ -132,6 +132,8 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
   - paths == plans == nodes combinations/permutations
   - DFS (with recursion)
   - BFS
+- Find amount of all plans 
+  - DP
 - Find best among all solutions problems
   - Iteration/loop
   - Greedy/ Eplison Greedy
@@ -834,7 +836,7 @@ More BFD on Matrix
         - Hash (Python: set/dict; Java: HashSet/HashMap)
 - DFS with Permutations
   - Permutation considers order. P(n, k) = A(n, k) =  n factorial = n!
-  - ❗️Medium [46. Permutations](leetcode/46.permutations.md) Distinct elements. 1.DFS-Permutation-Recursion / 2.Non-Recursion (Stack)
+  - ❗️Medium [46. Permutations](leetcode/46.permutations.md) Distinct elements. 1.DFS-Permutation-Recursion / 2.Non-Recursion (Stack以后再做)
 - Combination DFS vs Permutation DFS
   - Search Tree shape
   - Templates
@@ -874,8 +876,9 @@ More BFD on Matrix
     - Medium [40. Combination Sum II](leetcode/40.combination_sum2.md) duplicate
     - Medium [216. Combination Sum III](leetcode/216.combination_sum3.md) k members sum up to target (Medium ==i90. K Sum II)
     - Medium [377. Combination Sum IV](leetcode/377.combination_sum4.md) total amount of combinations  (== Hard i89. K Sum) - DP 以后再做
-  - Medium [77. Combinations](leetcode/77.combinations.md) Recursion, Stack
-  - Medium [17. Letter Combinations of a Phone Number]
+  - Medium [77. Combinations](leetcode/77.combinations.md) Recursion, Stack以后再做
+  - Medium [17. Letter Combinations of a Phone Number](leetcode/17.Letter_Combinations_of_a_Phone_Number.md)
+  - II 
   
   - 79. Word Search
   - 212. Word Search II
