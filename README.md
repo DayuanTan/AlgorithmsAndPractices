@@ -698,7 +698,7 @@ for x in nodes:
 ## 5.5 BFS for “all plans” problems 使用宽度优先搜索找所有方案
 - One plan == one path
   - All plans == find all paths (like connected-component problems)
-  - Medium [78. Subsets]() https://leetcode-cn.com/problems/subsets/
+  - Medium [78. Subsets](leetcode/78.subset.md) DFS/BFS
   - Hard [297. Serialize and Deserialize Binary Tree] https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/
 
 ## 5.6 Bidirectional BFS 双向
@@ -872,15 +872,16 @@ More BFD on Matrix
 ## 8Practice
 
 - Combinations  
-  - Medium [39. Combination Sum](leetcode/39.combination_sum.md) distinct
-    - Medium [40. Combination Sum II](leetcode/40.combination_sum2.md) duplicate
-    - Medium [216. Combination Sum III](leetcode/216.combination_sum3.md) k members sum up to target (Medium ==i90. K Sum II)
+  - Medium [39. Combination Sum](leetcode/39.combination_sum.md) distinct, use multiple times
+    - Medium [40. Combination Sum II](leetcode/40.combination_sum_ii.md) duplicate, use once
+    - Medium [216. Combination Sum III](leetcode/216.combination_sum3.md) k members sum up to target (Medium ==i90. K Sum II), use once
     - Medium [377. Combination Sum IV](leetcode/377.combination_sum4.md) total amount of combinations  (== Hard i89. K Sum) - DP 以后再做
   - Medium [77. Combinations](leetcode/77.combinations.md) Recursion, Stack以后再做
   - Medium [17. Letter Combinations of a Phone Number](leetcode/17.Letter_Combinations_of_a_Phone_Number.md)
-  - II 
   
-  - 79. Word Search
+  
+  DFS on Matrix
+  - Medium [79. Word Search](leetcode/79.word_search.md)
   - 212. Word Search II
   - i1848 · Word Search III
 
