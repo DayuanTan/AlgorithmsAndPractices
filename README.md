@@ -699,7 +699,7 @@ for x in nodes:
 - One plan == one path
   - All plans == find all paths (like connected-component problems)
   - Medium [78. Subsets](leetcode/78.subset.md) DFS/BFS
-  - Hard [297. Serialize and Deserialize Binary Tree] https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/
+  - Hard [297. Serialize and Deserialize Binary Tree] https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/ 以后练习
 
 ## 5.6 Bidirectional BFS 双向
 如果同时给了start and end point
@@ -881,8 +881,8 @@ More BFD on Matrix
   
   
   DFS on Matrix
-  - Medium [79. Word Search](leetcode/79.word_search.md)
-  - 212. Word Search II
+  - Medium [79. Word Search](leetcode/79.word_search.md) one target word
+  - Hard [212. Word Search II](leetcode/212.Word_Search_II.md) multiple target words
   - i1848 · Word Search III
 
   - 127. Word Ladder
