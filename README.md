@@ -709,7 +709,7 @@ Bi-BFS Template
 ## 5Practice
 
 - level order traversal 分层遍历
-  - ❗️Medium [102. Binary Tree Level Order Traversal](leetcode/102.Binary_Tree_Level_Order_Traversal.md) 3 implementation ways 
+  - ❗️Medium [102. Binary Tree Level Order Traversal](leetcode/102.Binary_Tree_Level_Order_Traversal.md) 3 types BFS (1 queue, 2 queues, dummy node), DFS
     - ❗️探索Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) BFS + Pruning, DP等多解法
     - ❗️总结[BFS Template](note/bfs_template.md) Queue record nodes to process. HashTable record visited node to prune or avoid cycle.
   - Simple graph shortest path 简单图最短路径
