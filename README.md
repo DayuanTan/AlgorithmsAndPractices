@@ -882,8 +882,10 @@ More BFD on Matrix
   
   DFS on Matrix
   - Medium [79. Word Search](leetcode/79.word_search.md) one target word
-  - Hard [212. Word Search II](leetcode/212.Word_Search_II.md) multiple target words
-  - i1848 · Word Search III
+  - Hard [212. Word Search II](leetcode/212.Word_Search_II.md) multiple target words. Prefix map/Tire
+  - Hard [i1848 · Word Search III](leetcode/i1848.Word_Search_III.md) Tire
+
+https://leetcode.cn/problems/unique-paths/ ?
 
   - 127. Word Ladder
   - 126. Word Ladder II
