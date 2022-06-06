@@ -713,7 +713,7 @@ Bi-BFS Template
     - ❗️探索Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) BFS + Pruning, DP等多解法
     - ❗️总结[BFS Template](note/bfs_template.md) Queue record nodes to process. HashTable record visited node to prune or avoid cycle.
   - Simple graph shortest path 简单图最短路径
-    - Hard [127. Word Ladder](leetcode/127.word_ladder.md)
+    - Hard [127. Word Ladder](leetcode/127.word_ladder.md) BFS分层/不分层, bi-BFS
 - Connected component 连通块问题
   - ❗️Medium [133. Clone Graph](leetcode/133.clone_graph.md)
   - BFS on Matrix (Change coordinates)
@@ -740,7 +740,7 @@ Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md)
 
 [i630 · Knight Shortest Path II] https://www.lintcode.com/problem/630/
 
-Hard [127. Word Ladder](leetcode/127.word_ladder.md)
+Hard [127. Word Ladder](leetcode/127.word_ladder.md) BFS分层/不分层, bi-BFS
 
 
 还没做：
@@ -882,13 +882,13 @@ More BFD on Matrix
   
   DFS on Matrix
   - Medium [79. Word Search](leetcode/79.word_search.md) one target word
-  - Hard [212. Word Search II](leetcode/212.Word_Search_II.md) multiple target words. Prefix map/Trie
-    - Hard [i638. Boggle Game](leetcode/i638.boggle_game.md) same as 212
-  - Hard [i1848. Word Search III](leetcode/i1848.Word_Search_III.md) multiple target words in continous sequence. Trie.
+    - Hard [212. Word Search II](leetcode/212.Word_Search_II.md) multiple target words. Prefix map/Trie
+      - Hard [i638. Boggle Game](leetcode/i638.boggle_game.md) same as 212
+    - Hard [i1848. Word Search III](leetcode/i1848.Word_Search_III.md) multiple target words in continous sequence. Trie.
   
 
-  - 127. Word Ladder
-  - 126. Word Ladder II
+  - Hard [127. Word Ladder](leetcode/127.word_ladder.md) BFS分层/不分层, bi-BFS. Review first先复习下这个方便和下一个对比
+    - Hard [126. Word Ladder II](leetcode/126.word_ladder2.md) BFS+DFS
 
 - Permutations
   - Medium [47. Permutations II]() duplicate elements.
