@@ -882,10 +882,9 @@ More BFD on Matrix
   
   DFS on Matrix
   - Medium [79. Word Search](leetcode/79.word_search.md) one target word
-  - Hard [212. Word Search II](leetcode/212.Word_Search_II.md) multiple target words. Prefix map/Tire
-  - Hard [i1848 · Word Search III](leetcode/i1848.Word_Search_III.md) Tire
-
-https://leetcode.cn/problems/unique-paths/ ?
+  - Hard [212. Word Search II](leetcode/212.Word_Search_II.md) multiple target words. Prefix map/Trie
+  - Hard [i1848. Word Search III](leetcode/i1848.Word_Search_III.md) multiple target words in continous sequence. Trie.
+  - Hard [i638. Boggle Game](leetcode/i638.boggle_game.md)
 
   - 127. Word Ladder
   - 126. Word Ladder II
@@ -893,6 +892,9 @@ https://leetcode.cn/problems/unique-paths/ ?
 - Permutations
   - Medium [47. Permutations II]() duplicate elements.
  
+
+https://leetcode.cn/problems/unique-paths/ ?一系列题目 也许是DP
+
 
 # 9. Dynamic Programming - Memoization 记忆化搜索 动态规划
 
