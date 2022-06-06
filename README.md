@@ -883,8 +883,9 @@ More BFD on Matrix
   DFS on Matrix
   - Medium [79. Word Search](leetcode/79.word_search.md) one target word
   - Hard [212. Word Search II](leetcode/212.Word_Search_II.md) multiple target words. Prefix map/Trie
+    - Hard [i638. Boggle Game](leetcode/i638.boggle_game.md) same as 212
   - Hard [i1848. Word Search III](leetcode/i1848.Word_Search_III.md) multiple target words in continous sequence. Trie.
-  - Hard [i638. Boggle Game](leetcode/i638.boggle_game.md)
+  
 
   - 127. Word Ladder
   - 126. Word Ladder II
