@@ -887,7 +887,7 @@ More BFD on Matrix
     - Hard [i1848. Word Search III](leetcode/i1848.Word_Search_III.md) multiple target words in continous sequence. Trie.
   
 
-  - Hard [127. Word Ladder 求最优方案总数](leetcode/127.word_ladder.md) BFS分层/不分层, bi-BFS. (Review first先复习下这个方便和下一个对比)
+  - Hard [127. Word Ladder 求最优方案之一](leetcode/127.word_ladder.md) BFS分层/不分层, bi-BFS. (Review first先复习下这个方便和下一个对比)
     - Hard [126. Word Ladder II 求全部最优方案path](leetcode/126.word_ladder2.md) BFS+DFS
 
 - Permutations
