@@ -827,16 +827,16 @@ More BFD on Matrix
     - Firstly we need to figure out what are vertexes and edges.
     - ❗️Medium [78. Subset](leetcode/78.subset.md) 
       - Find all plans problem -> Use DFS
-      - Solution 1 Combination Special DFS
-      - Solution 2 General DFS
-      - Other Solutions: Can also do BFS (未写)
+      - Solution 1 Combination Special DFS 分层
+      - Solution 2 General DFS 不分层
+      - Solution 3 BFS 
     - ❗️Medium [90. Subset ii](leetcode/90.subset_ii.md) Duplicate elements
       - Remove duplicate while searching
         - Sort and compare to avoid duplicate
         - Hash (Python: set/dict; Java: HashSet/HashMap)
 - DFS with Permutations
   - Permutation considers order. P(n, k) = A(n, k) =  n factorial = n!
-  - ❗️Medium [46. Permutations](leetcode/46.permutations.md) Distinct elements. 1.DFS-Permutation-Recursion / 2.Non-Recursion (Stack以后再做)
+  - ❗️Medium [46. Permutations](leetcode/46.permutations.md) Distinct elements. 1.DFS-Permutation-Recursion; 2.Non-Recursion 
 - Combination DFS vs Permutation DFS
   - Search Tree shape
   - Templates
@@ -891,7 +891,7 @@ More BFD on Matrix
     - Hard [126. Word Ladder II 求全部最优方案path](leetcode/126.word_ladder2.md) BFS+DFS
 
 - Permutations
-  - Medium [47. Permutations II]() duplicate elements.
+  - Medium [47. Permutations II](leetcode/47.Permutations_II.md) duplicate elements.
  
 
 https://leetcode.cn/problems/unique-paths/ ?一系列题目 也许是DP
