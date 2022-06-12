@@ -891,8 +891,21 @@ More BFD on Matrix
     - Hard [126. Word Ladder II 求全部最优方案path](leetcode/126.word_ladder2.md) BFS+DFS
 
 - Permutations
+  - Medium [46. Permutations](leetcode/46.permutations.md) Distinct elements. 1.DFS-Permutation-Recursion; 2.Non-Recursion/Stack. 
   - Medium [47. Permutations II](leetcode/47.Permutations_II.md) duplicate elements.
- 
+  - Medium [31. Next Permutation](leetcode/31.Next_Permutation.md)
+
+N 皇后问题及程序结构的艺术
+
+• 数独及搜索顺序的优化算法
+
+然后完成bfs
+然后7dc
+然后dp
+
+
+TSP 
+  DFS, pruning, DP
 
 https://leetcode.cn/problems/unique-paths/ ?一系列题目 也许是DP
 
