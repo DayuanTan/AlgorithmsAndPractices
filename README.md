@@ -895,19 +895,25 @@ More BFD on Matrix
   - Medium [47. Permutations II](leetcode/47.Permutations_II.md) duplicate elements.
   - Medium [31. Next Permutation](leetcode/31.Next_Permutation.md)
 
+Hard [51. N-Queens](leetcode/51.n_queens.md)
+37. Sudoku Solver
+36. Valid Sudoku 
+
 N 皇后问题及程序结构的艺术
 
-• 数独及搜索顺序的优化算法
+数独及搜索顺序的优化算法
 
-然后完成bfs
-然后7dc
-然后dp
 
+980. Unique Paths III DFS?
 
 TSP 
   DFS, pruning, DP
+  847. Shortest Path Visiting All Nodes
+  1266. Minimum Time Visiting All Points
 
-https://leetcode.cn/problems/unique-paths/ ?一系列题目 也许是DP
+然后完成bfs bi-bfs
+然后7dc
+然后dp
 
 
 # 9. Dynamic Programming - Memoization 记忆化搜索 动态规划
