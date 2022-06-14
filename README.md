@@ -895,21 +895,20 @@ More BFD on Matrix
   - Medium [47. Permutations II](leetcode/47.Permutations_II.md) duplicate elements.
   - Medium [31. Next Permutation](leetcode/31.Next_Permutation.md)
 
-Hard [51. N-Queens](leetcode/51.n_queens.md)
-37. Sudoku Solver
-36. Valid Sudoku 
+Hard [51. N-Queens](leetcode/51.n_queens.md) Each possible move is a tree node. Ask all-plans.
+- Hard [52. N-Queens 2](leetcode/52.n_queens_2.md) Ask #all-plans. Almost same.
 
-N 皇后问题及程序结构的艺术
-
-数独及搜索顺序的优化算法
+37.  Sudoku Solver
+36.  Valid Sudoku 
 
 
-980. Unique Paths III DFS?
+
+37.  Unique Paths III DFS?
 
 TSP 
   DFS, pruning, DP
-  847. Shortest Path Visiting All Nodes
-  1266. Minimum Time Visiting All Points
+  1.   Shortest Path Visiting All Nodes
+  2.    Minimum Time Visiting All Points
 
 然后完成bfs bi-bfs
 然后7dc
