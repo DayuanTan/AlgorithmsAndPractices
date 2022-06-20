@@ -898,8 +898,8 @@ More BFD on Matrix
 Hard [51. N-Queens](leetcode/51.n_queens.md) Each possible move is a tree node. Ask all-plans.
 - Hard [52. N-Queens 2](leetcode/52.n_queens_2.md) Ask #all-plans. Almost same.
 
-37.  Sudoku Solver
-Medium [36.  Valid Sudoku](leetcode/36.valid_sudoku.md)
+Hard [37.  Sudoku Solver](leetcode/37.sudoku_solver.md) DFS
+-  Medium [36.  Valid Sudoku](leetcode/36.valid_sudoku.md) Array Traverse
 
 
 
