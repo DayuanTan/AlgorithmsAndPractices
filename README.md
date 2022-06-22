@@ -702,15 +702,15 @@ for x in nodes:
   - 序列化 Hard [297. Serialize and Deserialize Binary Tree](297.Serialize_and_Deserialize_Binary_Tree.md)  
 
 ## 5.6 Bidirectional BFS 双向
-如果同时给了start and end point
-图的话一般是无向图
-Bi-BFS Template
+- 如果同时给了start and end point
+- 图的话一般是无向图
+- [Bi-BFS Template](note/bfs_template.md)
 
 ## 5Practice
 
 - level order traversal 分层遍历
   - ❗️Medium [102. Binary Tree Level Order Traversal](leetcode/102.Binary_Tree_Level_Order_Traversal.md) 3 types BFS (1 queue, 2 queues, dummy node), DFS
-    - ❗️探索Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) BFS + Pruning, DP等多解法
+    - ❗️探索Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) BFS + Pruning, bi-BFS, DP等多解法
     - ❗️总结[BFS Template](note/bfs_template.md) Queue record nodes to process. HashTable record visited node to prune or avoid cycle.
   - Simple graph shortest path 简单图最短路径
     - Hard [127. Word Ladder](leetcode/127.word_ladder.md) BFS分层/不分层, bi-BFS
@@ -734,13 +734,10 @@ Bi-BFS Template
   - find the TO with min lexicographical order
     - ❗️Hard [269. Alien Dictionary](leetcode/269.alien_dictionary.md)
 
-Bi-BFS
-
-Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md)
-
-[i630 · Knight Shortest Path II] https://www.lintcode.com/problem/630/
-
-Hard [127. Word Ladder](leetcode/127.word_ladder.md) BFS分层/不分层, bi-BFS
+- Bi-BFS
+  - Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md)
+  - [i630 · Knight Shortest Path II] https://www.lintcode.com/problem/630/
+  - Hard [127. Word Ladder](leetcode/127.word_ladder.md) BFS分层/不分层, bi-BFS
 
 
 还没做：
@@ -754,8 +751,6 @@ More BFD on Matrix
 - i598. Zombie in Matrix https://www.lintcode.com/problem/598/
 - i573. Build Post Office II https://www.lintcode.com/problem/573/
 - i1179. Friend Circles https://www.lintcode.com/problem/1179/  BFS / Union Find
-
-- i630. Knight Shortest Path II https://www.lintcode.com/problem/630/
 
 
 
