@@ -699,7 +699,7 @@ for x in nodes:
 - One plan == one path
   - All plans == find all paths (like connected-component problems)
   - Medium [78. Subsets](leetcode/78.subset.md) DFS/BFS
-  - Hard [297. Serialize and Deserialize Binary Tree] https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/ 以后练习
+  - 序列化 Hard [297. Serialize and Deserialize Binary Tree](297.Serialize_and_Deserialize_Binary_Tree.md)  
 
 ## 5.6 Bidirectional BFS 双向
 如果同时给了start and end point
@@ -880,7 +880,7 @@ More BFD on Matrix
   - Medium [17. Letter Combinations of a Phone Number](leetcode/17.Letter_Combinations_of_a_Phone_Number.md)
   
   
-  DFS on Matrix
+- DFS on Matrix
   - Medium [79. Word Search](leetcode/79.word_search.md) one target word
     - Hard [212. Word Search II](leetcode/212.Word_Search_II.md) multiple target words. Prefix map/Trie
       - Hard [i638. Boggle Game](leetcode/i638.boggle_game.md) same as 212
@@ -895,15 +895,13 @@ More BFD on Matrix
   - Medium [47. Permutations II](leetcode/47.Permutations_II.md) duplicate elements.
   - Medium [31. Next Permutation](leetcode/31.Next_Permutation.md)
 
-Hard [51. N-Queens](leetcode/51.n_queens.md) Each possible move is a tree node. Ask all-plans.
-- Hard [52. N-Queens 2](leetcode/52.n_queens_2.md) Ask #all-plans. Almost same.
+- Implicit Graph/Tree
+  - Hard [51. N-Queens](leetcode/51.n_queens.md) Each possible move is a tree node. Ask all-plans.
+    - Hard [52. N-Queens 2](leetcode/52.n_queens_2.md) Ask #all-plans. Almost same.
+  - Hard [37.  Sudoku Solver](leetcode/37.sudoku_solver.md) DFS
+    - Medium [36.  Valid Sudoku](leetcode/36.valid_sudoku.md) Array Traverse
+  - Hard [980. Unique Paths III]() DFS, DP
 
-Hard [37.  Sudoku Solver](leetcode/37.sudoku_solver.md) DFS
--  Medium [36.  Valid Sudoku](leetcode/36.valid_sudoku.md) Array Traverse
-
-
-
-37.  Unique Paths III DFS?
 
 TSP 
   DFS, pruning, DP
