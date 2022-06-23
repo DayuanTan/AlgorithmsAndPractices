@@ -96,11 +96,11 @@ def find_nodes_by_bfs(self, node):
 # Bi-BFS 双向宽度优先搜索代码模板
 
 ```
-初始化forward_quque forward_set , 加入起点
-初始化backward_quque backward_set , 加入起点
+初始化forward_queue forward_set , 加入起点
+初始化backward_queue backward_set , 加入终点
 distance = 0
 
-while forward_quque backward_quque 都非空：
+while forward_queue backward_queue 都非空：
     distance += 1
     for all nodes in forward_queue:
         扩展出下一层的点放入forward_queue 和forward_set里面
