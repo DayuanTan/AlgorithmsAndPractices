@@ -59,12 +59,14 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
   - [HashMap](#hashmap)
   - [Java - HashMap  vs HashSet](#java---hashmap--vs-hashset)
   - [Collision](#collision)
-- [7. DC - Divide and Conquer](#7-dc---divide-and-conquer)
-- [8. DFS](#8-dfs)
-  - [8Theory 记得用java再做一遍](#8theory-记得用java再做一遍)
-  - [8.1 Combination and Permutation BFS](#81-combination-and-permutation-bfs)
-  - [8.2 All-plans problems](#82-all-plans-problems)
-  - [8.3 When to use DFS vs BFS](#83-when-to-use-dfs-vs-bfs)
+- [7. DFS](#7-dfs)
+  - [7heory (记得用java再做一遍)](#7heory-记得用java再做一遍)
+  - [7.1 Combination and Permutation BFS](#71-combination-and-permutation-bfs)
+  - [7.2 All-plans problems](#72-all-plans-problems)
+  - [7.3 When to use DFS vs BFS](#73-when-to-use-dfs-vs-bfs)
+  - [7Practice](#7practice)
+- [8. DC - Divide and Conquer](#8-dc---divide-and-conquer)
+  - [8Theory](#8theory)
   - [8Practice](#8practice)
 - [9. Dynamic Programming - Memoization 记忆化搜索 动态规划](#9-dynamic-programming---memoization-记忆化搜索-动态规划)
   - [9Theory:](#9theory)
@@ -735,22 +737,11 @@ for x in nodes:
     - ❗️Hard [269. Alien Dictionary](leetcode/269.alien_dictionary.md)
 
 - Bi-BFS
-  - Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md)
-  - [i630 · Knight Shortest Path II] https://www.lintcode.com/problem/630/
+  - Medium [1197. Minimum Knight Moves](leetcode/1197.Minimum_Knight_Moves.md) bi-BFS
   - Hard [127. Word Ladder](leetcode/127.word_ladder.md) BFS分层/不分层, bi-BFS
 
 
-还没做：
-More BFS on graph
--  
-- Medium i618. Search Graph Nodes https://www.lintcode.com/problem/618/
-
-
-
-More BFD on Matrix
-- i598. Zombie in Matrix https://www.lintcode.com/problem/598/
-- i573. Build Post Office II https://www.lintcode.com/problem/573/
-- i1179. Friend Circles https://www.lintcode.com/problem/1179/  BFS / Union Find
+[other](leetcode/bfs_other.md)
 
 
 
@@ -805,15 +796,13 @@ More BFD on Matrix
 - Easy [706. Design HashMap](leetcode/706.design_hashmap.md)
 - Easy [705. Design HashSet](leetcode/705.design_hashset.md)
 
-# 7. DC - Divide and Conquer
 
 
+# 7. DFS
 
-# 8. DFS
+## 7heory (记得用java再做一遍)
 
-## 8Theory 记得用java再做一遍
-
-## 8.1 Combination and Permutation BFS  
+## 7.1 Combination and Permutation BFS  
 - Except Binary Tree, 90% of DFS is combination or permutation problems. Especially combination. 
 - DFS with Combinations
   - C(n, k) = n! / {k! (n-k)!}
@@ -841,7 +830,7 @@ More BFD on Matrix
     - Permutations: O(N! * N)
     - => small depth and may large width => DFS
 
-## 8.2 All-plans problems
+## 7.2 All-plans problems
 - Find all plans meet requirements 找所有满足某个条件的方案
 - Find all paths 找到图中的所有满足条件的路径
   - 路径 == 方案 == 图中节点的排列组合
@@ -849,7 +838,7 @@ More BFD on Matrix
   - Yes
   - Need to convert find-all-paths to find-all-nodes
 
-## 8.3 When to use DFS vs BFS
+## 7.3 When to use DFS vs BFS
 
 - The space complexity of BFS depends on its width 宽度优先搜索的空间复杂度取决于宽度 
 - The space complexity of DFS depends on its depth 深度优先搜索的空间复杂度取决于深度
@@ -864,7 +853,7 @@ More BFD on Matrix
 
 
 
-## 8Practice
+## 7Practice
 
 - Combinations  
   - Medium [39. Combination Sum](leetcode/39.combination_sum.md) distinct, use multiple times
@@ -906,6 +895,13 @@ TSP
 然后完成bfs bi-bfs
 然后7dc
 然后dp
+
+# 8. DC - Divide and Conquer
+
+## 8Theory
+
+
+## 8Practice
 
 
 # 9. Dynamic Programming - Memoization 记忆化搜索 动态规划
