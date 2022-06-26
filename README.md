@@ -908,6 +908,8 @@ TSP
 |Recursion algorithm: The result of bigger problems depend on the result of smaller problems. So use the recursion function to solve the smaller problems.|DFS can be implemented without using Recursion fucntion, for example you design a stack and operate by hand yourself. |Backtracking operation: when the recursion function return to its previous layer, some parameters need to be changed back to their previous values.|
 |Usually when we say recursion, we mean the recursion function.|DFS is a traversal/searching algorithm.||
 
+Easy [257. Binary Tree Paths (find all paths)](leetcode/257.Binary_Tree_Paths.md)
+
 ## 8Practice
 
 
