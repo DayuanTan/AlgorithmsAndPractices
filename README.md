@@ -67,6 +67,7 @@ Parts of this note refer to Jiuzhang, Labuladong, and other internet recourses. 
   - [7Practice](#7practice)
 - [8. DC - Divide and Conquer](#8-dc---divide-and-conquer)
   - [8Theory](#8theory)
+    - [8.1 Recursion V.S. DFS V.S. BackTracking](#81-recursion-vs-dfs-vs-backtracking)
   - [8Practice](#8practice)
 - [9. Dynamic Programming - Memoization 记忆化搜索 动态规划](#9-dynamic-programming---memoization-记忆化搜索-动态规划)
   - [9Theory:](#9theory)
@@ -900,6 +901,12 @@ TSP
 
 ## 8Theory
 
+### 8.1 Recursion V.S. DFS V.S. BackTracking
+|Recursion|DFS|BackTracking|
+|-|-|-|
+|Recursion function: One way to implement the program, i.e. a function calls itself.|DFS can be implemented by using Recursion fucntion.|Backtracking method: It is DFS algorithm.|
+|Recursion algorithm: The result of bigger problems depend on the result of smaller problems. So use the recursion function to solve the smaller problems.|DFS can be implemented without using Recursion fucntion, for example you design a stack and operate by hand yourself. |Backtracking operation: when the recursion function return to its previous layer, some parameters need to be changed back to their previous values.|
+|Usually when we say recursion, we mean the recursion function.|DFS is a traversal/searching algorithm.||
 
 ## 8Practice
 
