@@ -907,8 +907,17 @@ TSP
 |Recursion function: One way to implement the program, i.e. a function calls itself.|DFS can be implemented by using Recursion fucntion.|Backtracking method: It is DFS algorithm.|
 |Recursion algorithm: The result of bigger problems depend on the result of smaller problems. So use the recursion function to solve the smaller problems.|DFS can be implemented without using Recursion fucntion, for example you design a stack and operate by hand yourself. |Backtracking operation: when the recursion function return to its previous layer, some parameters need to be changed back to their previous values.|
 |Usually when we say recursion, we mean the recursion function.|DFS is a traversal/searching algorithm.||
+||
 
-Easy [257. Binary Tree Paths (find all paths)](leetcode/257.Binary_Tree_Paths.md)
+
+|Traversal 遍历法|DC 分治法|
+|-|-|
+|A helper guy stores all visited nodes |Ask your gangs to solve the sub-problem and you sum up their results yourself|
+|Usually use a global variable or shared argument|Usually use return-value to store results of sub-problems|
+||
+
+Easy [257. Binary Tree Paths (find all paths)](leetcode/257.Binary_Tree_Paths.md) DFS, 遍历法 vs 分治法 
+[Binary tree DC template](note/binary_tree_dc.md)
 
 ## 8Practice
 
