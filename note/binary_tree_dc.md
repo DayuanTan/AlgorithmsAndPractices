@@ -29,7 +29,7 @@
 
  py
  ```py
- def divide_conquer(root){
+ def divide_conquer(root):
     # 递归出口
     # 一般处理node==null就够了，大部分情况不需要处理node==leaf
     if root is None:
@@ -40,11 +40,10 @@
         如果叶子节点的返回结果可以通过两个空节点的返回结果得到就省略这一段代码
 
     # 处理左子树
-    left_result = divide_conquer(root.left);
+    left_result = divide_conquer(root.left)
     # 处理右子树
-    right_result = divide_conquer(root.right);
+    right_result = divide_conquer(root.right)
     # 合并答案
-    result = merge left_result and right_result;
-    return result;
- }
+    result = merge left_result and right_result
+    return result
  ```
