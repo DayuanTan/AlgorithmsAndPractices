@@ -919,6 +919,8 @@ TSP
 - Easy [257. Binary Tree Paths (find all paths)](leetcode/257.Binary_Tree_Paths.md) DFS, 遍历法 vs 分治法 
 - [Binary tree DC template](note/binary_tree_dc.md)
 - Easy [110. Balanced Binary Tree](leetcode/110.Balanced_Binary_Tree.md) Traversal and DC
+  - Easy [104. Maximum Depth of Binary Tree](leetcode/104.Maximum_Depth_of_Binary_Tree.md)
+  - Meidum []
 
 ## 8Practice
 
