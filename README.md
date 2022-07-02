@@ -920,7 +920,8 @@ TSP
 - [Binary tree DC template](note/binary_tree_dc.md)
 - Easy [110. Balanced Binary Tree](leetcode/110.Balanced_Binary_Tree.md) Traversal and DC
   - Easy [104. Maximum Depth of Binary Tree](leetcode/104.Maximum_Depth_of_Binary_Tree.md)
-  - Meidum []
+  - Meidum [1120. Maximum Average Subtree](leetcode/1120.Maximum_average_of_subtree.md)
+  - Hard [4. Median of Two Sorted Arrays](leetcode/4.Median_of_Two_Sorted_Arrays.md)
 
 ## 8Practice
 
